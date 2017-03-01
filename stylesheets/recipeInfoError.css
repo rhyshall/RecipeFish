@@ -1,0 +1,152 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: recipeInfoError.css													       ****
+** Purpose: Provides style sheet for "recipeInfoError.php"					   	       ****
+** Author: Rhys Hall																   ****
+** Date Created: 07/17/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#empty-field-message  #exclamation-mark 
+{
+	padding-right: 395px;
+}
+
+#empty-field-message 
+{
+	margin-left: 121.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#empty-field-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 1184px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}
+
+#name-length-message  #exclamation-mark 
+{
+	padding-right: 350px;
+}
+
+#name-length-message 
+{
+	margin-left: 121.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#name-length-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 1184px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}
+
+#name-symbols-message  #exclamation-mark 
+{
+	padding-right: 228px;
+}
+
+#name-symbols-message 
+{
+	margin-left: 121.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#name-symbols-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 1184px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}
+
+#description-length-message  #exclamation-mark 
+{
+	padding-right: 326px;
+}
+
+#description-length-message 
+{
+	margin-left: 121.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#description-length-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 1184px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}
+
+#image-type-message  #exclamation-mark 
+{
+	padding-right: 375px;
+}
+
+#image-type-message
+{
+	margin-left: 121.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#image-type-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 1184px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}
+
+#image-size-message  #exclamation-mark 
+{
+	padding-right: 261px;
+}
+
+#image-size-message
+{
+	margin-left: 121.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#image-size-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 1184px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}

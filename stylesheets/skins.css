@@ -1,0 +1,68 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: skins.css													   		  		   ****
+** Purpose: Provides style sheet for "skins.php"					   	       		   ****
+** Author: Rhys Hall																   ****
+** Date Created: 10/09/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#skin-instructions 
+{
+	padding-top: 12px;
+	margin-top: 34px;
+	margin-left: 198px;
+	margin-right: 198px;
+	padding-bottom: 6px;
+	background-color: #f3fcf9;
+	border-style: solid;
+	border-left-width: 0.5px;
+	border-top-width: 0.5px;
+	border-right-width: 0.5px;
+	border-bottom-width: 0.25px;
+	border-color: grey;
+}
+
+#skin-instructions p
+{
+	text-align: center;
+	font-size: 17px;
+	font-family: sans-serif;
+	color: grey;
+}
+
+#skin-gallery 
+{
+	padding-top: 30px;
+	margin-left: 198px;
+	width: 1030px;
+	background-color: #f2f2f2;
+	padding-bottom: 10px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-width: 0.5px;
+	border-right-width: 0.5px;
+	border-bottom-width: 0.25px;
+	border-top-color: #f2f2f2;
+	border-color: grey;
+}
+
+.row
+{
+	width: 1020px;
+	padding-left: 30px;
+}
+
+.thumbnail
+{
+	height: 224px;
+	width: 224px;
+}
+
+.thumbnail > img
+{
+	height: 208px;
+	width: 200px;
+	padding-top: 4px;
+}

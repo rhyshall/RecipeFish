@@ -1,0 +1,58 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: registerGeneralError.css													   ****
+** Purpose: Provides style sheet for "registerGeneralError.php"					   	   ****
+** Author: Rhys Hall																   ****
+** Date Created: 04/26/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#empty-field-message #exclamation-mark 
+{
+	padding-right: 154px;
+}
+
+#empty-field-message 
+{
+	padding-left: 373.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 45px;
+	margin-top: -45px;
+}
+
+#empty-field-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 680px;
+	padding-left: 24px;
+	padding-top: 5px;
+	border-radius: 5px;
+}
+
+#confirm-message #exclamation-mark 
+{
+	padding-right: 116px;
+}
+
+#confirm-message
+{
+	padding-left: 373.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 45px;
+	margin-top: -45px;
+}
+
+#confirm-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 680px;
+	padding-left: 20px;
+	padding-top: 5px;
+	border-radius: 5px;
+}

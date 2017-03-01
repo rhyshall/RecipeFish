@@ -1,0 +1,33 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: registerEmailError.css													   	   ****
+** Purpose: Provides style sheet for "registerEmailError.php"					       ****
+** Author: Rhys Hall																   ****
+** Date Created: 05/01/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#existing-email-message #exclamation-mark 
+{
+	padding-right: 100px;
+}
+
+#existing-email-message 
+{
+	padding-left: 373.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 45px;
+	margin-top: -45px;
+}
+
+#existing-email-message p
+{
+	color: #ffffff;
+	background-color: #3366ff;
+	height: 35px;
+	width: 680px;
+	padding-left: 22px;
+	padding-top: 5px;
+	border-radius: 5px;
+}

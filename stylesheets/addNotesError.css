@@ -1,0 +1,33 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: addNotesError.css													           ****
+** Purpose: Provides style sheet for "addNotesError.php"					   	       ****
+** Author: Rhys Hall																   ****
+** Date Created: 09/05/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#notes-length-message #exclamation-mark 
+{
+	padding-right: 226px;
+}
+
+#notes-length-message
+{
+	padding-left: 273.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 45px;
+	margin-top: 60px;
+}
+
+#notes-length-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 880px;
+	padding-left: 24px;
+	padding-top: 5px;
+	border-radius: 5px;
+}

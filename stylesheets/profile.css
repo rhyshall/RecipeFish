@@ -1,0 +1,49 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: profile.css																   ****
+** Purpose: Provides style sheet for "profile.php"					   				   ****
+** Author: Rhys Hall																   ****
+** Date Created: 09/13/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1500px;
+	float: left;
+}
+
+#container
+{
+	width: 1426.5px;
+	height: 1500px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1500px;
+	float: left;
+}
+
+#clear-float
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

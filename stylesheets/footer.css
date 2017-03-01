@@ -1,0 +1,59 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: footer.css																	   ****
+** Purpose: Provides style sheet for "footer.php"					   				   ****
+** Author: Rhys Hall																   ****
+** Date Created: 04/24/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0%;
+	padding: 0%;
+}
+
+#margin-canvas-footer1
+{
+	background-color: #99ccff;
+	float: left;
+	height: 150px;
+	width: 166px;
+}
+
+#container-footer
+{
+	float: left; 
+	height: 150px;
+	width: 1426.5px;
+}
+
+#copyright
+{
+	text-align: center;
+}
+
+#copyright-p1
+{
+	padding-top: 55px;
+	font-size: 16px;
+}
+
+#copyright-p2
+{
+	font-size: 16px;
+	padding-top: 16px;
+}
+
+#margin-canvas-footer2
+{
+	background-color: #99ccff;
+	height: 150px;
+	width: 166px;
+	float: left;
+}
+
+#clear-float-footer
+{
+	clear: both;
+}

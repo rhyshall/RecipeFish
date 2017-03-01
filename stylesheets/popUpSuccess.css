@@ -1,0 +1,48 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: popUpSuccess.css											   				   ****
+** Purpose: Provides style sheet for pop-up success messages						   ****
+** Author: Rhys Hall																   ****
+** Date Created: 09/05/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#container
+{
+	background-color: #f5f5ef;
+	height: 100%;
+	width: 100%;
+}
+
+#message 
+{
+	padding-top: 60px;
+	background-color: #f5f5ef;
+}
+
+#message p 
+{
+	font-size: 18px;
+	text-align: center;
+}
+
+#close 
+{
+	padding-top: 100px;
+	text-align: center;
+	background-color: #f5f5ef;
+}
+
+#close-button
+{
+	height: 40px;
+	width: 150px;
+	font-size: 19px;
+	box-shadow: 1px 1px 2.5px #29a329;
+}

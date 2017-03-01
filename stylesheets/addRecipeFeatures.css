@@ -1,0 +1,505 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: addRecipeFeatures.css													       ****
+** Purpose: Provides style sheet for "addRecipeFeatures.php"					   	   ****
+** Author: Rhys Hall																   ****
+** Date Created: 07/06/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0%;
+	padding: 0%;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 2800px;
+	float: left;
+}
+
+#container
+{
+	width: 1426.5px;
+	height: 2800px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#title p 
+{
+	padding-top: 20px;
+	font-size: 21px;
+	font-family: sans-serif;
+	color: #e62e00;
+	text-align: center;
+}
+
+#sub-title p 
+{
+	padding-top: 20px;
+	margin-bottom: 40px;
+	font-size: 19px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#bar
+{
+	margin-left: 263.25px;
+	margin-bottom: 40px;
+	width: 900px;
+}
+
+#blue-bar 
+{
+	width: 40%;
+}
+
+#categories-form input
+{
+	height: 14px;
+	width: 14px;
+}
+
+#categories-form p 
+{
+	font-size: 17px;
+	padding-left: 6px;
+}
+
+#categories-box 
+{
+	height: 2120px;
+	width: 900px;
+	margin-top: 50px;
+	margin-left: 263.25px;
+	background-color: #f3fcf9;
+	border-style: ridge;
+	border-left-width: 3px;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-color: #f2f2f2;
+}
+
+#categories-instructions
+{
+	font-family: sans-serif;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 17px;
+	color: grey;
+}
+
+#ethnicity-categories 
+{
+	padding-top: 65px;
+}
+
+#ethnicity-step
+{
+	font-size: 17px;
+	float: left;
+	padding-top: 4px;
+	padding-left: 318px;
+}
+
+#ethnicity-title 
+{
+	font-size: 17px;
+	font-family: sans-serif;
+	text-align: center;
+	float: left;
+	padding-top: 4px;
+	padding-left: 30px;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
+#color-line1
+{
+	margin-left: 50px;
+	height: 1px;
+	width: 800px;
+	background-color: #cd7ea2;
+}
+
+#ethnicity-columns
+{
+	padding-top: 40px;
+	padding-left: 100px;
+}
+
+#ethnicity-columns p 
+{
+	padding-left: 20px;
+	margin-top: -16px;
+	font-size: 14.5px;
+}
+
+.column 
+{
+	padding-left: 90px;
+}
+
+#ethnicity-column1
+{
+	float: left;
+}
+
+#ethnicity-column2
+{
+	float: left;
+}
+
+#ethnicity-column3
+{
+	float: left;
+}
+
+#ethnicity-column4
+{
+	float: left;
+}
+
+#clear-float2
+{
+	clear: both;
+}
+
+#meal-type-categories 
+{
+	padding-top: 89px;
+}
+
+#meal-type-step
+{
+	font-size: 17px;
+	float: left;
+	padding-top: 4px;
+	padding-left: 318px;
+}
+
+#meal-type-title 
+{
+	font-size: 17px;
+	font-family: sans-serif;
+	text-align: center;
+	float: left;
+	padding-top: 4px;
+	padding-left: 30px;
+}
+
+#clear-float3
+{
+	clear: both;
+}
+
+#color-line2
+{
+	margin-left: 50px;
+	height: 1px;
+	width: 800px;
+	background-color: #009933;
+}
+
+#meal-type-columns
+{
+	padding-top: 40px;
+	padding-left: 100px;
+}
+
+#meal-type-columns p 
+{
+	padding-left: 20px;
+	margin-top: -16px;
+	font-size: 14.5px;
+}
+
+#meal-type-column1
+{
+	float: left;
+}
+
+#meal-type-column2
+{
+	float: left;
+}
+
+#meal-type-column3
+{
+	float: left;
+}
+
+#meal-type-column4
+{
+	float: left;
+}
+
+#clear-float4
+{
+	clear: both;
+}
+
+#popular-type-categories 
+{
+	padding-top: 89px;
+}
+
+#popular-type-step
+{
+	font-size: 17px;
+	float: left;
+	padding-top: 4px;
+	padding-left: 284px;
+}
+
+#popular-type-title 
+{
+	font-size: 17px;
+	font-family: sans-serif;
+	text-align: center;
+	float: left;
+	padding-top: 4px;
+	padding-left: 30px;
+}
+
+#clear-float5
+{
+	clear: both;
+}
+
+#color-line3
+{
+	margin-left: 50px;
+	height: 1px;
+	width: 800px;
+	background-color: #ff6600;
+}
+
+#popular-type-columns
+{
+	padding-top: 40px;
+	padding-left: 100px;
+}
+
+#popular-type-columns p 
+{
+	padding-left: 20px;
+	margin-top: -16px;
+	font-size: 14.5px;
+}
+
+#popular-type-column1
+{
+	float: left;
+}
+
+#popular-type-column2
+{
+	float: left;
+}
+
+#popular-type-column3
+{
+	float: left;
+}
+
+#popular-type-column4
+{
+	float: left;
+	padding-left: 80px;
+}
+
+#clear-float6
+{
+	clear: both;
+}
+
+#other-categories 
+{
+	padding-top: 89px;
+}
+
+#other-step
+{
+	font-size: 17px;
+	float: left;
+	padding-top: 4px;
+	padding-left: 298px;
+}
+
+#other-title 
+{
+	font-size: 17px;
+	font-family: sans-serif;
+	text-align: center;
+	float: left;
+	padding-top: 4px;
+	padding-left: 30px;
+}
+
+#clear-float7
+{
+	clear: both;
+}
+
+#color-line4
+{
+	margin-left: 50px;
+	height: 1px;
+	width: 800px;
+	background-color: #002db3;
+}
+
+#other-columns
+{
+	padding-top: 40px;
+	padding-left: 100px;
+}
+
+#other-columns p 
+{
+	padding-left: 20px;
+	margin-top: -16px;
+	font-size: 14.5px;
+}
+
+#other-column1
+{
+	float: left;
+}
+
+#other-column2
+{
+	float: left;
+}
+
+#other-column3
+{
+	float: left;
+}
+
+#other-column4
+{
+	float: left;
+}
+
+#clear-float8
+{
+	clear: both;
+}
+
+#holiday-categories 
+{
+	padding-top: 89px;
+}
+
+#holiday-step
+{
+	font-size: 17px;
+	float: left;
+	padding-top: 4px;
+	padding-left: 318px;
+}
+
+#holiday-title 
+{
+	font-size: 17px;
+	font-family: sans-serif;
+	text-align: center;
+	float: left;
+	padding-top: 4px;
+	padding-left: 30px;
+}
+
+#clear-float9
+{
+	clear: both;
+}
+
+#color-line5
+{
+	margin-left: 50px;
+	height: 1px;
+	width: 800px;
+	background-color: #e60000;
+}
+
+#holiday-columns
+{
+	padding-top: 40px;
+	padding-left: 100px;
+}
+
+#holiday-columns p 
+{
+	padding-left: 20px;
+	margin-top: -16px;
+	font-size: 14.5px;
+}
+
+#holiday-column1
+{
+	float: left;
+}
+
+#holiday-column2
+{
+	float: left;
+}
+
+#holiday-column3
+{
+	float: left;
+}
+
+#holiday-column4
+{
+	padding-left: 80px;
+	float: left;
+}
+
+#clear-float10
+{
+	clear: both;
+}
+
+#next
+{
+	padding-top: 66px;
+	text-align: center;
+}
+
+#next-button
+{
+	height: 39px;
+	width: 136px;
+	font-size: 19px;
+	box-shadow: 1px 1px 2.5px #e65c00;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 2800px;
+	float: left;
+}
+
+#clear-float11
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

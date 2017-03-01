@@ -1,0 +1,138 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: addRecipeNotes.css													   		   ****
+** Purpose: Provides style sheet for "addRecipeNotes.php"					   	       ****
+** Author: Rhys Hall																   ****
+** Date Created: 06/04/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1100px;
+	float: left;
+}
+
+#container
+{
+	width: 1426.5px;
+	height: 1100px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#title p 
+{
+	padding-top: 20px;
+	font-size: 21px;
+	font-family: sans-serif;
+	color: #e62e00;
+	text-align: center;
+}
+
+#sub-title p 
+{
+	padding-top: 20px;
+	margin-bottom: 40px;
+	font-size: 19px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#bar
+{
+	margin-left: 263.25px;
+	margin-bottom: 40px;
+	width: 900px;
+}
+
+#blue-bar 
+{
+	width: 100%;
+}
+
+#notes-box
+{
+	height: 476px;
+	width: 850px;
+	margin-top: 20px;
+	margin-left: 288.25px;
+	background-color: #f2f9f9;
+	border-style: ridge;
+	border-left-width: 3px;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-color: #f2f2f2;
+}
+
+#notes-instructions-1 
+{
+	font-family: sans-serif;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 17px;
+	color: grey;
+}
+
+#notes
+{
+	padding-top: 60px;
+	padding-left: 70px;
+}
+
+#notes-title
+{
+	padding-left: 3px;
+	color: #808080;
+	font-size: 18px;
+}
+
+#notes-field
+{
+	height: 270px;
+	width: 710px;
+	font-size: 17px;
+	color: #808080;
+	background-color: #f9f9f9;
+}
+
+#submit
+{
+	padding-top: 90px;
+	text-align: center;
+}
+
+#submit-button
+{
+	height: 45px;
+	width: 250px;
+	font-size: 20px;
+	box-shadow: 1px 1px 2.5px #29a329;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1100px;
+	float: left;
+}
+
+#clear-float
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

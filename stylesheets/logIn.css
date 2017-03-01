@@ -1,0 +1,148 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: logIn.css																	   ****
+** Purpose: Provides style sheet for "logIn.php"					   				   ****
+** Author: Rhys Hall																   ****
+** Date Created: 04/26/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 850px;
+	float: left;
+}
+
+#container
+{
+	width: 1426.5px;
+	height: 850px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#title p 
+{
+	padding-top: 60px;
+	text-align: center;
+	font-size: 22px;
+	font-family: sans-serif;
+}
+
+#hidden-field 
+{
+	height: 0px;
+	width: 0px;
+	visibility: hidden;
+}
+
+#log-in-email 
+{
+	padding-top: 125px;
+	padding-left: 539px;
+}
+
+#log-in-email-field
+{
+	height: 40px;
+	width: 350px;
+	font-size: 18px;
+	color: #808080;
+	background-color: #f9f9f9;
+}
+
+#log-in-password
+{
+	padding-top: 45px;
+	padding-left: 539px;
+}
+
+#log-in-password-field 
+{
+	height: 40px;
+	width: 350px;
+	font-size: 18px;
+	color: #808080;
+	background-color: #f9f9f9;
+	float: left;
+}
+
+#forgot-password
+{
+	padding-top: 12px;
+	padding-left: 30px;
+	float: left;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
+#log-in-submit 
+{
+	padding-top: 115px;
+	text-align: center;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+
+#log-in-submit-button
+{
+	height: 40px;
+	width: 200px;
+	font-size: 20px;
+	box-shadow: 1px 1px 2.5px #007399;
+}
+
+#register-link 
+{
+	padding-left: 490px;
+}
+
+#register-link h3
+{
+	font-family: sans-serif;
+	font-size: 18px;
+	float: left;
+}
+
+#register-link a
+{
+	padding-top: 17px;
+	font-family: sans-serif;
+	font-size: 18px;
+	float: left;
+}
+
+#clear-float2
+{
+	clear: both;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 850px;
+	float: left;
+}
+
+#clear-float3
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

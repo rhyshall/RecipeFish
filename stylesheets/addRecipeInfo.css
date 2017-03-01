@@ -1,0 +1,448 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: addRecipeInfo.css													   		   ****
+** Purpose: Provides style sheet for "addRecipeInfo.php"					   	       ****
+** Author: Rhys Hall																   ****
+** Date Created: 05/24/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0%;
+	padding: 0%;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1380px;
+	float: left;
+}
+
+#container
+{
+	width: 1426.5px;
+	height: 1380px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#title p 
+{
+	padding-top: 20px;
+	font-size: 21px;
+	font-family: sans-serif;
+	color: #e62e00;
+	text-align: center;
+}
+
+#sub-title p 
+{
+	padding-top: 20px;
+	font-size: 19px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#bar
+{
+	margin-left: 263.25px;
+	margin-bottom: 40px;
+	width: 900px;
+}
+
+#blue-bar 
+{
+	width: 20%;
+}
+
+#colour-background 
+{
+	height: 914px;
+	width: 1184px;
+	margin-bottom: 40px;
+	margin-left: 121.25px;
+	background-color: #eef7f7;
+	border-radius: 50%;
+}
+
+#side1
+{
+	height: 405px;
+	width: 522px;
+	float: left;
+	margin-left: 331px;
+	margin-top: 26px;
+    box-sizing: border-box;
+    border: 2px solid #ffe680;
+    border-radius: 50%;
+    background-color: #ffffb3;
+}
+
+#step1
+{
+	padding-top: 18px;
+	text-align: center;
+	font-size: 20px;
+	font-style: bold;
+}
+
+#recipe-name 
+{
+	padding-top: 20px;
+	padding-left: 74.5px;
+}
+
+#recipe-name p 
+{
+	padding-left: 4px;
+	color: #000000;
+	font-size: 16.5px;
+}
+
+#recipe-name-field 
+{
+	height: 35px;
+	width: 372px;
+	font-size: 16.5px;
+	color: #000000;
+	background-color: #f9f9f9;
+}
+
+#description
+ {
+    padding-top: 22.5px;
+	padding-left: 74.5px;
+}
+
+#description p 
+{
+	padding-left: 4px;
+	color: #000000;
+	font-size: 17px;
+}
+
+#description-field
+{
+	height: 127.5px;
+	width: 372px;
+	font-size: 16.5px;
+	background-color: #f9f9f9;
+}
+
+#side2
+{
+	height: 405px;
+	width: 522px;
+	float: left;
+	margin-top: -60px;
+	margin-left: 70px;
+    box-sizing: border-box;
+    border: 2px solid #eac8d6;
+    border-radius: 50%;
+    background-color: #f8edf2;
+}
+
+#step2
+{
+	padding-top: 18px;
+	text-align: center;
+	font-size: 20px;
+	font-style: bold;
+}
+	
+#preparation-time 
+{
+	padding-top: 14px;
+	padding-left: 116px;
+}
+
+#preparation-time p
+{
+	padding-left: 3px;
+	color: #000000;
+	font-size: 17px;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+#prep-hours-field
+{
+	height: 31.5px;
+	width: 67px;
+	font-size: 16.5px;
+	color: #000000;
+	background-color: #f9f9f9;
+	float: left;
+}
+
+#prep-hours p 
+{
+	color: #000000;
+	font-size: 16.5px;
+	padding-top: 10px;
+	padding-left: 12.5px;
+	float: left;
+}
+
+#prep-minutes-field
+{
+	height: 31.5px;
+	width: 67px;
+	font-size: 16.5px;
+	color: #000000;
+	background-color: #f9f9f9;
+	margin-left: 40px;
+	float: left;
+}
+
+#prep-minutes p 
+{
+	color: #000000;
+	font-size: 16.5px;
+	padding-top: 10px;
+	padding-left: 12.5px;
+	margin-top: 2px;
+	float: left;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
+#cooking-time
+{
+	padding-top: 18px;
+	padding-left: 116px;
+}
+
+#cooking-time p
+{
+	padding-top: 30px;
+	padding-left: 3px;
+	color: #000000;
+	font-size: 17px;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+#cook-hours-field
+{
+	height: 31.5px;
+	width: 67px;
+	font-size: 16.5px;
+	color: #000000;
+	background-color: #f9f9f9;
+	float: left;
+}
+
+#cook-hours p 
+{
+	color: #000000;
+	float: left;
+	font-size: 16.5px;
+	padding-top: 10px;
+	padding-left: 12.5px;
+}
+
+#cook-minutes-field
+{
+	height: 31.5px;
+	width: 67px;
+	font-size: 16.5px;
+	color: #000000;
+	background-color: #f9f9f9;
+	float: left;
+	margin-left: 40px;
+	margin-top: 2px;
+}
+
+#cook-minutes p 
+{
+	color: #000000;
+	float: left;
+	font-size: 16.5px;
+	padding-top: 10px;
+	padding-left: 12.5px;
+	margin-top: 2px;
+}
+
+#clear-float2
+{
+	clear: both;
+}
+
+#wait-time 
+{
+	padding-top: 18px;
+	padding-left: 116px;
+}
+
+#wait-time p
+{
+	padding-top: 30px;
+	padding-left: 3px;
+	color: #000000;
+	font-size: 17px;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+#wait-hours-field
+{
+	height: 31.5px;
+	width: 67px;
+	font-size: 16.5px;
+	color: #000000;
+	background-color: #f9f9f9;
+	float: left;
+}
+
+#wait-hours p 
+{
+	color: #000000;
+	float: left;
+	font-size: 16.5px;
+	padding-top: 10px;
+	padding-left: 12.5px;
+}
+
+#wait-minutes-field
+{
+	height: 31.5px;
+	width: 67px;
+	font-size: 16.5px;
+	color: #000000;
+	background-color: #f9f9f9;
+	float: left;
+	margin-left: 40px;
+	margin-top: 2px;
+}
+
+#wait-minutes p 
+{
+	color: #000000;
+	float: left;
+	font-size: 16.5px;
+	padding-top: 10px;
+	padding-left: 12.5px;
+	margin-top: 2px;
+}
+
+#clear-float3
+{
+	clear: both;
+}
+
+#servings 
+{
+	padding-top: 18px;
+	padding-left: 116px;
+}
+
+#servings p 
+{
+	padding-left: 3px;
+	color: #000000;
+	font-size: 17px;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+#servings-field
+{
+	height: 31.5px;
+	width: 67px;
+	font-size: 16.5px;
+	color: #000000;
+	background-color: #f9f9f9;
+}
+
+#side3
+{
+	height: 405px;
+	width: 522px;
+	float: left;
+    box-sizing: border-box;
+    border: 2px solid #80ff80;
+    border-radius: 50%;
+    background-color: #ccffcc;
+	margin-top: -60px;
+}
+
+#step3
+{
+	padding-top: 18px;
+	text-align: center;
+	font-size: 20px;
+	font-style: bold;
+}
+
+#recipe-image
+{
+	padding-top: 40px;
+	padding-left: 182px;
+}
+
+#recipe-image p 
+{
+	font-size: 17px;
+	color: #000000;
+	padding-left: 3px;
+}
+
+#photo-icon 
+{
+	font-size: 150px;
+	cursor: pointer;
+}
+
+#recipe-image-field
+{
+	font-size: 17px;
+}
+
+#clear-float4
+{
+	clear: both;
+}
+
+#next
+{
+	padding-top: 56px;
+	text-align: center;
+}
+
+#next-button
+{
+	height: 39px;
+	width: 136px;
+	font-size: 19px;
+	box-shadow: 1px 1px 2.5px #e65c00;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1380px;
+	float: left;
+}
+
+#clear-float5
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

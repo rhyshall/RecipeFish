@@ -1,0 +1,481 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: recipeProfile.css															   ****
+** Purpose: Provides style sheet for "recipeProfile.php"					   		   ****
+** Author: Rhys Hall																   ****
+** Date Created: 09/25/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	height: 3500px;
+	width: 166px;
+	padding-bottom: 80px;
+	float: left;
+}
+
+#container
+{
+	height: 3500px;
+	width: 1426.5px;
+	padding-bottom: 80px;
+	float: left;
+	background-color: #fff5e6;
+}
+
+#title
+{
+	background-color: #ffd699;
+	margin-top: -6.75px;
+	padding-bottom: 4px;
+	box-shadow: 1px 1px 1px #ffad33;
+}
+
+#title p 
+{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 20.5px;
+	font-family: sans-serif;
+	color: #000000;
+}
+
+#recipe-photo 
+{
+	padding-top: 1px;
+	padding-left: 182px;
+	float: left;
+}
+
+#recipe-photo img 
+{
+	height: 288px;
+	width: 416px;
+}
+
+#photo-stats
+{
+	background-color: #f2f2f2;
+	height: 60px;
+	width: 416px;
+}
+
+#header-info1
+{
+	margin-top: 1px;
+	height: 348px;
+	width: 323.25px;
+	background-color: #f2f2f2;
+	float: left;
+}
+
+.colon
+{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#prep-time
+{
+	padding-top: 42px;
+	padding-left: 60px;
+}
+
+#clock
+{
+	font-size: 17px;
+	padding-top: 2px;
+	float: left;
+}
+
+#prep-time p
+{
+	font-size: 17.5px;
+	padding-left: 6px;
+	float: left;
+}
+
+#clear-float
+{
+	clear: both;
+}
+
+#wait-time
+{
+	padding-top: 30px;
+	padding-left: 60px;
+}
+
+#clock3
+{
+	font-size: 17px;
+	padding-top: 2px;
+	float: left;
+}
+
+#wait-time p
+{
+	font-size: 17.5px;
+	padding-left: 6px;
+	float: left;
+}
+
+#clear-float2
+{
+	clear: both;
+}
+
+#author
+{
+	padding-top: 60px;
+	padding-left: 60px;
+}
+
+#author p
+{
+	font-size: 17.5px;
+	float: left
+}
+
+#author a 
+{
+	font-size: 17.5px;
+	float: left;
+	padding-left: 6.5px;
+}
+
+#clear-float3
+{
+	clear: both;
+}
+
+#date-uploaded
+{
+	padding-top: 30px;
+	padding-left: 60px;
+}
+
+#date-uploaded p
+{
+	font-size: 17.5px;
+}
+
+#header-info2
+{
+	margin-top: 1px;
+	height: 348px;
+	width: 323.25px;
+	background-color: #f2f2f2;
+	float: left;
+}
+
+#cook-time
+{
+	padding-top: 42px;
+	padding-left: 20px;
+}
+
+#clock2
+{
+	font-size: 17px;
+	padding-top: 2px;
+	float: left;
+}
+
+#cook-time p
+{
+	font-size: 17.5px;
+	padding-left: 6px;
+	float: left;
+}
+
+#clear-float4
+{
+	clear: both;
+}
+
+#servings
+{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+#cutlery
+{
+	font-size: 17px;
+	padding-top: 2px;
+	float: left;
+}
+
+#servings p
+{
+	font-size: 17.5px;
+	padding-left: 8px;
+	float: left;
+}
+
+#clear-float5
+{
+	clear: both;
+}
+
+#clear-float6
+{
+	clear: both;
+}
+
+#description-title
+{
+	margin-top: 90px;
+	margin-left: 182px;
+	margin-right: 182px;
+	background-color: #ffd699;
+	box-shadow: 1px 1px 1px #ffad33;
+}
+
+#description-title p 
+{
+	padding-top: 10px;
+	padding-bottom: 4px;
+	text-align: center;
+	font-size: 19px;
+	font-family: sans-serif;
+	color: #000000;
+}
+
+#description-text 
+{
+	background-color: #f6f6f6;
+	margin-top: -8px;
+	margin-left: 182px;
+	margin-right: 182px;
+	height: 276px;
+}
+
+#description-text p 
+{
+	padding-top: 30px;
+	padding-left: 52px;
+	padding-right: 44px;
+	font-size: 16px;
+	color: #000000;
+}
+
+#ingredients-title
+{
+	margin-top: 90px;
+	margin-left: 182px;
+	margin-right: 182px;
+	background-color: #ffd699;
+	box-shadow: 1px 1px 1px #ffad33;
+}
+
+#ingredients-title p 
+{
+	padding-top: 10px;
+	padding-bottom: 4px;
+	text-align: center;
+	font-size: 19px;
+	font-family: sans-serif;
+	color: #000000;
+}
+
+.glyphicon-plus
+{
+	float: left;
+	padding-top: 32px;
+	padding-left: 38px;
+	padding-right: 10px;
+	font-size: 15px;
+}
+
+.ingredient 
+{
+	margin-bottom: -8px;
+	float: left;
+}
+
+#ingredients-text 
+{
+	background-color: #f6f6f6;
+	padding-bottom: 30px;
+	margin-top: -8px;
+	margin-left: 182px;
+	margin-right: 182px;
+	width: 1063px;
+}
+
+#ingredients-text1
+{
+	background-color: #f6f6f6;
+	width: 531.5;
+	float: left;
+}
+
+#ingredients-text1 p 
+{
+	padding-top: 30px;
+	padding-right: 44px;
+	font-size: 16px;
+	color: #000000;
+}
+
+#clear-float7
+{
+	clear: both;
+}
+
+#ingredients-text2
+{
+	background-color: #f6f6f6;
+	width: 531.5;
+	float: left;
+}
+
+#ingredients-text2 p 
+{
+	padding-top: 30px;
+	padding-right: 44px;
+	font-size: 16px;
+	color: #000000;
+}
+
+#clear-float8
+{
+	clear: both;
+}
+
+#clear-float9
+{
+	clear: both;
+}
+
+.step 
+{
+	padding-left: 42px;
+	font-weight: bold;
+}
+
+.direction 
+{
+	padding-right: 42px;
+	padding-left: 10px;
+}
+
+#directions-title
+{
+	margin-top: 90px;
+	margin-left: 182px;
+	margin-right: 182px;
+	background-color: #ffd699;
+	box-shadow: 1px 1px 1px #ffad33;
+}
+
+#directions-title p 
+{
+	padding-top: 10px;
+	padding-bottom: 4px;
+	text-align: center;
+	font-size: 19px;
+	font-family: sans-serif;
+	color: #000000;
+}
+
+.step-area
+{
+	float: left;
+}
+
+.direction-area 
+{
+	float: left;
+	width: 980px;
+}
+
+#directions-text
+{
+	background-color: #f6f6f6;
+	padding-bottom: 30px;
+	margin-top: -8px;
+	margin-left: 182px;
+	margin-right: 182px;
+	width: 1063px;
+}
+
+#directions-text p 
+{
+	padding-top: 30px;
+	font-size: 16px;
+	color: #000000;
+}
+
+
+#notes-title
+{
+	background-color: #ffd699;
+	margin-top: 90px;
+	margin-left: 182px;
+	margin-right: 182px;
+	box-shadow: 1px 1px 1px #ffad33;
+}
+
+#notes-title p 
+{
+	padding-top: 10px;
+	padding-bottom: 4px;
+	text-align: center;
+	font-size: 19px;
+	font-family: sans-serif;
+	color: #000000;
+}
+
+#notes-text 
+{
+	background-color: #f6f6f6;
+	margin-top: -8px;
+	margin-left: 182px;
+	margin-right: 182px;
+	height: 276px;
+}
+
+#notes-text p 
+{
+	padding-top: 30px;
+	padding-left: 52px;
+	padding-right: 44px;
+	font-size: 16px;
+	color: #000000;
+}
+
+#clear-float10
+{
+	clear: both;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	height: 3500px;
+	width: 166px;
+	padding-bottom: 80px;
+	float: left;
+}
+
+#clear-float11
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

@@ -1,0 +1,39 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: profileMenu.css															   ****
+** Purpose: Provides style sheet for "profileMenu.php"					   		       ****
+** Author: Rhys Hall																   ****
+** Date Created: 10/08/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+}
+
+.nav-pills a 
+{
+	font-size: 16px;
+	font-family: sans-serif;
+	margin-left: 8px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus 
+{
+    color: #ffffff;
+    background-color:#5bc0de;
+	border-color: #46b8da;
+}
+
+#profile-menu 
+{
+	margin-left: 326px;
+}
+
+.tabContent 
+{
+    display: none;
+}

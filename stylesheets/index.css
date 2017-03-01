@@ -1,0 +1,104 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: index.css																	   ****
+** Purpose: Provides style sheet for "index.php"					   				   ****
+** Author: Rhys Hall																   ****
+** Date Created: 04/13/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0%;
+	padding: 0%;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 2000px;
+	float: left;
+}
+
+#container
+{
+	width: 1426.5px;
+	height: 2000px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#top-separator 
+{
+	margin-top: -10px;
+	padding-left: 20.25px;
+	padding-right: 20.25px;
+}
+
+#recipe-canvas
+{
+	width: 1386px;
+	margin-left: 20.25px;
+	margin-top: -12px;
+}
+
+.thumbnail, .thumbnail:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.recipe-image
+{
+	border-radius: 5px;
+	padding-bottom: 10px;
+}
+
+.recipe-heading
+{
+	font-style: italic;
+	text-align: center;
+}
+
+.glyphicon-time
+{
+	padding-top: 1.25px;
+	float: left;
+}
+
+.recipe-time 
+{
+	padding-left: 4px;
+	float: left;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
+#bottom-separator 
+{
+	margin-top: -20px;
+	padding-left: 20.25px;
+	padding-right: 20.25px;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 2000px;
+	float: left;
+}
+
+#clear-float2
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

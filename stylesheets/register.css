@@ -1,0 +1,176 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: register.css																   ****
+** Purpose: Provides style sheet for "register.php"					   				   ****
+** Author: Rhys Hall																   ****
+** Date Created: 04/26/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1020px;
+	float: left;
+}
+
+#container
+{
+	width: 1426.5px;
+	height: 1020px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#title
+{
+	background-color: #ffffff;
+	padding-bottom: 135px;
+}
+
+#title p 
+{
+	padding-top: 60px;
+	text-align: center;
+	font-size: 22px;
+	font-family: sans-serif;
+}
+
+#register-username 
+{
+	padding-left: 540.25px;
+	background-color: #ffffff;
+}
+
+#register-username-field 
+{
+	height: 42.5px;
+	width: 350px;
+	font-size: 18px;
+	color: #808080;
+	background-color: #f9f9f9;
+}
+
+#register-email 
+{
+	padding-top: 45px;
+	padding-left: 540.25px;
+	background-color: #ffffff;
+}
+
+#register-email-field
+{
+	height: 42.5px;
+	width: 350px;
+	font-size: 18px;
+	color: #808080;
+	background-color: #f9f9f9;
+}
+
+#register-password 
+{
+	padding-top: 50px;
+	padding-left: 540.25px;
+	background-color: #ffffff;
+}
+
+#register-password-field 
+{
+	height: 42.5px;
+	width: 350px;
+	font-size: 18px;
+	color: #808080;
+	background-color: #f9f9f9;
+}
+
+#register-password-confirmation 
+{
+	padding-top: 45px;
+	padding-left: 540.25px;
+	background-color: #ffffff;
+}
+
+#register-password-confirmation-field 
+{
+	height: 42.5px;
+	width: 350px;
+	font-size: 18px;
+	color: #808080;
+	background-color: #f9f9f9;
+}
+
+#register-gender
+{
+	padding-top: 42.5px;
+	padding-left: 604px;
+	background-color: #ffffff;
+}
+
+#register-gender h1
+{
+	float: left;
+	font-size: 18px;
+	color: #808080;
+}
+
+#register-gender input
+{
+	margin-top: 24px;
+	float: left;
+}
+
+#register-gender h2
+{
+	float: left;
+	font-size: 18px;
+	padding-left: 75px;
+	color: #808080;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
+#register-submit 
+{
+	padding-top: 60px;
+	text-align: center;
+	padding-bottom: 10px;
+	background-color: #ffffff;
+	padding-bottom: 50px;
+}
+
+#register-submit-button
+{
+	height: 42.5px;
+	width: 275px;
+	font-size: 20px;
+	box-shadow: 1px 1px 2.5px #e65c00;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1020px;;
+	float: left;
+}
+
+#clear-float2
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

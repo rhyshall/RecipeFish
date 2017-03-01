@@ -1,0 +1,116 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: customButtons.css															   ****
+** Purpose: Provides style sheet for button customizations 		   					   ****
+** Author: Rhys Hall																   ****
+** Date Created: 04/25/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+/************************************************
+** grey button customizations 				 ****
+************************************************/
+.btn-grey1
+{ 
+  color: #000000; 
+  background-color: #E6E6E6; 
+  border-color: #E6F3FF; 
+} 
+ 
+.btn-grey1:hover, 
+.btn-grey1:focus, 
+.btn-grey1:active, 
+.btn-grey1.active, 
+.open .dropdown-toggle.btn-grey1
+{ 
+  color: #000000; 
+  background-color: #D9D9D9; 
+  border-color: #E6F3FF; 
+} 
+ 
+.btn-grey1:active, 
+.btn-grey1.active, 
+.open.dropdown-toggle.btn-grey1
+{ 
+  background-image: none; 
+} 
+ 
+.btn-grey1.disabled, 
+.btn-grey1[disabled], 
+fieldset[disabled] .btn-grey1, 
+.btn-grey1.disabled:hover, 
+.btn-grey1[disabled]:hover, 
+fieldset[disabled].btn-grey1:hover, 
+.btn-grey1.disabled:focus, 
+.btn-grey1[disabled]:focus, 
+fieldset[disabled].btn-grey1:focus, 
+.btn-grey1.disabled:active, 
+.btn-grey1[disabled]:active, 
+fieldset[disabled].btn-grey1:active, 
+.btn-grey1.disabled.active, 
+.btn-grey1[disabled].active, 
+fieldset[disabled].btn-grey1.active 
+{ 
+  background-color: #E6E6E6; 
+  border-color: #E6F3FF; 
+} 
+ 
+.btn-grey1 .badge 
+{ 
+  color: #E6E6E6; 
+  background-color: #000000; 
+}
+
+/************************************************
+************************************************/
+
+.btn-grey2
+{ 
+  color: #000000; 
+  background-color: #D9D9D9; 
+  border-color: #E6F3FF; 
+} 
+ 
+.btn-grey2:hover, 
+.btn-grey2:focus, 
+.btn-grey2:active, 
+.btn-grey2.active, 
+.open .dropdown-toggle.btn-grey2
+{ 
+  color: #000000; 
+  background-color: #BFBFBF; 
+  border-color: #E6F3FF; 
+} 
+ 
+.btn-grey2:active, 
+.btn-grey2.active, 
+.open.dropdown-toggle.btn-grey2
+{ 
+  background-image: none; 
+} 
+ 
+.btn-grey2.disabled, 
+.btn-grey2[disabled], 
+fieldset[disabled] .btn-grey2, 
+.btn-grey2.disabled:hover, 
+.btn-grey2[disabled]:hover, 
+fieldset[disabled].btn-grey2:hover, 
+.btn-grey2.disabled:focus, 
+.btn-grey2[disabled]:focus, 
+fieldset[disabled].btn-grey2:focus, 
+.btn-grey2.disabled:active, 
+.btn-grey2[disabled]:active, 
+fieldset[disabled].btn-grey2:active, 
+.btn-grey2.disabled.active, 
+.btn-grey2[disabled].active, 
+fieldset[disabled].btn-grey2.active 
+{ 
+  background-color: #BFBFBF; 
+  border-color: #E6F3FF; 
+} 
+ 
+.btn-grey2 .badge 
+{ 
+  color: #BFBFBF; 
+  background-color: #000000; 
+}

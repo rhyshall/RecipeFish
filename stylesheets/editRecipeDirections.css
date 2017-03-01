@@ -1,0 +1,225 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: editRecipeDirections.css													   ****
+** Purpose: Provides style sheet for "editRecipeDirections.php"					   	   ****
+** Author: Rhys Hall																   ****
+** Date Created: 10/08/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0%;
+	padding: 0%;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1325px;
+	float: left;
+}
+
+#container
+{
+	width: 1426.5px;
+	height: 1325px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#title p 
+{
+	padding-top: 20px;
+	font-size: 21px;
+	font-family: sans-serif;
+	color: #e62e00;
+	text-align: center;
+}
+
+#sub-title p 
+{
+	padding-top: 20px;
+	font-size: 19px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#add-direction
+{
+	height: 500px;
+	width: 550px;
+	margin-top: 110px;
+	margin-left: 50px;
+	float: left;
+	background-color: #f2f9f9;
+	border-style: ridge;
+	border-left-width: 3px;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-color: #f2f2f2;
+}
+
+#add-instructions-1 
+{
+	font-family: sans-serif;
+	padding-top: 38px;
+	text-align: center;
+	font-size: 17px;
+}
+
+#add-instructions-2
+{
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 17px;
+}
+
+#direction p 
+{
+	padding-top: 40px;
+	padding-left: 27px;
+	color: #808080;
+	font-size: 18px;
+}
+
+#direction-field 
+{
+	height: 180px;
+	width: 500px;
+	margin-left: 22px;
+	font-size: 18px;
+	color: #808080;
+	background-color: #f9f9f9;
+}
+
+#add
+{
+	margin-top: 50px;
+	text-align: center;
+}
+
+#add-button
+{
+	height: 41.5px;
+	width: 120px;
+	font-size: 18.5px;
+	box-shadow: 0.5px 0.5px 1.5px #00994d;
+}
+
+#view-directions
+{
+	height: 619px;
+	width: 660px;
+	margin-left: 116px;
+	margin-top: 50px;
+	margin-right: 50px;
+	float: left;
+	overflow: scroll;
+	background-color: #fffff9;
+}
+
+#directions-table
+{
+	height: 538px;
+	width: 642px;
+} 
+
+#directions-table caption 
+{
+	font-size: 18px;
+	margin-left: 286px;
+}
+
+#step-title 
+{
+	padding-left: 6px;
+}
+
+#direction-title
+{
+	width: 420px;
+	padding-left: 20px;
+}
+
+td 
+{
+	height: 39px;
+	font-size: 15px;
+}
+
+.direction-input
+{
+	display: none;
+	height: 0px;
+	width: 0px;
+}
+
+.direction-added 
+{
+	width: 420px;
+	padding-left: 16px;
+}
+
+.glyphicon 
+{
+	padding-right: 14px;
+}
+
+.blank 
+{
+	height: 39px;
+}
+
+#hidden-step
+{
+	width: 74px;
+	color: transparent;
+	padding-left: 22px;
+}
+
+#hidden-direction
+{
+	width: 550px;
+	color: transparent;
+	padding-left: 22px;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
+#next
+{
+	padding-top: 104px;
+	text-align: center;
+}
+
+#next-button
+{
+	height: 39px;
+	width: 136px;
+	font-size: 19px;
+	box-shadow: 1px 1px 2.5px #e65c00;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 1325px;
+	float: left;
+}
+
+#clear-float2
+{
+	clear: both;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}

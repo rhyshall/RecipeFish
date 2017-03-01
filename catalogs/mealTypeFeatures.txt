@@ -1,0 +1,8 @@
+Alcohol
+Appetizer
+Beverage
+Breakfast
+Dessert
+Dinner
+Lunch
+Snack

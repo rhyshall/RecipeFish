@@ -1,0 +1,145 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: basicInfo.css													   		  	   ****
+** Purpose: Provides style sheet for "basicInfo.php"					   	       	   ****
+** Author: Rhys Hall																   ****
+** Date Created: 10/11/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#info-box 
+{
+	width: 838px;
+	margin-top: 50px;
+	margin-left: 294px;
+	background-color: #f2f2f2;
+	border-style: solid;
+	border-left-width: 0.5px;
+	border-top-width: 0.5px;
+	border-right-width: 0.5px;
+	border-bottom-width: 0.5px;
+	border-color: grey;
+}
+
+#instructions-text 
+{
+	font-family: sans-serif;
+	padding-top: 12px;
+	padding-bottom: 6px;
+	text-align: center;
+	font-size: 17px;
+	background-color: #f3fcf9;
+	border-bottom-style: solid;
+	border-bottom-width: 0.25px;
+	border-color: grey;
+}
+
+#instructions-text p
+{
+	color: grey;
+}
+
+#username
+{
+	padding-top: 80px;
+	padding-left: 180px;
+}
+
+#username-label
+{
+	padding-top: 8px;
+	font-size: 17.5px;
+	float: left;
+}
+
+#username-field
+{
+	width: 380px;
+	float: left;
+	font-size: 17px;
+	color: grey;
+	margin-left: 20px;
+}
+
+#email
+{
+	padding-top: 110px;
+	padding-left: 182px;
+}
+
+#email-label
+{
+	padding-top: 8px;
+	font-size: 17.5px;
+	float: left;
+}
+
+#email-field
+{
+	width: 416px;
+	float: left;
+	font-size: 17px;
+	color: grey;
+	margin-left: 20px;
+}
+
+#gender 
+{
+	padding-top: 110px;
+	padding-left: 304px;
+}
+
+#male-label 
+{
+	float: left;
+	padding-right: 10px;
+	font-size: 17px;
+}
+
+#male-radio
+{
+	margin-top: 7px;
+	float: left;
+}
+
+#female-label 
+{
+	float: left;
+	padding-left: 90px;
+	padding-right: 9.5px;
+	font-size: 17px;
+}
+
+#female-radio 
+{
+	margin-top: 7px;
+	float: left;
+}
+
+#save-info 
+{
+	padding-top: 110px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#save-symbol
+{
+	font-size: 14px;
+	padding-left: 7px;
+}
+
+#save-info-button 
+{
+	height: 39px;
+	width: 110px;
+	font-size: 16px;
+	box-shadow: 1px 1px 1px #1f7a1f;
+	padding-bottom: 0.25px;
+}

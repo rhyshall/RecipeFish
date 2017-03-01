@@ -1,0 +1,72 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: popUpConfirm.css											   				   ****
+** Purpose: Provides style sheet for pop-up confirm messages						   ****
+** Author: Rhys Hall																   ****
+** Date Created: 09/17/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#container
+{
+	background-color: #f5f5ef;
+	height: 100%;
+	width: 100%;
+}
+
+#message 
+{
+	padding-top: 60px;
+	background-color: #f5f5ef;
+}
+
+#message p 
+{
+	font-size: 18px;
+	text-align: center;
+}
+
+#yes
+{
+	padding-top: 90px;
+	text-align: center;
+	background-color: #f5f5ef;
+	padding-left: 100px;
+	float: left;
+}
+
+#no
+{
+	padding-top: 90px;
+	text-align: center;
+	background-color: #f5f5ef;
+	padding-left: 100px;
+	float: left;
+}
+
+#yes-button
+{
+	height: 36px;
+	width: 90px;
+	font-size: 19px;
+	box-shadow: 1px 1px 1.5px #29a329;
+}
+
+#no-button
+{
+	height: 36px;
+	width: 90px;
+	font-size: 19px;
+	box-shadow: 1px 1px 1.5px #cc0000;
+}
+
+#clear-float
+{
+	clear: both;
+}

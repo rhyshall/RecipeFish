@@ -1,0 +1,264 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: header.css																	   ****
+** Purpose: Provides style sheet for "header.php"					   				   ****
+** Author: Rhys Hall																   ****
+** Date Created: 04/16/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+}
+
+#margin-canvas-header1
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 84px;
+	float: left;
+}
+
+#container-header
+{
+	width: 1426.5px;
+	height: 75.5px;
+	float: left;
+}
+
+#colour-canvas-header1
+{
+	background-color: #efffff;
+	width: 1426.5px;
+	height: 3px;
+}
+
+#header-canvas
+{
+	background-color: #ffffff;
+	height: 70px;
+}
+
+#logo-text
+{
+	float: left;
+	padding-top: 22px;
+	padding-left: 22px;
+	background-color: #f9f9f9;
+	height: 70px;
+}
+
+#logo-text img
+{
+	height: 38px;
+	width: 180px;
+}
+
+#logo-image
+{
+	float: left;
+	padding-top: 17px;
+	padding-left: 5px;
+	background-color: #f9f9f9;
+	height: 70px;
+}
+
+#logo-image img
+{
+	height: 38px;
+	width: 45px;
+}
+
+#categories
+{
+	float: left;
+	padding-top: 13px;
+	padding-left: 45px;
+	background-color: #f9f9f9;
+	height: 70px;
+}
+
+#categories-button 
+{
+	height: 45px; 
+	width: 130px;
+	text-align: left;
+	color: #000000;
+	font-size: 16px;
+	float: left;
+}
+
+#categories-drop-down
+{
+	float: left;
+	background-color: #f9f9f9;
+}
+
+#categories-drop-down-button 
+{
+	height: 45px;
+	width: 45px;
+	float: left;
+}
+
+#search-form
+{
+	float: left;
+	padding-top: 13px;
+	padding-left: 40px;
+	background-color: #f9f9f9;
+	height: 70px;
+}
+
+#search-field
+{
+	height: 45px;
+	width: 477px;
+	float: left;
+	font-size: 17px;
+}
+
+#search-button
+{
+	height: 45px;
+	width: 45px;
+	float: left;
+}
+
+#account
+{
+	float: left;
+	width: 392px;
+	padding-top: 18px;
+	padding-left: 204px;
+	background-color: #f9f9f9;
+	height: 70px;
+}
+
+#register-button 
+{
+	font-size: 16px;
+	float: left;
+	padding-top: 9px;
+}
+
+#account h5
+{
+	float: left;
+	font-size: 16px;
+	padding-top: 0.5px;
+	padding-left: 27px;
+}
+
+#log-in-button 
+{
+	font-size: 16px;
+	float: left;
+	padding-top: 9px;
+	padding-left: 25px;
+}
+
+#user-menu 
+{
+	float: left;
+	padding-top: 13px;
+	padding-left: 102px;
+	background-color: #f9f9f9;
+	height: 70px;
+}
+
+#male-pic
+{
+	font-size: 20px;
+	color: #000000; 
+	padding-top: 5px;
+	padding-right: 10%;
+}
+
+#female-pic 
+{
+	color: #000000; 
+	margin-top: -6px;
+	margin-right: 8%;
+	height: 20px;
+	width: 20px;
+}
+
+#user-button 
+{
+	height: 45px; 
+	width: 206px;
+	text-align: left;
+	color: #000000;
+	font-size: 16px;
+	float: left;
+	line-height: 38px;
+}
+
+#user-drop-down
+{
+	float: left;
+	width: 84px;
+}
+
+#user-drop-down-menu li 
+{
+	display: block;
+}
+
+#user-drop-down-button 
+{
+	height: 45px;
+	width: 45px;
+	float: left;
+}
+
+#clear-float-header1
+{
+	clear: both;
+} 
+
+#colour-canvas-header2
+{
+	background-color: #efffff;
+	width: 1426.5px;
+	height: 2.25px;
+	-webkit-box-shadow: 0px 0.1px #000000;
+    -moz-box-shadow: 0px 0.1px #000000;
+    box-shadow: 0px 0.1px #000000;
+}
+
+#margin-canvas-header2
+{
+	background-color: #99ccff;
+	width: 166px;
+	height: 84px;
+	float: left;
+}
+
+#clear-float-header2
+{
+	clear: both;
+} 
+
+/*
+#advanced-search 
+{
+	float: left;
+	vertical-align: top;
+	padding-top: 0.62%;
+	padding-left: 0.6%;
+	background-color: #f9f9f9;
+	height: 68px;
+}
+
+#advanced-search-button 
+{
+	height: 45px;
+	width: 150px;
+	font-size: 16px;
+	float: left;
+} */

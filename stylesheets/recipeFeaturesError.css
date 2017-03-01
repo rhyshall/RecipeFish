@@ -1,0 +1,80 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: recipeFeaturesError.css													   ****
+** Purpose: Provides style sheet for "recipeFeaturesError.php"					       ****
+** Author: Rhys Hall																   ****
+** Date Created: 07/24/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#ethnicity-message  #exclamation-mark 
+{
+	padding-right: 238px;
+}
+
+#ethnicity-message 
+{
+	margin-left: 263.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-top: 38px;
+}
+
+#ethnicity-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 900px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}
+
+#meal-type-message  #exclamation-mark 
+{
+	padding-right: 238px;
+}
+
+#meal-type-message 
+{
+	margin-left: 263.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-top: 38px;
+}
+
+#meal-type-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 900px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}
+
+#holiday-message  #exclamation-mark 
+{
+	padding-right: 238px;
+}
+
+#holiday-message 
+{
+	margin-left: 263.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-top: 38px;
+}
+
+#holiday-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 900px;
+	padding-left: 38px;
+	padding-top: 5px;
+	border-radius: 60px;
+}

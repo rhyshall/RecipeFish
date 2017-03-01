@@ -1,0 +1,77 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: registerUsernameError.css													   ****
+** Purpose: Provides style sheet for "registerUsernameError.php"					   ****
+** Author: Rhys Hall																   ****
+** Date Created: 05/01/2016														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#invalid-message-1 #exclamation-mark 
+{
+	padding-right: 78px;
+}
+
+#invalid-message-1
+{
+	padding-left: 373.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	margin-top: -52px;
+}
+
+#invalid-message-2
+{
+	padding-top: 68px;
+	padding-left: 373.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	margin-top: -78px;
+	padding-bottom: 45px;
+}
+
+#invalid-message-p1
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 680px;
+	padding-left: 20px;
+	padding-top: 5px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#invalid-message-p2
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	height: 35px;
+	width: 680px;
+	padding-left: 192px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#existing-username-message #exclamation-mark 
+{
+	padding-right: 77.5px;
+}
+
+#existing-username-message 
+{
+	padding-left: 373.25px;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-bottom: 45px;
+	margin-top: -45px;
+}
+
+#existing-username-message p 
+{
+	color: #ffffff;
+	background-color: #3366ff;
+	height: 35px;
+	width: 680px;
+	padding-left: 23px;
+	padding-top: 5px;
+	border-radius: 5px;
+}

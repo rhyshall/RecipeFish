@@ -1,0 +1,52 @@
+Afghan%1
+African%3
+American%6
+Arab%1
+Armenian%1
+Australian%4
+Brazilian%5
+Bulgarian%1
+Cajun%1
+Canadian%6
+Caribbean%4
+Chinese%8
+Cuban%1
+Dominican%1
+Egyptian%3
+English%6
+French%6
+German%6
+Greek%6
+Guatemalan%1
+Hawaiian%1
+Indian%8
+Indonesian%1
+Irish%3
+Italian%6
+Jamaican%1
+Japanese%5
+Jewish%2
+Korean%6
+Kurdish%1
+Latin American%1
+Lebanese%1
+Malaysian%1
+Mediterranean%2
+Mexican%6
+Mongolian%1
+Moroccan%1
+Native American%2
+Pakistani%2
+Persian%1
+Polish%1
+Portuguese%4
+Puerto Rican%1
+Russian%2
+Scandinavian%1
+Scottish%2
+South American%4
+Spanish%6
+Thai%6
+Ukrainian%1
+Venezuelan%1
+Vietnamese%5
