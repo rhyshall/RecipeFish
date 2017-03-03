@@ -199,6 +199,30 @@ class Recipe
 	}
 	
 	/****
+	** retrieve all recipe data corresponding to given popular ingredient
+	**
+	** @return    double array  class data of all recipes corresponding to given popular ingredient
+	*/
+	function selectByPopularIngredient($popularIngredient)
+	{
+		$connection = RecipeMingle::connect();
+		
+		$query = "select * from recipe where popular_features like %:popular_feature%;";
+		
+		$statement = $connection->prepare($query);	
+		
+		// bind class values to query values
+		$statement->bindValue(":popular_feature", $popularIngredient);	
+
+		$statement->execute();
+		$result = $statement->fetchAll();
+		
+		RecipeMingle::close($connection);
+		
+		return $result;
+	}
+	
+	/****
 	** retrieve all recipe data corresponding to given other feature
 	**
 	** @return    double array  class data of all recipes corresponding to given other feature

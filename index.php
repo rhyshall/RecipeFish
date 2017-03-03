@@ -69,6 +69,24 @@ $RECIPE_COUNT = 16;
 									
 									<p id="<?php echo "recipe-name" . $j ?>" class="recipe-name">Name</p>
 									
+									<!--5-star rating system widget: retrieved from https://codepen.io/jamesbarnett/pen/vlpkh-->
+									<fieldset class="rating">
+										<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Magnificent!"></label>
+										<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Amazing"></label>
+										<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Great"></label>
+										<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Good"></label>
+										<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Fair"></label>
+										<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Poor"></label>
+										<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Very poor"></label>
+										<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Sucked!"></label>
+										<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Really sucked!"></label>
+										<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Worst recipe ever!"></label>
+									</fieldset>
+									
+									<div id="clear-float1">
+										<!--clear float from previous content-->
+									</div>
+									
 									<p id="<?php echo "recipe-description" . $j ?>" class="recipe-description">Description</p>
 									
 									<div class="recipe-separator">
@@ -79,7 +97,13 @@ $RECIPE_COUNT = 16;
 									
 									<span class="glyphicon glyphicon-time"></span><p id="<?php echo "recipe-time" . $j ?>" class="recipe-time">Time</p>
 									
-									<div id="clear-float1">
+									<div id="clear-float2">
+										<!--clear float from previous content-->
+									</div>
+									
+									<span class="glyphicon glyphicon-book"></span><p id="<?php echo "recipe-cookbook" . $j ?>" class="cookbook-adds">0</p>
+									
+									<div id="clear-float3">
 										<!--clear float from previous content-->
 									</div>
 								</a>
@@ -103,7 +127,7 @@ $RECIPE_COUNT = 16;
 			<!--right-side coloured border-->
 		</div>
 		
-		<div id="clear-float2">
+		<div id="clear-float4">
 			<!--clear float from previous content-->
 		</div>
 		

@@ -838,6 +838,42 @@ function generateByPopularIngredient($heading)
 	$recipe = new Recipe;
 	$recipeSelector = new Recipe;
 	
+	//split heading string into name and priority value
+	$tokens = explode(" ", $heading);
+	
+	$ingredient = $tokens[0];
+	
+	//find recipes in database with popular ingredient (plural form) in heading (singular form) 
+	switch ($ingredient)
+	{
+		//special singular form "berry" not sub-string of plural form (won't detect in database)
+		case "berry":
+		{
+			$candidates = $recipeSelector->selectByPopularIngredient("berries");
+		}
+		
+		//special singular form "pastry" not sub-string of plural form (won't detect in database)
+		case "pastry":
+		{
+			$candidates = $recipeSelector->selectByPopularIngredient("pastries");
+		}
+		
+		default:
+		{
+			$candidates = $recipeSelector->selectByPopularIngredient($ingredient);
+		}
+	}
+	
+	if (count($candidates) != 0)
+	{
+		$recipe = selectRandomCandidate($candidates);
+	}
+	
+	else 
+	{
+		$recipe = null;
+	}
+	
 	return $recipe;
 }
 
