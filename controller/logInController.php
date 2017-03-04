@@ -9,7 +9,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "/model/user.php");
@@ -37,7 +37,7 @@ else
 		$_SESSION["passwordField"] = $_POST["log-in-password"];
 	}
 	
-	header("Location: http://localhost/RecipeMingle/view/logIn.php");
+	header("Location: http://localhost/RecipeFish/view/logIn.php");
 	exit(); 
 }
 
@@ -57,7 +57,7 @@ if (strcmp($user->getEmail(), $email) == 0)
 		$_SESSION["email"] = $user->getEmail();
 		$_SESSION["gender"] = $user->getGender();
 	
-		header("Location: http://localhost/RecipeMingle");
+		header("Location: http://localhost/RecipeFish");
 		exit(); 
 	}
 	
@@ -67,7 +67,7 @@ if (strcmp($user->getEmail(), $email) == 0)
 		$_SESSION["combinationInvalid"] = "set";
 		$_SESSION["emailField"] = $email;
 
-		header("Location: http://localhost/RecipeMingle/view/logIn.php");
+		header("Location: http://localhost/RecipeFish/view/logIn.php");
 		exit(); 
 	}
 }
@@ -78,7 +78,7 @@ else
 	$_SESSION["emailField"] = $email;
 	$_SESSION["passwordField"] = $password;
 	
-	header("Location: http://localhost/RecipeMingle/view/logIn.php");
+	header("Location: http://localhost/RecipeFish/view/logIn.php");
 	exit(); 
 }
 ?>

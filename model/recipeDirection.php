@@ -3,13 +3,13 @@
 *******************************************************************************************
 ** Name: recipeDirection.php														   ****
 ** Description: Provides functionality for storing and retrieving recipe/direction     ****
-** IDs to and from the Recipe Mingle database				   						   ****
+** IDs to and from the Recipe Fish database				   						   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 09/04/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 class RecipeDirection
 {
@@ -23,7 +23,7 @@ class RecipeDirection
 	*/
 	function selectByRecipeID($recipeID)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 	
 		$query = "select direction_id, recipe_id from recipe_direction where recipe_id=:recipe_id;";
 		
@@ -43,7 +43,7 @@ class RecipeDirection
 			$directionIDs[$i] = $result[$i]["direction_id"];
 		}
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $directionIDs;
 	}
@@ -56,7 +56,7 @@ class RecipeDirection
 	*/
 	function insert()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "insert into recipe_direction(direction_id, recipe_id) values (:direction_id, :recipe_id)";
 			
@@ -68,7 +68,7 @@ class RecipeDirection
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -79,7 +79,7 @@ class RecipeDirection
 			/*$arr = $statement->errorInfo();
 			print_r($arr);*/
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}
@@ -93,7 +93,7 @@ class RecipeDirection
 	*/
 	function remove($recipeID)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "delete from recipe_direction where recipe_id=:recipe_id;";
 			
@@ -103,7 +103,7 @@ class RecipeDirection
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -114,7 +114,7 @@ class RecipeDirection
 			$arr = $statement->errorInfo();
 			print_r($arr);
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}

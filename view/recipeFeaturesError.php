@@ -12,7 +12,7 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/recipeFeaturesError.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/recipeFeaturesError.css">
 	<head>
 	
 	<body>

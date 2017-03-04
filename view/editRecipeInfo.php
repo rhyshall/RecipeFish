@@ -10,15 +10,15 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/editRecipeInfo.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/editRecipeInfo.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 	</head>
 	
 	<body>
@@ -46,7 +46,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 				include($root . "view/recipeInfoError.php");
 			?>
 		
-			<form id="brief-form" action="/RecipeMingle/controller/recipeInfoController.php" method="post" enctype="multipart/form-data">
+			<form id="brief-form" action="/RecipeFish/controller/recipeInfoController.php" method="post" enctype="multipart/form-data">
 				<div id="colour-background">
 					<div id="side1">
 						<div id="step1">

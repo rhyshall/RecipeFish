@@ -9,7 +9,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "/model/recipe.php");
@@ -126,7 +126,7 @@ if (strlen($_POST["notes"]) > 500)
 	
 	$_SESSION["notes"] = $_POST["notes"]; 
 	
-	header("Location: http://localhost/RecipeMingle/view/addRecipeNotes.php");
+	header("Location: http://localhost/RecipeFish/view/addRecipeNotes.php");
 	exit(); 
 }
 
@@ -183,7 +183,7 @@ $recipe->setNotes($notes);
 $recipe->setAuthorID($authorID);
 $recipe->setDateUploaded($date);
 
-//insert recipe class variables into the Recipe Mingle database 
+//insert recipe class variables into the Recipe Fish database 
 $success1 = $recipe->insert();
 
 //if insert is successful
@@ -288,7 +288,7 @@ if ($success1 == true)
 	}
 }
 
-//insert recipe ingredient class variables into Recipe Mingle database 
+//insert recipe ingredient class variables into Recipe Fish database 
 $ingredientCount = count($_SESSION["ingredients"]);
 
 for ($i = 0; $i < $ingredientCount; $i++)
@@ -313,7 +313,7 @@ for ($i = 0; $i < $ingredientCount; $i++)
 	}
 }
 
-//insert recipe direction class variables into Recipe Mingle database 
+//insert recipe direction class variables into Recipe Fish database 
 $directionCount = count($_SESSION["directions"]);
 
 for ($i = 0; $i < $directionCount; $i++)
@@ -386,6 +386,6 @@ else
 	}
 }
 
-header("Location: http://localhost/RecipeMingle/view/recipes.php");
+header("Location: http://localhost/RecipeFish/view/recipes.php");
 exit(); 
 ?>

@@ -3,13 +3,13 @@
 *******************************************************************************************
 ** Name: review.php																	   ****
 ** Description: Provides functionality for storing and retrieving review data to and   ****
-** from the Recipe Mingle database				   									   ****
+** from the Recipe Fish database				   									   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 05/11/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 class Review
 {

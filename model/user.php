@@ -3,13 +3,13 @@
 *******************************************************************************************
 ** Name: user.php																	   ****
 ** Description: Provides functionality for storing and retrieving user data to and     ****
-** from the Recipe Mingle database				   									   ****
+** from the Recipe Fish database				   									   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 04/13/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 class User
 {
@@ -23,7 +23,7 @@ class User
 	private $recipeSortID; /* 1 = alphabetical, 2 = newest to oldest, 3 = oldest to newest, 4 = reverse alphabetical */
 	
 	/****
-	** retrieve user data from Recipe Mingle database corresponding
+	** retrieve user data from Recipe Fish database corresponding
 	** to given user ID
 	**
 	** @param    str  $ID  user ID  	
@@ -31,7 +31,7 @@ class User
 	*/
 	function selectByID($ID)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 	
 		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id from user where id=:id;";
 		
@@ -52,7 +52,7 @@ class User
 		$userObj->setSkinID($result["skin_id"]);
 		$userObj->setRecipeSortID($result["recipe_sort_id"]);
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $userObj;
 	}
@@ -66,7 +66,7 @@ class User
 	*/
 	function selectByUsername($username)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 	
 		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id from user where username=:username;";
 		
@@ -87,7 +87,7 @@ class User
 		$userObj->setSkinID($result["skin_id"]);
 		$userObj->setRecipeSortID($result["recipe_sort_id"]);
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $userObj;
 	}
@@ -101,7 +101,7 @@ class User
 	*/
 	function selectByEmail($email)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 	
 		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id from user where email=:email;";
 		
@@ -122,19 +122,19 @@ class User
 		$userObj->setSkinID($result["skin_id"]);
 		$userObj->setRecipeSortID($result["recipe_sort_id"]);
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $userObj;
 	}
 	
 	/****
-	** retrieve all class data of all users from Recipe Mingle database
+	** retrieve all class data of all users from Recipe Fish database
 	**
 	** @return    double array  class data of all users
 	*/
 	function selectAll()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from user;";
 		
@@ -143,7 +143,7 @@ class User
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -156,7 +156,7 @@ class User
 	*/
 	function insert()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "insert into user(id, username, password, email, gender, image_path, skin_id, recipe_sort_id) 
 				values (:id, :username, :password, :email, :gender, :image_path, :skin_id, :recipe_sort_id)";
@@ -176,7 +176,7 @@ class User
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -187,7 +187,7 @@ class User
 			/*$arr = $statement->errorInfo();
 			print_r($arr);*/
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}
@@ -201,7 +201,7 @@ class User
 	*/
 	function update()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "update user set username=:username, email=:email, gender=:gender, password=:password, image_path=:image_path,
 				skin_id=:skin_id, recipe_sort_id=:recipe_sort_id where id=:id;";
@@ -220,7 +220,7 @@ class User
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -231,7 +231,7 @@ class User
 			/*$arr = $statement->errorInfo();
 			print_r($arr);*/
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}

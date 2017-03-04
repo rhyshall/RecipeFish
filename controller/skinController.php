@@ -10,7 +10,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "/model/user.php");
@@ -28,6 +28,6 @@ $user->update();
 
 $_SESSION["skinSaved"] = "set";
 
-header("Location: http://localhost/RecipeMingle/view/profile.php");
+header("Location: http://localhost/RecipeFish/view/profile.php");
 exit();
 ?>

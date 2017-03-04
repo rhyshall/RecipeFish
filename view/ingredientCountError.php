@@ -12,7 +12,7 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/ingredientCountError.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/ingredientCountError.css">
 	<head>
 	
 	<body>

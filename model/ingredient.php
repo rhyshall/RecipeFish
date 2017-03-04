@@ -3,13 +3,13 @@
 *******************************************************************************************
 ** Name: ingredient.php																   ****
 ** Description: Provides functionality for storing and retrieving ingredient data to   ****
-** and from the Recipe Mingle database				   								   ****
+** and from the Recipe Fish database				   								   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 05/11/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 class Ingredient
 {
@@ -17,13 +17,13 @@ class Ingredient
 	private $content;
 	
 	/****
-	** retrieve all class data of all ingredients from Recipe Mingle database
+	** retrieve all class data of all ingredients from Recipe Fish database
 	**
 	** @return    double array  class data of all ingredients
 	*/
 	function selectAll()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from ingredient;";
 		
@@ -32,7 +32,7 @@ class Ingredient
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -44,7 +44,7 @@ class Ingredient
 	*/
 	function selectByID($id)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select content from ingredient where id=:id;";
 		
@@ -56,7 +56,7 @@ class Ingredient
 		$statement->execute();
 		$result = $statement->fetch();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result[0];
 	}
@@ -68,9 +68,9 @@ class Ingredient
 	*/
 	function selectNextID()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
-		$query = "select auto_increment from information_schema.tables where table_name='ingredient' and table_schema ='recipe_mingle'";
+		$query = "select auto_increment from information_schema.tables where table_name='ingredient' and table_schema ='recipe_Fish'";
 		
 		$statement = $connection->prepare($query);	
 
@@ -80,7 +80,7 @@ class Ingredient
 		//assign only possible result to int variable
 		$ID = $resultArray[0][0];
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $ID;
 	}
@@ -93,7 +93,7 @@ class Ingredient
 	*/
 	function insert()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "insert into ingredient(id, content) values (:id, :content)";
 			
@@ -105,7 +105,7 @@ class Ingredient
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -116,7 +116,7 @@ class Ingredient
 			/*$arr = $statement->errorInfo();
 			print_r($arr);*/
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}
@@ -130,7 +130,7 @@ class Ingredient
 	*/
 	function remove($id)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "delete from ingredient where id=:id;";
 			
@@ -140,7 +140,7 @@ class Ingredient
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -151,7 +151,7 @@ class Ingredient
 			$arr = $statement->errorInfo();
 			print_r($arr);
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}

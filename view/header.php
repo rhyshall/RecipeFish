@@ -3,7 +3,7 @@
 *******************************************************************************************
 ** Name: header.php																       ****
 ** Description: Provides header interface (such as recipe search field and sign-in 	   ****
-** 				button) for all Recipe Mingle pages.		   						   ****
+** 				button) for all Recipe Fish pages.		   						   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 04/13/2016														   	   ****
 *******************************************************************************************
@@ -12,24 +12,24 @@
 
 <html>
 	<head>
-		<title>Recipe Mingle | Discover and share your creativity with tasty recipes outside of the kitchen</title>
+		<title>Recipe Fish | Discover and share your creativity with tasty recipes outside of the kitchen</title>
 	
 		<!--stylesheet for given page-->
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/header.css?<?php echo date('l jS \of F Y h:i:s A'); ?>"/>
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/header.css?<?php echo date('l jS \of F Y h:i:s A'); ?>"/>
 		
 		<!--custom button stylesheets-->
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/customButtons.css"/>
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/customButtons.css"/>
 		
 		<!--Bootstrap stylesheets-->
-		<link rel="stylesheet" href="/RecipeMingle/Bootstrap/css/bootstrap.css">
-		<link rel="stylesheet" href="/RecipeMingle/Bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/RecipeMingle/Bootstrap/css/bootstrap-theme.css">
-		<link rel="stylesheet" href="/RecipeMingle/Bootstrap/css/bootstrap-theme-min.css">
+		<link rel="stylesheet" href="/RecipeFish/Bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="/RecipeFish/Bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/RecipeFish/Bootstrap/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="/RecipeFish/Bootstrap/css/bootstrap-theme-min.css">
 		
 		<!--Bootstrap scripts-->
-		<script src="/RecipeMingle/Bootstrap/js/bootstrap.js"></script>
-		<script src="/RecipeMingle/Bootstrap/js/bootstrap.min.js"></script>
-		<script src="/RecipeMingle/Bootstrap/js/npm.js"></script>
+		<script src="/RecipeFish/Bootstrap/js/bootstrap.js"></script>
+		<script src="/RecipeFish/Bootstrap/js/bootstrap.min.js"></script>
+		<script src="/RecipeFish/Bootstrap/js/npm.js"></script>
 		
 		<script type="text/javascript">
 			function showDropdown()
@@ -70,12 +70,8 @@
 			</div>
 			
 			<div id ="header-canvas">
-				<div id="logo-text">
-					<a href="/RecipeMingle"><img src="/RecipeMingle/images/standard/recipe mingle logo.png"></a>
-				</div>
-			
-				<div id="logo-image">
-					<a href="/RecipeMingle"><img src="/RecipeMingle/images/standard/chef fish.png"></a>
+				<div id="logo">
+					<a href="/RecipeFish"><img src="/RecipeFish/images/standard/recipe fish logo.png"></a>
 				</div>
 				
 				<div id="categories">
@@ -87,7 +83,7 @@
 					</div>
 				</div>
 		
-				<form id="search-form" action="/RecipeMingle/controller/searchController.php" role="search">
+				<form id="search-form" action="/RecipeFish/controller/searchController.php" role="search">
 					<input id="search-field" type="text" class="form-control" placeholder="Search recipe..."></input>
 
 					<button id="search-button" class="btn btn-info" type="submit"><i class="glyphicon glyphicon-search"></i></button>
@@ -116,7 +112,7 @@
 								else 
 								{
 							?>		<!--display user button with female pic-->	
-									<button id="user-button" class="btn btn-grey1" type="submit"><img id="female-pic" src="/RecipeMingle/images/standard/female user.png"></span>
+									<button id="user-button" class="btn btn-grey1" type="submit"><img id="female-pic" src="/RecipeFish/images/standard/female user.png"></span>
 									<?php echo $_SESSION["username"] ?></button>
 							<?php	
 								} 
@@ -128,14 +124,14 @@
 								<span class="caret"></span></button>
 							
 								<ul id="user-drop-down-menu" class="dropdown-menu">
-									<li><a href="/RecipeMingle/view/profile.php">Profile<span class="glyphicon glyphicon-user pull-right"></span></a></li>
+									<li><a href="/RecipeFish/view/profile.php">Profile<span class="glyphicon glyphicon-user pull-right"></span></a></li>
 									<li><a href="#">Cookbook<span class="glyphicon glyphicon-book pull-right"></span></a></li>
-									<li><a href="/RecipeMingle/view/recipes.php">Recipes<span class="glyphicon glyphicon-cutlery pull-right"></span></a></li>
+									<li><a href="/RecipeFish/view/recipes.php">Recipes<span class="glyphicon glyphicon-cutlery pull-right"></span></a></li>
 									<li><a href="#">Reviews<span class="glyphicon glyphicon-list-alt pull-right"></span></a></li>
 									<li><a href="#">Stats<span class="glyphicon glyphicon-stats pull-right"></span></a></li>
 									<li><a href="#">History<span class="glyphicon glyphicon-align-left pull-right"></span></a></li>
 									<li class="divider"></li>
-									<li><a href="/RecipeMingle/controller/logOutController.php">Log Out<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+									<li><a href="/RecipeFish/controller/logOutController.php">Log Out<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -146,9 +142,9 @@
 					{
 				?>
 						<div id="account">
-							<a href="/RecipeMingle/view/register.php" id="register-button">Register</a>
+							<a href="/RecipeFish/view/register.php" id="register-button">Register</a>
 							<h5>|</h5> 
-							<a href="/RecipeMingle/view/logIn.php" id="log-in-button">Log In</a>
+							<a href="/RecipeFish/view/logIn.php" id="log-in-button">Log In</a>
 						</div>
 				<?php 
 					}

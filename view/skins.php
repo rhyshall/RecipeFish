@@ -8,18 +8,18 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 $SKIN_COUNT = 12;
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/skins.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/skins.css">
 		
 		<script type="text/javascript">
 			function saveSkin(ID)
 			{
-				window.location.href = "/RecipeMingle/controller/skinController.php?skinID=" + ID;
+				window.location.href = "/RecipeFish/controller/skinController.php?skinID=" + ID;
 			}
 		</script>
 	</head>
@@ -47,7 +47,7 @@ $SKIN_COUNT = 12;
 					
 					for ($j = $lowerBound; $j < $upperBound; $j++)
 					{
-						echo '<div class="col-md-3"><a href="#" onclick="saveSkin(' . $j . ');"' . 'class="thumbnail"><img src="/RecipeMingle/images/skins/skin' . $j . '.png"></a></div>';
+						echo '<div class="col-md-3"><a href="#" onclick="saveSkin(' . $j . ');"' . 'class="thumbnail"><img src="/RecipeFish/images/skins/skin' . $j . '.png"></a></div>';
 					}
 					
 					echo '</div>';

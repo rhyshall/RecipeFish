@@ -10,7 +10,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "/utilities/recipeInfoUtilities.php");
 include($root . "utilities/database.php");
@@ -232,6 +232,6 @@ else
 }
 
 //go to recipe features page 
-header("Location: http://localhost/RecipeMingle/view/addRecipeFeatures.php"); 
+header("Location: http://localhost/RecipeFish/view/addRecipeFeatures.php"); 
 exit(); 
 ?>

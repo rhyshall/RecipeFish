@@ -10,15 +10,15 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/editRecipeIngredients.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/editRecipeIngredients.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 		
 		<script type="text/javascript">
 			var ingredientCount = 0;
@@ -225,7 +225,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 				</div>
 			</div>
 			
-			<form id="ingredients-form" action="/RecipeMingle/controller/recipeIngredientsController.php" method="post">
+			<form id="ingredients-form" action="/RecipeFish/controller/recipeIngredientsController.php" method="post">
 				<div id="view-ingredients">
 					<table id="ingredients-table" class="table table-striped">
 						<caption>My List</caption>

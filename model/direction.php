@@ -3,13 +3,13 @@
 *******************************************************************************************
 ** Name: direction.php																   ****
 ** Description: Provides functionality for storing and retrieving direction data to    ****
-** and from the Recipe Mingle database				   								   ****
+** and from the Recipe Fish database				   								   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 05/11/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 class Direction
 {
@@ -24,7 +24,7 @@ class Direction
 	*/
 	function selectByID($id)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select content from direction where id=:id;";
 		
@@ -36,7 +36,7 @@ class Direction
 		$statement->execute();
 		$result = $statement->fetch();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result[0];
 	}
@@ -48,9 +48,9 @@ class Direction
 	*/
 	function selectNextID()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
-		$query = "select auto_increment from information_schema.tables where table_name='direction' and table_schema ='recipe_mingle'";
+		$query = "select auto_increment from information_schema.tables where table_name='direction' and table_schema ='recipe_Fish'";
 		
 		$statement = $connection->prepare($query);	
 
@@ -60,7 +60,7 @@ class Direction
 		//assign only possible result to int variable
 		$ID = $resultArray[0][0];
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $ID;
 	}
@@ -73,7 +73,7 @@ class Direction
 	*/
 	function insert()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "insert into direction(id, step_num, content) values (:id, :step_num, :content)";
 			
@@ -86,7 +86,7 @@ class Direction
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -97,7 +97,7 @@ class Direction
 			/*$arr = $statement->errorInfo();
 			print_r($arr);*/
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}
@@ -111,7 +111,7 @@ class Direction
 	*/
 	function remove($id)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "delete from direction where id=:id;";
 			
@@ -121,7 +121,7 @@ class Direction
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -132,7 +132,7 @@ class Direction
 			$arr = $statement->errorInfo();
 			print_r($arr);
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}

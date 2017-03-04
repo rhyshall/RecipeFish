@@ -83,7 +83,7 @@ function getNextHolidayHeading()
  **/
 function getPopularIngredientHeading()
 {
-	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	$INGREDIENT_PRIORITY_TOTAL = 239;
 	$ingredientHeading = "None";
 	
@@ -126,7 +126,7 @@ function getPopularIngredientHeading()
  **/
 function getOtherFeatureHeading()
 {
-	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	$OTHER_PRIORITY_TOTAL = 33;
 	$otherFeatureHeading = "None";
 	
@@ -169,7 +169,7 @@ function getOtherFeatureHeading()
  **/
 function getEthnicityHeading()
 {
-	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	$ETHNICITY_PRIORITY_TOTAL = 157;
 	$ethnicityHeading = "None";
 	
@@ -426,7 +426,7 @@ function isNew($heading)
 function isPopularIngredient($heading)
 {
 	$isPopularIngredient = false;
-	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 	$handle = fopen($root . "catalogs/popularIngredientsPriorities.txt", "r");
 
@@ -462,7 +462,7 @@ function isPopularIngredient($heading)
 function isOtherFeature($heading)
 {
 	$isOtherFeature = false;
-	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 	$handle = fopen($root . "catalogs/otherFeaturesPriorities.txt", "r");
 
@@ -499,7 +499,7 @@ function isEthnicity($heading)
 {
 	$isEthnicity = false;
 	
-	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 	$handle = fopen($root . "catalogs/ethnicityPriorities.txt", "r");
 

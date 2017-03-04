@@ -8,12 +8,12 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/profileMenu.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/profileMenu.css">
 		
 		<script type="text/javascript">
 			function showContent(element)  

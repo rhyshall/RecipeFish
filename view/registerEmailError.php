@@ -12,7 +12,7 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/registerEmailError.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/registerEmailError.css">
 	<head>
 	
 	<body>

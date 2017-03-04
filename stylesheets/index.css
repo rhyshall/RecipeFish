@@ -40,9 +40,9 @@ body
 
 #recipe-canvas
 {
-	width: 1386px;
 	margin-left: 20.25px;
 	margin-top: -12px;
+	background-color: #f9f9f9;
 }
 
 .thumbnail, .thumbnail:hover

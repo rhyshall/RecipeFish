@@ -10,15 +10,15 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/addRecipeDirections.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/addRecipeDirections.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 		
 		<script type="text/javascript">
 			var directionCount = 0;
@@ -262,7 +262,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 				</div>
 			</div>
 			
-			<form id="directions-form" action="/RecipeMingle/controller/recipeDirectionsController.php" method="post">
+			<form id="directions-form" action="/RecipeFish/controller/recipeDirectionsController.php" method="post">
 				<div id="view-directions">
 					<table id="directions-table" class="table table-striped">
 						<caption>My List</caption>

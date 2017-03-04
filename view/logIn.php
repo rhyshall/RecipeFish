@@ -10,15 +10,15 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/logIn.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/logIn.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 	</head>
 	
 	<body>
@@ -34,10 +34,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 		
 		<div id="container">
 			<div id="title">
-				<p>Sign in with your Recipe Mingle account</p>
+				<p>Sign in with your Recipe Fish account</p>
 			</div>
 		
-			<form id="log-in-form" action="/RecipeMingle/controller/logInController.php" method="post">
+			<form id="log-in-form" action="/RecipeFish/controller/logInController.php" method="post">
 				<!--invalid log-in error message (if necessary)-->
 				<?php 
 					include($root . "view/logInError.php");
@@ -76,7 +76,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 						<div id="log-in-password">
 							<input id="log-in-password-field" name="log-in-password" type="password" class="form-control" value="<?php echo $_SESSION["passwordField"] ?>"input>
 				
-							<a id="forgot-password" href="/RecipeMingle/view/retrievePassword.php">Forgot Password?</a>
+							<a id="forgot-password" href="/RecipeFish/view/retrievePassword.php">Forgot Password?</a>
 						</div>
 					<?php 
 						unset($_SESSION["passwordField"]);
@@ -88,7 +88,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 						<div id="log-in-password">
 							<input id="log-in-password-field" name="log-in-password" type="password" class="form-control" placeholder="Password"></input>
 				
-							<a id="forgot-password" href="/RecipeMingle/view/retrievePassword.php">Forgot Password?</a>
+							<a id="forgot-password" href="/RecipeFish/view/retrievePassword.php">Forgot Password?</a>
 						</div>
 						
 						<div id="clear-float1">
@@ -108,7 +108,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 			<div id="register-link">
 				<h3>New user? &nbsp </h3>
 			
-				<a href="/RecipeMingle/view/register.php">Create an account</a>
+				<a href="/RecipeFish/view/register.php">Create an account</a>
 			
 				<h3>&nbsp to access every feature</h3>
 			</div>

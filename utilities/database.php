@@ -2,25 +2,25 @@
 /******************************************************************************************
 *******************************************************************************************
 ** Name: database.php																   ****
-** Description: Provides interface for connecting to and closing the Recipe Mingle 	   ****
+** Description: Provides interface for connecting to and closing the Recipe Fish 	   ****
 ** database			   																   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 04/13/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
-class RecipeMingle
+class RecipeFish
 {	
 	private $connection;
 
 	/**
-     * establish connection to Recipe Mingle database
+     * establish connection to Recipe Fish database
      * @return database connection
      */
 	function connect()
 	{
 		$host = "localhost";
-		$databaseName = "recipe_mingle";
+		$databaseName = "recipe_fish";
 		
 		$connectionString =  "mysql:host=" . $host . ";dbname=" . $databaseName;
 		
@@ -39,7 +39,7 @@ class RecipeMingle
 
 
 	/**
-     * close connection to Recipe Mingle database
+     * close connection to Recipe Fish database
      * @param database connection
      * @return none
      */

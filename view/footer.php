@@ -3,7 +3,7 @@
 *******************************************************************************************
 ** Name: footer.php																       ****
 ** Description: Provides footer interface (such as "Help" and "About" buttons) for 	   ****
-** all Recipe Mingle pages.		   									   				   ****
+** all Recipe Fish pages.		   									   				   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 04/13/2016														   	   ****
 *******************************************************************************************
@@ -12,7 +12,7 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/footer.css"/>
 	</head>
 	
 	<body> 

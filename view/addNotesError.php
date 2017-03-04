@@ -11,7 +11,7 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/addNotesError.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/addNotesError.css">
 	<head>
 	
 	<body>

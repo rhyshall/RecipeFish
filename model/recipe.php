@@ -3,13 +3,13 @@
 *******************************************************************************************
 ** Name: recipe.php																	   ****
 ** Description: Provides functionality for storing and retrieving recipe data to and   ****
-** from the Recipe Mingle database				   									   ****
+** from the Recipe Fish database				   									   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 05/11/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 class Recipe
 {
@@ -34,13 +34,13 @@ class Recipe
 	private $dateUploaded;
 	
 	/****
-	** retrieve all class data of all recipes from Recipe Mingle database
+	** retrieve all class data of all recipes from Recipe Fish database
 	**
 	** @return    double array  class data of all recipes
 	*/
 	function selectAll()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe;";
 		
@@ -49,7 +49,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -61,7 +61,7 @@ class Recipe
 	*/
 	function selectByRecipeID($id)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe where id=:recipe_id;";
 		
@@ -73,7 +73,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetch();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -85,7 +85,7 @@ class Recipe
 	*/
 	function selectByUserID($id)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe where author_id=:author_id;";
 		
@@ -97,7 +97,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -109,9 +109,9 @@ class Recipe
 	*/
 	function selectNextID()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
-		$query = "select auto_increment from information_schema.tables where table_name='recipe' and table_schema ='recipe_mingle'";
+		$query = "select auto_increment from information_schema.tables where table_name='recipe' and table_schema ='recipe_Fish'";
 		
 		$statement = $connection->prepare($query);	
 
@@ -121,7 +121,7 @@ class Recipe
 		//assign only possible result to int variable
 		$ID = $resultArray[0][0];
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $ID;
 	}
@@ -133,7 +133,7 @@ class Recipe
 	*/
 	function selectByMealType($mealType)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe where meal_type=:meal_type;";
 		
@@ -145,7 +145,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -157,7 +157,7 @@ class Recipe
 	*/
 	function selectByTimeLimit($timeLimit)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe where prep_time_hour=0 and cook_time_hour=0 and wait_time_hour=0 and (prep_time_minute+cook_time_minute+wait_time_minute)<=:time_limit";
 		
@@ -169,7 +169,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -181,7 +181,7 @@ class Recipe
 	*/
 	function selectByHoliday($holiday)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe where holiday=:holiday;";
 		
@@ -193,7 +193,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -205,7 +205,7 @@ class Recipe
 	*/
 	function selectByPopularIngredient($popularIngredient)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe where popular_features like %:popular_feature%;";
 		
@@ -217,7 +217,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -229,7 +229,7 @@ class Recipe
 	*/
 	function selectByOtherFeature($otherFeature)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe where other_features like %:other_feature%;";
 		
@@ -241,7 +241,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -253,7 +253,7 @@ class Recipe
 	*/
 	function selectByEthnicity($ethnicity)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "select * from recipe where ethnicity=:ethnicity;";
 		
@@ -265,7 +265,7 @@ class Recipe
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
-		RecipeMingle::close($connection);
+		RecipeFish::close($connection);
 		
 		return $result;
 	}
@@ -278,7 +278,7 @@ class Recipe
 	*/
 	function insert()
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "insert into recipe(id, name, description, prep_time_hour, prep_time_minute, cook_time_hour, cook_time_minute, wait_time_hour, 
 				wait_time_minute, servings, image_path, ethnicity, meal_type, popular_features, other_features, holiday, notes, author_id, date_uploaded) 
@@ -311,7 +311,7 @@ class Recipe
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -322,7 +322,7 @@ class Recipe
 			/*$arr = $statement->errorInfo();
 			print_r($arr);*/
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}
@@ -336,7 +336,7 @@ class Recipe
 	*/
 	function remove($id)
 	{
-		$connection = RecipeMingle::connect();
+		$connection = RecipeFish::connect();
 		
 		$query = "delete from recipe where id=:id;";
 			
@@ -346,7 +346,7 @@ class Recipe
 		
 		if ($statement->execute())
 		{
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return true;
 		}
@@ -357,7 +357,7 @@ class Recipe
 			$arr = $statement->errorInfo();
 			print_r($arr);
 			
-			RecipeMingle::close($connection);
+			RecipeFish::close($connection);
 			
 			return false;
 		}

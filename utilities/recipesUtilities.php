@@ -8,11 +8,11 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 /****
 ** Determines if current user has existing recipe in 
-** Recipe Mingle database 
+** Recipe Fish database 
 **
 ** @return    boolean  validity of existing recipe
 */

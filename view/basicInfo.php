@@ -8,7 +8,7 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 $user = new User;
 $userSelector = new User;
@@ -22,10 +22,10 @@ $gender = $user->getGender();
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/basicInfo.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/basicInfo.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 		
 		<script type="text/javascript">
 			<!--displays success pop-up window if add recipe was successful
@@ -57,7 +57,7 @@ $gender = $user->getGender();
 			include($root . "view/switchBasicInfoError.php");
 		?>
 		
-			<form id="info-form" action="/RecipeMingle/controller/basicInfoController.php" method="post">
+			<form id="info-form" action="/RecipeFish/controller/basicInfoController.php" method="post">
 				<!--insert current username for user-->
 				<div id="username">
 					<p id="username-label">Username</p>

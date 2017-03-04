@@ -42,34 +42,13 @@ body
 	height: 70px;
 }
 
-#logo-text
+#logo
 {
 	float: left;
-	padding-top: 22px;
+	padding-top: 6px;
 	padding-left: 22px;
 	background-color: #f9f9f9;
 	height: 70px;
-}
-
-#logo-text img
-{
-	height: 38px;
-	width: 180px;
-}
-
-#logo-image
-{
-	float: left;
-	padding-top: 17px;
-	padding-left: 5px;
-	background-color: #f9f9f9;
-	height: 70px;
-}
-
-#logo-image img
-{
-	height: 38px;
-	width: 45px;
 }
 
 #categories

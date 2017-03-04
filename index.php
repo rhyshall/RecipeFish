@@ -2,7 +2,7 @@
 /******************************************************************************************
 *******************************************************************************************
 ** Name: index.php																	   ****
-** Description: Home page Recipe Mingle interface displaying favourite dishes  		   ****
+** Description: Home page of Recipe Fish interface displaying favourite dishes  	   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 04/13/2016														   	   ****
 *******************************************************************************************
@@ -10,7 +10,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "utilities/indexUtilities.php");
@@ -20,10 +20,10 @@ $RECIPE_COUNT = 16;
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/index.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/index.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 	</head>
 	
 	<body>
@@ -63,7 +63,7 @@ $RECIPE_COUNT = 16;
 								?>
 							
 								<a href="#" class="thumbnail">
-									<img class="recipe-image" src="/RecipeMingle/images/skins/skin1.png">
+									<img class="recipe-image" src="/RecipeFish/images/skins/skin1.png">
 									
 									<p id="<?php echo "recipe-heading" . $j ?>" class="recipe-heading"><?php echo $heading?></p>
 									

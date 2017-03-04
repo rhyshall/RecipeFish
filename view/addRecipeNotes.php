@@ -10,15 +10,15 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/addRecipeNotes.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/addRecipeNotes.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 	</head>
 	
 	<body>
@@ -54,7 +54,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 				</div>
 			</div>
 		
-			<form id="notes-form" action="/RecipeMingle/controller/addRecipeController.php" method="post">
+			<form id="notes-form" action="/RecipeFish/controller/addRecipeController.php" method="post">
 				<div id="notes-box">
 					<p id="notes-instructions-1">Enter any additional comments about your recipe. (maximum 500 characters)</p>
 				

@@ -12,7 +12,7 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/directionCountError.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/directionCountError.css">
 	<head>
 	
 	<body>

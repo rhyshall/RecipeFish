@@ -9,7 +9,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "/model/user.php");
@@ -54,12 +54,12 @@ if ((strlen($_POST["register-username"]) > 0) && (strlen($_POST["register-email"
 	
 	if (strcmp($gender, "male") == 0)
 	{
-		$imagePath = "/RecipeMingle/images/uploads/users/user1.png";
+		$imagePath = "/RecipeFish/images/uploads/users/user1.png";
 	}
 	
 	else 
 	{
-		$imagePath = "/RecipeMingle/images/uploads/users/user2.png";
+		$imagePath = "/RecipeFish/images/uploads/users/user2.png";
 	}
 	
 	$skinID = 1;
@@ -71,7 +71,7 @@ else
 	//fields are empty 
 	$_SESSION["emptyField"] = "set";
 	
-	header("Location: http://localhost/RecipeMingle/view/register.php");
+	header("Location: http://localhost/RecipeFish/view/register.php");
 	exit(); 
 }
 
@@ -84,7 +84,7 @@ if (isValidUsername($username) == true)
 		//username already exists
 		$_SESSION["registerUsernameExists"] = "set";
 	
-		header("Location: http://localhost/RecipeMingle/view/register.php");
+		header("Location: http://localhost/RecipeFish/view/register.php");
 		exit();
 	}
 }
@@ -94,7 +94,7 @@ else
 	//username is invalid
 	$_SESSION["registerUsernameInvalid"] = "set";
 
-	header("Location: http://localhost/RecipeMingle/view/register.php");
+	header("Location: http://localhost/RecipeFish/view/register.php");
 	exit();
 }
 
@@ -103,7 +103,7 @@ if (emailExists($email) == true)
 	//email already exists
 	$_SESSION["registerEmailExists"] = "set";
 	
-	header("Location: http://localhost/RecipeMingle/view/register.php");
+	header("Location: http://localhost/RecipeFish/view/register.php");
 	exit();
 }
 
@@ -117,7 +117,7 @@ if (isValidPasswordLength($password) == true)
 		unset($_SESSION["passwordField"]);
 		unset($_SESSION["passwordConfirmationField"]);
 	
-		header("Location: http://localhost/RecipeMingle/view/register.php");
+		header("Location: http://localhost/RecipeFish/view/register.php");
 		exit();
 	}
 }
@@ -129,7 +129,7 @@ else
 	unset($_SESSION["passwordField"]);
 	unset($_SESSION["passwordConfirmationField"]);
 	
-	header("Location: http://localhost/RecipeMingle/view/register.php");
+	header("Location: http://localhost/RecipeFish/view/register.php");
 	exit();
 }
 
@@ -140,7 +140,7 @@ if (passwordConfirmed($password, $passwordConfirmation) == false)
 	unset($_SESSION["passwordField"]);
 	unset($_SESSION["passwordConfirmationField"]);
 	
-	header("Location: http://localhost/RecipeMingle/view/register.php");
+	header("Location: http://localhost/RecipeFish/view/register.php");
 	exit();
 }
 
@@ -198,7 +198,7 @@ if ($success == 1)
 		unset($_SESSION["genderButton"]);
 	}
 	
-	header("Location: http://localhost/RecipeMingle");
+	header("Location: http://localhost/RecipeFish");
 	exit();
 }
 ?>

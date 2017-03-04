@@ -12,6 +12,6 @@ session_start();
 
 $_SESSION["pageNumber"] = $_GET["pageNumber"];
 
-header("Location: http://localhost/RecipeMingle/view/recipes.php");
+header("Location: http://localhost/RecipeFish/view/recipes.php");
 exit();
 ?>

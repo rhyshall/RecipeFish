@@ -9,7 +9,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "/model/recipe.php");
@@ -77,6 +77,6 @@ for ($i = 0; $i < $directionCount; $i++)
 
 $_SESSION["deleteRecipeSuccess"] = $recipeName;
 
-header("Location: http://localhost/RecipeMingle/view/recipes.php");
+header("Location: http://localhost/RecipeFish/view/recipes.php");
 exit(); 
 ?>

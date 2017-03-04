@@ -12,7 +12,7 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/registerGeneralError.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/registerGeneralError.css">
 	<head>
 	
 	<body>

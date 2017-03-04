@@ -8,15 +8,15 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/popUpError.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/popUpError.css">
 		
 		<!--Bootstrap stylesheets-->
-		<link rel="stylesheet" href="/RecipeMingle/Bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/RecipeFish/Bootstrap/css/bootstrap.min.css">
 	</head>
 	
 	<body>

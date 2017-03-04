@@ -10,7 +10,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "/model/recipe.php");
@@ -79,7 +79,7 @@ $cookMin = $recipe["cook_time_minute"];
 $waitHour = $recipe["wait_time_hour"];
 $waitMin = $recipe["wait_time_minute"];
 $servings = $recipe["servings"];
-$imagePath = substr($recipe["image_path"], strpos($recipe["image_path"], "/RecipeMingle"));
+$imagePath = substr($recipe["image_path"], strpos($recipe["image_path"], "/RecipeFish"));
 $ethnicity = $recipe["ethnicity"];
 $mealType = $recipe["meal_type"];
 $popularFeatures = featureStringToArray($recipe["popular_features"]);
@@ -133,10 +133,10 @@ $authorUsername = $userObj->getUsername();
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/recipeProfile.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/recipeProfile.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 	</head>
 	
 	<body>

@@ -8,7 +8,7 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 /****
  ** Loads the recipe info input page
@@ -17,7 +17,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 function reEnterInput()
 {
 	//go back to recipe info input 
-	header("Location: http://localhost/RecipeMingle/view/addRecipeInfo.php"); 
+	header("Location: http://localhost/RecipeFish/view/addRecipeInfo.php"); 
 	exit(); 
 }
 

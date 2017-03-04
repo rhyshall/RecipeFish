@@ -3,14 +3,14 @@
 *******************************************************************************************
 ** Name: recipeSortTypeController.php												   ****
 ** Description: Provides functionality for changing a given user's recipe sort type ID ****
-**              in the Recipe Mingle database 										   ****
+**              in the Recipe Fish database 										   ****
 ** Date Created: 04/25/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "/model/user.php");
@@ -52,6 +52,6 @@ $user->setRecipeSortID($sortID);
 
 $user->update();
 	
-header("Location: http://localhost/RecipeMingle/view/recipes.php");
+header("Location: http://localhost/RecipeFish/view/recipes.php");
 exit();
 ?>

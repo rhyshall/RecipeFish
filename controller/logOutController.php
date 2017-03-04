@@ -12,6 +12,6 @@ session_start();
 unset($_SESSION["username"]);
 unset($_SESSION["gender"]);
 
-header("Location: http://localhost/RecipeMingle");
+header("Location: http://localhost/RecipeFish");
 exit(); 
 ?>

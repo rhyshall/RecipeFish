@@ -10,15 +10,15 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/editRecipeFeatures.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/editRecipeFeatures.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 		
 		<script type="text/javascript">
 			<!--deselects all check-boxes for corresponding category IDs except current one-->
@@ -91,7 +91,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 				include($root . "view/recipeFeaturesError.php");
 			?>
 		
-			<form id="categories-form" action="/RecipeMingle/controller/recipeFeaturesController.php" method="post">
+			<form id="categories-form" action="/RecipeFish/controller/recipeFeaturesController.php" method="post">
 				<div id="categories-box">
 					<p id="categories-instructions">Check the features from each category that relate to your recipe.</p>
 					

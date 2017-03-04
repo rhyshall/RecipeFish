@@ -9,7 +9,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "/model/user.php");
@@ -25,7 +25,7 @@ if ((strcmp($username, $_SESSION["username"]) == 0) && (strcmp($email, $_SESSION
 {
 	$_SESSION["falseEdit"] = "set";
 	
-	header("Location: http://localhost/RecipeMingle/view/profile.php");
+	header("Location: http://localhost/RecipeFish/view/profile.php");
 	exit();
 }
 
@@ -41,20 +41,20 @@ if (strcmp($gender, $user->getGender()) != 0)
 	$imagePath = $user->getImagePath();
 	
 	//if user is using default gender photo
-	if ((strcmp("/RecipeMingle/images/uploads/users/user1.png", $imagePath) == 0) || (strcmp("/RecipeMingle/images/uploads/users/user2.png", $imagePath) == 0))
+	if ((strcmp("/RecipeFish/images/uploads/users/user1.png", $imagePath) == 0) || (strcmp("/RecipeFish/images/uploads/users/user2.png", $imagePath) == 0))
 	{
 		//if gender is male
 		if (strcmp($gender, "male") == 0)
 		{
 			//switch to default male photo
-			$user->setImagePath("/RecipeMingle/images/uploads/users/user1.png");
+			$user->setImagePath("/RecipeFish/images/uploads/users/user1.png");
 		}
 		
 		//if gender is female 
 		else 
 		{
 			//switch to default female photo
-			$user->setImagePath("/RecipeMingle/images/uploads/users/user2.png");
+			$user->setImagePath("/RecipeFish/images/uploads/users/user2.png");
 		}	
 	}
 }
@@ -68,7 +68,7 @@ if (isValidUsername($username) == true)
 		//username already exists
 		$_SESSION["switchUsernameExists"] = "set";
 	
-		header("Location: http://localhost/RecipeMingle/view/profile.php");
+		header("Location: http://localhost/RecipeFish/view/profile.php");
 		exit();
 	}
 }
@@ -78,7 +78,7 @@ else
 	//username is invalid
 	$_SESSION["switchUsernameInvalid"] = "set";
 
-	header("Location: http://localhost/RecipeMingle/view/profile.php");
+	header("Location: http://localhost/RecipeFish/view/profile.php");
 	exit();
 }
 
@@ -87,7 +87,7 @@ if ((emailExists($email) == true) && (strcmp($_SESSION["email"], $email) != 0))
 	//email already exists
 	$_SESSION["switchEmailExists"] = "set";
 	
-	header("Location: http://localhost/RecipeMingle/view/profile.php");
+	header("Location: http://localhost/RecipeFish/view/profile.php");
 	exit();
 }
 
@@ -103,6 +103,6 @@ $_SESSION["gender"] = $gender;
 
 $_SESSION["basicInfoUpdated"] = "set";
 
-header("Location: http://localhost/RecipeMingle/view/profile.php");
+header("Location: http://localhost/RecipeFish/view/profile.php");
 exit();
 ?>

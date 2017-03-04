@@ -10,15 +10,15 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/register.css?<?php echo date('l jS \of F Y h:i:s A'); ?>"/>
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/register.css?<?php echo date('l jS \of F Y h:i:s A'); ?>"/>
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 	</head>
 	
 	<body>
@@ -37,7 +37,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 				<p>Register now. It's quick and easy!</p>
 			</div>
 		
-			<form id="register-form" action="/RecipeMingle/controller/registerController.php" method="post">
+			<form id="register-form" action="/RecipeFish/controller/registerController.php" method="post">
 				<?php 
 					//sign-up error messages (if required)
 					include($root . "view/registerGeneralError.php");

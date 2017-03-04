@@ -12,7 +12,7 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/switchBasicInfoError.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/switchBasicInfoError.css">
 	<head>
 	
 	<body>

@@ -10,7 +10,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 /****
  ** Unsets the array feature values saved as global variables 
@@ -49,7 +49,7 @@ function unsetArrays()
 function reEnterInput()
 {
 	//go back to recipe features input 
-	header("Location: http://localhost/RecipeMingle/view/addRecipeFeatures.php"); 
+	header("Location: http://localhost/RecipeFish/view/addRecipeFeatures.php"); 
 	
 	unsetArrays();
 	
@@ -238,6 +238,6 @@ for ($i = 0; $i < $count; $i++)
 }
 
 //go to recipe ingredients page 
-header("Location: http://localhost/RecipeMingle/view/addRecipeIngredients.php"); 
+header("Location: http://localhost/RecipeFish/view/addRecipeIngredients.php"); 
 exit(); 
 ?>

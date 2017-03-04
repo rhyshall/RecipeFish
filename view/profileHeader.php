@@ -8,14 +8,14 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "/model/user.php");
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/profileHeader.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/profileHeader.css">
 	</head>
 	
 	<body>
@@ -25,7 +25,7 @@ include($root . "/model/user.php");
 			$userObj = $userSelector->selectByUsername($_SESSION["username"]);	
 			
 			$profilePicURL = $userObj->getImagePath();
-			$skinURL = "/RecipeMingle/images/skins/skin" . $userObj->getSkinID() . ".png";
+			$skinURL = "/RecipeFish/images/skins/skin" . $userObj->getSkinID() . ".png";
 		?>
 	
 		<div id="profile-container" style="background-image: url(<?php echo $skinURL; ?>)">

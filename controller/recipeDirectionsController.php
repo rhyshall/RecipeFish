@@ -10,7 +10,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 /****
  ** Loads the recipe ingredients input page
@@ -19,7 +19,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
 function reEnterInput()
 {
 	//go back to recipe ingredients input 
-	header("Location: http://localhost/RecipeMingle/view/addRecipeDirections.php"); 
+	header("Location: http://localhost/RecipeFish/view/addRecipeDirections.php"); 
 	exit(); 
 }
 
@@ -53,6 +53,6 @@ else
 }
 
 //go to recipe notes page 
-header("Location: http://localhost/RecipeMingle/view/addRecipeNotes.php"); 
+header("Location: http://localhost/RecipeFish/view/addRecipeNotes.php"); 
 exit();
 ?>

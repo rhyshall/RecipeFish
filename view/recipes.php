@@ -10,7 +10,7 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "/utilities/recipesUtilities.php");
 include($root . "utilities/database.php");
@@ -25,10 +25,10 @@ $REVERSE_ALPHABETICAL = 4;
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/recipes.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/recipes.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
 		
 		<script type="text/javascript">
 			<!--disables parent window until pop-up window closed 
@@ -75,7 +75,7 @@ $REVERSE_ALPHABETICAL = 4;
 			<!--permanently changes user recipe sort type and reloads page 
 			function sortSelect(recipeSortID)
 			{
-				window.location.href = "/RecipeMingle/controller/recipeSortTypeController.php?sortType=" + recipeSortID;
+				window.location.href = "/RecipeFish/controller/recipeSortTypeController.php?sortType=" + recipeSortID;
 			}
 			
 			<!--switches recipe page to selected page number-->
@@ -83,7 +83,7 @@ $REVERSE_ALPHABETICAL = 4;
 			{
 				var pageNumber = value[0];
 				
-				window.location.href = "/RecipeMingle/controller/recipePageController.php?pageNumber=" + pageNumber;
+				window.location.href = "/RecipeFish/controller/recipePageController.php?pageNumber=" + pageNumber;
 			}
 		</script>
 	</head>
@@ -138,7 +138,7 @@ $REVERSE_ALPHABETICAL = 4;
 				if (hasRecipe() == false)
 				{
 			?>		<!--prompt user to add first recipe-->
-					<form id="add-first-recipe-form" action="/RecipeMingle/view/addRecipeInfo.php" method="post">
+					<form id="add-first-recipe-form" action="/RecipeFish/view/addRecipeInfo.php" method="post">
 						<div id="add-first-recipe-messages">
 							<p id="recipe-message1">You have not added any personal recipes</p>
 						
@@ -228,7 +228,7 @@ $REVERSE_ALPHABETICAL = 4;
 											$index = $indexes[$i];
 											
 											$id = $recipes[$index]["id"];
-											$imagePath = strstr($recipes[$index]["image_path"], "/RecipeMingle/");
+											$imagePath = strstr($recipes[$index]["image_path"], "/RecipeFish/");
 											$name = $recipes[$index]["name"];
 											
 											//split time from date 
@@ -237,8 +237,8 @@ $REVERSE_ALPHABETICAL = 4;
 											$date = $splitArray[0];
 								?>
 											<tr>
-												<td id="<?php echo 'photo' . $i+1 ?>"><a href="/RecipeMingle/view/recipeProfile.php?id=<?php echo $id ?>"><img src="<?php echo $imagePath; ?>"></a></img></td>
-												<td id="<?php echo 'name' . $i+1 ?>"><div class="table-name"><a href="/RecipeMingle/view/recipeProfile.php?id=<?php echo $id ?>"><?php echo $name ?></a></div></td>
+												<td id="<?php echo 'photo' . $i+1 ?>"><a href="/RecipeFish/view/recipeProfile.php?id=<?php echo $id ?>"><img src="<?php echo $imagePath; ?>"></a></img></td>
+												<td id="<?php echo 'name' . $i+1 ?>"><div class="table-name"><a href="/RecipeFish/view/recipeProfile.php?id=<?php echo $id ?>"><?php echo $name ?></a></div></td>
 												<td id="<?php echo 'date' . $i+1 ?>"><div class="table-date"><?php echo $date ?></div></td>
 												<td><span class="glyphicon glyphicon-pencil" style="cursor:pointer"></span></td>
 												<td><span id="<?php echo $id ?>" class="glyphicon glyphicon-trash" style="cursor:pointer" onclick="confirmRecipeDelete(this.id)"></span></td>
@@ -259,7 +259,7 @@ $REVERSE_ALPHABETICAL = 4;
 					<!--display sort, page, and upload options-->
 					<div id="options-menu">
 						<div id="add-recipe">
-							<button id="add-recipe-button" class="btn btn-success" type="button" onclick="window.location.href='/RecipeMingle/view/addRecipeInfo.php'">Add
+							<button id="add-recipe-button" class="btn btn-success" type="button" onclick="window.location.href='/RecipeFish/view/addRecipeInfo.php'">Add
 							<span id="plus-symbol" class="glyphicon glyphicon-plus"></span></button>
 						</div>
 						

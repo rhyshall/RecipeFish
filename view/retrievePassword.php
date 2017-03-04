@@ -10,15 +10,15 @@
 
 session_start();
 
-$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeMingle/";
+$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeMingle/stylesheets/retrievePassword.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/retrievePassword.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeMingle/images/colour sheets.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/colour sheets.ico"/>
 	</head>
 	
 	<body>
