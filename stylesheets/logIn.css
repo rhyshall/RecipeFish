@@ -14,28 +14,45 @@ body
 	background-color: #ffffff;
 }
 
+#margin-canvas1, #container, #margin-canvas2 
+{
+	display: table-cell;
+	height: auto;
+	overflow: hidden;
+}
+
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 166px;
-	height: 850px;
-	float: left;
+	width: 218px;
 }
 
 #container
 {
-	width: 1426.5px;
-	height: 850px;
-	float: left;
 	background-color: #ffffff;
 }
 
-#title p 
+#chef-fish 
 {
-	padding-top: 60px;
-	text-align: center;
-	font-size: 22px;
-	font-family: sans-serif;
+	margin-top: 58px;
+	margin-left: 390px;
+	height: 66px;
+	width: 82.5px;
+	float: left;
+}
+
+#speech-bubble
+{
+	height: 63px;
+	width: 460px;
+	margin-top: 48px;
+	margin-left: 14px;
+	float: left;
+}
+
+#clear-float1
+{
+	clear: both;
 }
 
 #hidden-field 
@@ -47,13 +64,13 @@ body
 
 #log-in-email 
 {
-	padding-top: 125px;
-	padding-left: 539px;
+	padding-top: 110px;
+	padding-left: 488px;
 }
 
 #log-in-email-field
 {
-	height: 40px;
+	height: 39px;
 	width: 350px;
 	font-size: 18px;
 	color: #808080;
@@ -63,12 +80,12 @@ body
 #log-in-password
 {
 	padding-top: 45px;
-	padding-left: 539px;
+	padding-left: 488px;
 }
 
 #log-in-password-field 
 {
-	height: 40px;
+	height: 39px;
 	width: 350px;
 	font-size: 18px;
 	color: #808080;
@@ -83,7 +100,7 @@ body
 	float: left;
 }
 
-#clear-float1
+#clear-float2
 {
 	clear: both;
 }
@@ -106,7 +123,7 @@ body
 
 #register-link 
 {
-	padding-left: 490px;
+	padding-left: 444px;
 }
 
 #register-link h3
@@ -124,19 +141,6 @@ body
 	float: left;
 }
 
-#clear-float2
-{
-	clear: both;
-}
-
-#margin-canvas2
-{
-	background-color: #99ccff;
-	width: 166px;
-	height: 850px;
-	float: left;
-}
-
 #clear-float3
 {
 	clear: both;
@@ -145,4 +149,10 @@ body
 #footer
 {
 	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 218px;
 }

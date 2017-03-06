@@ -27,17 +27,18 @@ $RECIPE_COUNT = 16;
 	</head>
 	
 	<body>
-		<div id="header">
-			<?php 
-				include($root . "view/header.php");
-			?>
-		</div>
-		
 		<div id="margin-canvas1">
 			<!--left-side coloured border-->
 		</div>
 		
 		<div id="container">
+			<div id="header">
+				<?php 
+					include($root . "view/header.php");
+				?>
+			</div>
+			
+		
 			<div id="top-separator">
 				<hr>
 			</div>
@@ -121,20 +122,16 @@ $RECIPE_COUNT = 16;
 			<div id="bottom-separator">
 				<hr>
 			</div>
+			
+			<div id="footer">
+				<?php 
+					include($root . "view/footer.php");
+				?>
+			</div>
 		</div>
 		
 		<div id="margin-canvas2">
 			<!--right-side coloured border-->
-		</div>
-		
-		<div id="clear-float4">
-			<!--clear float from previous content-->
-		</div>
-		
-		<div id="footer">
-			<?php 
-				include($root . "view/footer.php");
-			?>
 		</div>
 	</body>
 </html>

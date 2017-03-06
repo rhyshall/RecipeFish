@@ -14,36 +14,31 @@ body
 	background-color: #ffffff;
 }
 
+#margin-canvas1, #container, #margin-canvas2 
+{
+	display: table-cell;
+	height: auto;
+	overflow: hidden;
+}
+
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 166px;
-	height: 1500px;
-	float: left;
+	width: 218px;
 }
 
 #container
 {
-	width: 1426.5px;
-	height: 1500px;
-	float: left;
 	background-color: #ffffff;
-}
-
-#margin-canvas2
-{
-	background-color: #99ccff;
-	width: 166px;
-	height: 1500px;
-	float: left;
-}
-
-#clear-float
-{
-	clear: both;
 }
 
 #footer
 {
 	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 218px;
 }

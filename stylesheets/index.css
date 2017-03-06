@@ -13,47 +13,60 @@ body
 {
 	margin: 0%;
 	padding: 0%;
+	display: table;
+	background-color: #000000;
+}
+
+#margin-canvas1, #container, #margin-canvas2 
+{
+	display: table-cell;
+	height: auto;
+	overflow: hidden;
 }
 
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 166px;
-	height: 2000px;
-	float: left;
+	width: 218px;
 }
 
 #container
 {
-	width: 1426.5px;
-	height: 2000px;
-	float: left;
 	background-color: #ffffff;
 }
 
 #top-separator 
 {
-	margin-top: -10px;
-	padding-left: 20.25px;
-	padding-right: 20.25px;
+	padding-top: 6px;
+	padding-left: 36px;
+	padding-right: 36px;
+	margin-bottom: -7px;
 }
 
 #recipe-canvas
 {
-	margin-left: 20.25px;
-	margin-top: -12px;
+	margin-left: 36px;
+	margin-right: 36px;
+	padding-top: -12px;
 	background-color: #f9f9f9;
+}
+
+.row 
+{
+	width: 1268px;
 }
 
 .thumbnail, .thumbnail:hover
 {
 	color: #000000;
 	text-decoration: none;
+	width: 300px;
+	background-color: #f9f9f9;
 }
 
 .recipe-image
 {
-	border-radius: 5px;
+	border-radius: 7px;
 	padding-bottom: 10px;
 }
 
@@ -149,24 +162,17 @@ body
 #bottom-separator 
 {
 	margin-top: -20px;
-	padding-left: 20.25px;
-	padding-right: 20.25px;
-}
-
-#margin-canvas2
-{
-	background-color: #99ccff;
-	width: 166px;
-	height: 2000px;
-	float: left;
-}
-
-#clear-float4
-{
-	clear: both;
+	padding-left: 36px;
+	padding-right: 36px;
 }
 
 #footer
 {
 	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 218px;
 }

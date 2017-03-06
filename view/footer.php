@@ -16,24 +16,12 @@
 	</head>
 	
 	<body> 
-		<div id="margin-canvas-footer1">
-			<!--left-side coloured border-->
-		</div>
-		
 		<div id="container-footer">
 			<div id="copyright">
 				<p id="copyright-p1">Copyright &copy Rhys Hall 2016</p>
 
 				<p id="copyright-p2">All Rights Reserved</p>
 			</div>
-		</div>
-		
-		<div id="margin-canvas-footer2">
-			<!--right-side coloured border-->
-		</div>
-		
-		<div id="clear-float-footer">
-			<!--clear float from previous content-->
 		</div>
 	</body>
 </html>

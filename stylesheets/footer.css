@@ -13,19 +13,10 @@ body
 	padding: 0%;
 }
 
-#margin-canvas-footer1
-{
-	background-color: #99ccff;
-	float: left;
-	height: 150px;
-	width: 166px;
-}
-
 #container-footer
 {
-	float: left; 
+	margin-top: 175px;
 	height: 150px;
-	width: 1426.5px;
 }
 
 #copyright
@@ -43,17 +34,4 @@ body
 {
 	font-size: 16px;
 	padding-top: 16px;
-}
-
-#margin-canvas-footer2
-{
-	background-color: #99ccff;
-	height: 150px;
-	width: 166px;
-	float: left;
-}
-
-#clear-float-footer
-{
-	clear: both;
 }

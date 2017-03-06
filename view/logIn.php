@@ -22,19 +22,27 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	</head>
 	
 	<body>
-		<div id="header">
-			<?php 
-				include($root . "view/header.php");
-			?>
-		</div>
-		
 		<div id="margin-canvas1">
 			<!--left-side coloured border-->
 		</div>
 		
 		<div id="container">
-			<div id="title">
-				<p>Sign in with your Recipe Fish account</p>
+			<div id="header">
+				<?php 
+					include($root . "view/header.php");
+				?>
+			</div>
+			
+			<div id="chef-fish-panel">
+				<img id="chef-fish" src="/RecipeFish/images/standard/chef fish.png">
+			</div>
+		
+			<div id="speech-bubble-panel">
+				<img id="speech-bubble" src="/RecipeFish/images/standard/log in speech bubble.png">
+			</div>
+			
+			<div id="clear-float1">
+				<!--clear float from previous content-->
 			</div>
 		
 			<form id="log-in-form" action="/RecipeFish/controller/logInController.php" method="post">
@@ -91,7 +99,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 							<a id="forgot-password" href="/RecipeFish/view/retrievePassword.php">Forgot Password?</a>
 						</div>
 						
-						<div id="clear-float1">
+						<div id="clear-float2">
 							<!--clear float from previous content-->
 						</div>
 				<?php 
@@ -113,23 +121,19 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 				<h3>&nbsp to access every feature</h3>
 			</div>
 			
-			<div id="clear-float2">
+			<div id="clear-float3">
 				<!--clear float from previous content-->
+			</div>
+			
+			<div id="footer">
+				<?php 
+					include($root . "view/footer.php");
+				?>
 			</div>
 		</div>
 		
 		<div id="margin-canvas2">
 			<!--right-side coloured border-->
-		</div>
-		
-		<div id="clear-float3">
-			<!--clear float from previous content-->
-		</div>
-		
-		<div id="footer">
-			<?php 
-				include($root . "view/footer.php");
-			?>
 		</div>
 	</body>
 </html>

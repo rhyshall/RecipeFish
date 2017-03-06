@@ -14,39 +14,51 @@ body
 	background-color: #ffffff;
 }
 
+#margin-canvas1, #container, #margin-canvas2 
+{
+	display: table-cell;
+	height: auto;
+	overflow: hidden;
+}
+
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 166px;
-	height: 1020px;
-	float: left;
+	width: 218px;
 }
 
 #container
 {
-	width: 1426.5px;
-	height: 1020px;
+	background-color: #ffffff;
+}
+
+#chef-fish 
+{
+	margin-top: 46px;
+	margin-left: 390px;
+	height: 66px;
+	width: 82.5px;
 	float: left;
-	background-color: #ffffff;
 }
 
-#title
+#speech-bubble
 {
-	background-color: #ffffff;
-	padding-bottom: 135px;
+	height: 61px;
+	width: 445px;
+	margin-top: 36px;
+	margin-left: 14px;
+	float: left;
 }
 
-#title p 
+#clear-float1
 {
-	padding-top: 60px;
-	text-align: center;
-	font-size: 22px;
-	font-family: sans-serif;
+	clear: both;
 }
 
 #register-username 
 {
-	padding-left: 540.25px;
+	padding-top: 104px;
+	padding-left: 488px;
 	background-color: #ffffff;
 }
 
@@ -62,7 +74,7 @@ body
 #register-email 
 {
 	padding-top: 45px;
-	padding-left: 540.25px;
+	padding-left: 488px;
 	background-color: #ffffff;
 }
 
@@ -78,7 +90,7 @@ body
 #register-password 
 {
 	padding-top: 50px;
-	padding-left: 540.25px;
+	padding-left: 488px;
 	background-color: #ffffff;
 }
 
@@ -94,7 +106,7 @@ body
 #register-password-confirmation 
 {
 	padding-top: 45px;
-	padding-left: 540.25px;
+	padding-left: 488px;
 	background-color: #ffffff;
 }
 
@@ -110,7 +122,7 @@ body
 #register-gender
 {
 	padding-top: 42.5px;
-	padding-left: 604px;
+	padding-left: 550px;
 	background-color: #ffffff;
 }
 
@@ -144,9 +156,7 @@ body
 {
 	padding-top: 60px;
 	text-align: center;
-	padding-bottom: 10px;
 	background-color: #ffffff;
-	padding-bottom: 50px;
 }
 
 #register-submit-button
@@ -157,20 +167,13 @@ body
 	box-shadow: 1px 1px 2.5px #e65c00;
 }
 
-#margin-canvas2
-{
-	background-color: #99ccff;
-	width: 166px;
-	height: 1020px;;
-	float: left;
-}
-
-#clear-float2
-{
-	clear: both;
-}
-
 #footer
 {
 	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 218px;
 }

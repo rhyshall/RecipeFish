@@ -24,17 +24,17 @@ include($root . "utilities/database.php");
 	</head>
 	
 	<body onFocus="parentDisable();" onclick="parentDisable();">
-		<div id="header">
-			<?php 
-				include($root . "view/header.php");
-			?>
-		</div>
-		
 		<div id="margin-canvas1">
 			<!--left-side coloured border-->
 		</div>
 		
 		<div id="container">
+			<div id="header">
+				<?php 
+					include($root . "view/header.php");
+				?>
+			</div>
+		
 			<?php 
 				include($root . "view/profileHeader.php");
 			?>
@@ -42,20 +42,16 @@ include($root . "utilities/database.php");
 			<?php 
 				include($root . "view/profileMenu.php");
 			?>
+			
+			<div id="footer">
+				<?php 
+					include($root . "view/footer.php");
+				?>
+			</div>
 		</div>
 		
 		<div id="margin-canvas2">
 			<!--right-side coloured border-->
-		</div>
-		
-		<div id="clear-float">
-			<!--clear float from previous content-->
-		</div>
-		
-		<div id="footer">
-			<?php 
-				include($root . "view/footer.php");
-			?>
 		</div>
 	</body>
 </html>

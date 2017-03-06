@@ -60,10 +60,6 @@
 	</head>
 	
 	<body>
-		<div id="margin-canvas-header1">
-			<!--left-side coloured border-->
-		</div>
-		
 		<div id="container-header">
 			<div id="colour-canvas-header1">
 				<!--colour border separating top of page and header content-->
@@ -158,14 +154,6 @@
 			<div id="colour-canvas-header2">
 				<!--colour border separating header content and recipes-->
 			</div>
-		</div>
-		
-		<div id="margin-canvas-header2">
-				<!--right-side coloured border-->
-		</div>
-		
-		<div id="clear-float-header2">
-			<!--clear float from previous content-->
 		</div>
 	</body>
 </html>

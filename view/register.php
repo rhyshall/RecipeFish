@@ -22,19 +22,27 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	</head>
 	
 	<body>
-		<div id="header">
-			<?php 
-				include($root . "view/header.php");
-			?>
-		</div>
-		
 		<div id="margin-canvas1">
 			<!--left-side coloured border-->
 		</div>
 		
 		<div id="container">
-			<div id="title">
-				<p>Register now. It's quick and easy!</p>
+			<div id="header">
+				<?php 
+					include($root . "view/header.php");
+				?>
+			</div>
+		
+			<div id="chef-fish-panel">
+				<img id="chef-fish" src="/RecipeFish/images/standard/chef fish.png">
+			</div>
+		
+			<div id="speech-bubble-panel">
+				<img id="speech-bubble" src="/RecipeFish/images/standard/registration speech bubble.png">
+			</div>
+			
+			<div id="clear-float1">
+				<!--clear float from previous content-->
 			</div>
 		
 			<form id="register-form" action="/RecipeFish/controller/registerController.php" method="post">
@@ -181,20 +189,16 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 					<button id="register-submit-button" class="btn btn-warning" type="submit">Register</button>
 				</div>
 			</form>
+			
+			<div id="footer">
+				<?php 
+					include($root . "view/footer.php");
+				?>
+			</div> 
 		</div>
 		
 		<div id="margin-canvas2">
 			<!--right-side coloured border-->
 		</div>
-		
-		<div id="clear-float2">
-			<!--clear float from previous content-->
-		</div>
-
-		<div id="footer">
-			<?php 
-				include($root . "view/footer.php");
-			?>
-		</div> 
 	</body>
 </html>
