@@ -28,7 +28,7 @@ $REVERSE_ALPHABETICAL = 4;
 		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/recipes.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
 		
 		<script type="text/javascript">
 			<!--disables parent window until pop-up window closed 
@@ -89,17 +89,9 @@ $REVERSE_ALPHABETICAL = 4;
 	</head>
 	
 	<body onFocus="parentDisable();" onclick="parentDisable();">
-		<div id="header">
-			<?php 
-				include($root . "view/header.php");
-			?>
-		</div>
-		
-		<div id="margin-canvas1">
-			<!--left-side coloured border-->
-		</div>
-		
+		<!--display pop-up if recipe previously added/deleted-->
 		<?php
+			//added recipe pop-up 
 			if (isset($_SESSION["addRecipeSuccess"]) == true)
 			{
 				echo "<script type='text/javascript'>displayAddSuccessPopUp();</script>";
@@ -107,6 +99,7 @@ $REVERSE_ALPHABETICAL = 4;
 				unset($_SESSION["addRecipeSuccess"]);
 			}
 		
+			//added recipe fail pop-up 
 			if (isset($_SESSION["addRecipeError"]) == true)
 			{
 				echo "<script type='text/javascript'>displayAddErrorPopUp();</script>";
@@ -114,6 +107,7 @@ $REVERSE_ALPHABETICAL = 4;
 				unset($_SESSION["addRecipeError"]);
 			}
 			
+			//deleted recipe pop-up
 			if (isset($_SESSION["deleteRecipeSuccess"]) == true)
 			{
 				$name = $_SESSION["deleteRecipeSuccess"];
@@ -123,8 +117,18 @@ $REVERSE_ALPHABETICAL = 4;
 				unset($_SESSION["deleteRecipeSuccess"]);
 			}
 		?>
+	
+		<div id="margin-canvas1">
+			<!--left-side coloured border-->
+		</div>
 		
 		<div id="container">
+			<div id="header">
+				<?php 
+					include($root . "view/header.php");
+				?>
+			</div>
+		
 			<?php 
 				include($root . "view/profileHeader.php");
 			?>
@@ -310,20 +314,16 @@ $REVERSE_ALPHABETICAL = 4;
 			<?php
 				}
 			?>
+			
+			<div id="footer">
+				<?php 
+					include($root . "view/footer.php");
+				?>
+			</div>
 		</div>
 		
 		<div id="margin-canvas2">
 			<!--right-side coloured border-->
-		</div>
-		
-		<div id="clear-float4">
-			<!--clear float from previous content-->
-		</div>
-		
-		<div id="footer">
-			<?php 
-				include($root . "view/footer.php");
-			?>
 		</div>
 	</body>
 </html>

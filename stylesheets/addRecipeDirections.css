@@ -13,19 +13,21 @@ body
 	padding: 0%;
 }
 
+#margin-canvas1, #container, #margin-canvas2 
+{
+	display: table-cell;
+	height: auto;
+	overflow: hidden;
+}
+
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 166px;
-	height: 1400px;
-	float: left;
+	width: 218px;
 }
 
 #container
 {
-	width: 1426.5px;
-	height: 1400px;
-	float: left;
 	background-color: #ffffff;
 }
 
@@ -49,7 +51,7 @@ body
 
 #bar
 {
-	margin-left: 263.25px;
+	margin-left: 210.5px;
 	margin-bottom: 40px;
 	width: 900px;
 }
@@ -61,8 +63,8 @@ body
 
 #add-direction
 {
-	height: 500px;
-	width: 550px;
+	height: 477px;
+	width: 485px;
 	margin-top: 70px;
 	margin-left: 50px;
 	float: left;
@@ -80,7 +82,7 @@ body
 	font-family: sans-serif;
 	padding-top: 38px;
 	text-align: center;
-	font-size: 17px;
+	font-size: 16.5px;
 	color: grey;
 }
 
@@ -88,7 +90,7 @@ body
 {
 	font-family: sans-serif;
 	text-align: center;
-	font-size: 17px;
+	font-size: 16.5px;
 	color: grey;
 }
 
@@ -102,10 +104,10 @@ body
 
 #direction-field 
 {
-	height: 180px;
-	width: 500px;
+	height: 172px;
+	width: 433px;
 	margin-left: 22px;
-	font-size: 18px;
+	font-size: 17px;
 	color: #808080;
 	background-color: #f9f9f9;
 }
@@ -118,17 +120,17 @@ body
 
 #add-button
 {
-	height: 41.5px;
+	height: 40px;
 	width: 120px;
-	font-size: 18.5px;
+	font-size: 17px;
 	box-shadow: 0.5px 0.5px 1.5px #00994d;
 }
 
 #view-directions
 {
 	height: 619px;
-	width: 660px;
-	margin-left: 116px;
+	width: 641px;
+	margin-left: 92px;
 	margin-top: 20px;
 	margin-right: 50px;
 	float: left;
@@ -139,7 +141,7 @@ body
 #directions-table
 {
 	height: 538px;
-	width: 642px;
+	width: 624px;
 } 
 
 #directions-table caption 
@@ -221,20 +223,13 @@ td
 	box-shadow: 1px 1px 2.5px #e65c00;
 }
 
-#margin-canvas2
-{
-	background-color: #99ccff;
-	width: 166px;
-	height: 1400px;
-	float: left;
-}
-
-#clear-float2
-{
-	clear: both;
-}
-
 #footer
 {
 	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 218px;
 }

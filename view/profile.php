@@ -20,7 +20,7 @@ include($root . "utilities/database.php");
 		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/profile.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
 	</head>
 	
 	<body onFocus="parentDisable();" onclick="parentDisable();">

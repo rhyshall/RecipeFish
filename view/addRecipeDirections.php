@@ -18,7 +18,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/addRecipeDirections.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
 		
 		<script type="text/javascript">
 			var directionCount = 0;
@@ -195,17 +195,17 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	</head>
 	
 	<body onFocus="parentDisable();" onclick="parentDisable();">
-		<div id="header">
-			<?php 
-				include($root . "view/header.php");
-			?>
-		</div>
-		
 		<div id="margin-canvas1">
 			<!--left-side coloured border-->
 		</div>
 		
 		<div id="container">
+			<div id="header">
+				<?php 
+					include($root . "view/header.php");
+				?>
+			</div>
+		
 			<div id="title">
 				<p>Add Your Recipe</p>
 			</div>
@@ -221,7 +221,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			
 			<div id="bar">
 				<div class="progress">
-					<div id="blue-bar" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+					<div id="blue-bar" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
 						<span class="sr-only">80% Complete</span>
 					</div>
 				</div>
@@ -307,6 +307,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 					<button id="next-button" class="btn btn-warning" type="submit">Next</button>
 				</div>
 			</form>
+			
+			<div id="footer">
+				<?php 
+					include($root . "view/footer.php");
+				?>
+			</div>
 		</div>
 		
 		<div id="margin-canvas2">
@@ -315,12 +321,6 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 		
 		<div id="clear-float2">
 			<!--clear float from previous content-->
-		</div>
-		
-		<div id="footer">
-			<?php 
-				include($root . "view/footer.php");
-			?>
 		</div>
 	</body>
 </html>

@@ -25,7 +25,7 @@ $gender = $user->getGender();
 		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/basicInfo.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
 		
 		<script type="text/javascript">
 			<!--displays success pop-up window if add recipe was successful

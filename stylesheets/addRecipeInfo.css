@@ -13,19 +13,21 @@ body
 	padding: 0%;
 }
 
+#margin-canvas1, #container, #margin-canvas2 
+{
+	display: table-cell;
+	height: auto;
+	overflow: hidden;
+}
+
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 166px;
-	height: 1380px;
-	float: left;
+	width: 218px;
 }
 
 #container
 {
-	width: 1426.5px;
-	height: 1380px;
-	float: left;
 	background-color: #ffffff;
 }
 
@@ -429,20 +431,13 @@ body
 	box-shadow: 1px 1px 2.5px #e65c00;
 }
 
-#margin-canvas2
-{
-	background-color: #99ccff;
-	width: 166px;
-	height: 1380px;
-	float: left;
-}
-
-#clear-float5
-{
-	clear: both;
-}
-
 #footer
 {
 	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 218px;
 }

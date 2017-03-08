@@ -13,19 +13,21 @@ body
 	padding: 0%;
 }
 
+#margin-canvas1, #container, #margin-canvas2 
+{
+	display: table-cell;
+	height: auto;
+	overflow: hidden;
+}
+
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 166px;
-	height: 2800px;
-	float: left;
+	width: 218px;
 }
 
 #container
 {
-	width: 1426.5px;
-	height: 2800px;
-	float: left;
 	background-color: #ffffff;
 }
 
@@ -49,7 +51,7 @@ body
 
 #bar
 {
-	margin-left: 263.25px;
+	margin-left: 210.5px;
 	margin-bottom: 40px;
 	width: 900px;
 }
@@ -76,7 +78,7 @@ body
 	height: 2120px;
 	width: 900px;
 	margin-top: 50px;
-	margin-left: 263.25px;
+	margin-left: 210.5px;
 	background-color: #f3fcf9;
 	border-style: ridge;
 	border-left-width: 3px;
@@ -91,7 +93,7 @@ body
 	font-family: sans-serif;
 	padding-top: 50px;
 	text-align: center;
-	font-size: 17px;
+	font-size: 16.5px;
 	color: grey;
 }
 
@@ -486,20 +488,13 @@ body
 	box-shadow: 1px 1px 2.5px #e65c00;
 }
 
-#margin-canvas2
-{
-	background-color: #99ccff;
-	width: 166px;
-	height: 2800px;
-	float: left;
-}
-
-#clear-float11
-{
-	clear: both;
-}
-
 #footer
 {
 	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 218px;
 }

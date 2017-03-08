@@ -18,7 +18,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/register.css?<?php echo date('l jS \of F Y h:i:s A'); ?>"/>
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
 	</head>
 	
 	<body>

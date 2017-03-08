@@ -136,21 +136,21 @@ $authorUsername = $userObj->getUsername();
 		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/recipeProfile.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
 	</head>
 	
 	<body>
-		<div id="header">
-			<?php 
-				include($root . "view/header.php");
-			?>
-		</div>
-		
 		<div id="margin-canvas1">
 			<!--left-side coloured border-->
 		</div>
 		
 		<div id="container">
+			<div id="header">
+				<?php 
+					include($root . "view/header.php");
+				?>
+			</div>
+		
 			<div id="title">
 				<p><?php echo $name ?></p>
 			</div>
@@ -319,20 +319,16 @@ $authorUsername = $userObj->getUsername();
 					?>
 				</div>
 			</div>
+			
+			<div id="footer">
+				<?php 
+					include($root . "view/footer.php");
+				?>
+			</div>
 		</div>
 
 		<div id="margin-canvas2">
 			<!--right-side coloured border-->
-		</div>
-		
-		<div id="clear-float11">
-			<!--clear float from previous content-->
-		</div>
-		
-		<div id="footer">
-			<?php 
-				include($root . "view/footer.php");
-			?>
 		</div>
 	</body>
 </html>

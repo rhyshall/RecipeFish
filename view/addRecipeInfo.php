@@ -18,21 +18,21 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/addRecipeInfo.css">
 		
 		<!--stylesheet for tab icon-->
-		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/colour wheel.ico"/>
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
 	</head>
 	
 	<body>
-		<div id="header">
-			<?php 
-				include($root . "view/header.php");
-			?>
-		</div>
-		
 		<div id="margin-canvas1">
 			<!--left-side coloured border-->
 		</div>
 		
 		<div id="container">
+			<div id="header">
+				<?php 
+					include($root . "view/header.php");
+				?>
+			</div>
+		
 			<div id="title">
 				<p>Add Your Recipe</p>
 			</div>
@@ -48,7 +48,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			
 			<div id="bar">
 				<div class="progress">
-					<div id="blue-bar" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+					<div id="blue-bar" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
 						<span class="sr-only">20% Complete</span>
 					</div>
 				</div>
