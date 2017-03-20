@@ -17,41 +17,44 @@ body
 #colour-canvas-header1
 {
 	background-color: #efffff;
-	height: 3px;
+	height: 2.5px;
 }
 
 #header-canvas
 {
 	background-color: #f9f9f9;
-	height: 70px;
-	width: 1323px;
+	height: 63px;
+	width: 1191px;
 }
 
-#logo
+#logo 
 {
 	float: left;
-	padding-top: 6px;
+	padding-top: 5px;
 	padding-left: 22px;
-	background-color: #f9f9f9;
-	height: 70px;
+}
+
+#logo img
+{
+	height: 55px;
+	width: 104.5px;
 }
 
 #categories
 {
 	float: left;
-	padding-top: 13px;
-	padding-left: 45px;
+	padding-top: 11.5px;
+	padding-left: 40.5px;
 	background-color: #f9f9f9;
-	height: 70px;
 }
 
 #categories-button 
 {
-	height: 45px; 
-	width: 130px;
-	text-align: left;
+	height: 39.5px; 
+	width: 110px;
+	text-align: center;
 	color: #000000;
-	font-size: 16px;
+	font-size: 14px;
 	float: left;
 }
 
@@ -63,111 +66,111 @@ body
 
 #categories-drop-down-button 
 {
-	height: 45px;
-	width: 45px;
+	height: 40.5px;
+	width: 40.5px;
 	float: left;
 }
 
 #search-form
 {
 	float: left;
-	padding-top: 13px;
-	padding-left: 40px;
+	padding-top: 11.5px;
+	padding-left: 50px;
 	background-color: #f9f9f9;
-	height: 70px;
+	height: 63px;
 }
 
 #search-field
 {
-	height: 45px;
-	width: 477px;
+	height: 39.5px;
+	width: 429.5px;
 	float: left;
-	font-size: 17px;
+	font-size: 14px;
 }
 
 #search-button
 {
-	height: 45px;
-	width: 45px;
+	height: 39.5px;
+	width: 39.5px;
 	float: left;
 }
 
 #account
 {
 	float: left;
-	padding-top: 18px;
-	padding-left: 182px;
+	padding-top: 16px;
+	padding-left: 150px;
 	background-color: #f9f9f9;
-	height: 70px;
+	height: 63px;
 }
 
 #register-button 
 {
-	font-size: 16px;
+	font-size: 14px;
 	float: left;
-	padding-top: 9px;
+	padding-top: 10px;
 }
 
 #account h5
 {
 	float: left;
-	font-size: 16px;
-	padding-top: 0.5px;
-	padding-left: 23px;
+	font-size: 15px;
+	padding-top: 1px;
+	padding-left: 21px;
 }
 
 #log-in-button 
 {
-	font-size: 16px;
+	font-size: 14px;
 	float: left;
-	padding-top: 9px;
-	padding-left: 23px;
-	padding-right: 40px;
+	padding-top: 10px;
+	padding-left: 21px;
+	padding-right: 36px;
 }
 
 #user-menu 
 {
 	float: left;
-	padding-top: 13px;
-	padding-left: 102px;
+	padding-top: 11.5px;
+	padding-left: 92px;
 	background-color: #f9f9f9;
-	height: 70px;
+	height: 63px;
 }
 
 #male-pic
 {
-	font-size: 20px;
+	font-size: 18px;
 	color: #000000; 
-	padding-top: 5px;
-	padding-right: 10%;
+	padding-top: 4.5px;
+	padding-right: 9%;
 }
 
 #female-pic 
 {
 	color: #000000; 
-	margin-top: -6px;
-	margin-right: 8%;
-	height: 20px;
-	width: 20px;
+	margin-top: -5.5px;
+	margin-right: 7%;
+	height: 18px;
+	width: 18px;
 }
 
 #user-button 
 {
-	height: 45px; 
-	width: 206px;
+	height: 40.5px; 
+	width: 185px;
 	text-align: left;
 	color: #000000;
 	font-size: 16px;
 	float: left;
-	line-height: 38px;
+	line-height: 34px;
 }
 
 #user-drop-down
 {
 	float: left;
-	width: 84px;
+	width: 76px;
 	position: absolute;
-	margin-left: 200px;
+	margin-left: 180px;
 }
 
 #user-drop-down-menu li 
@@ -177,8 +180,8 @@ body
 
 #user-drop-down-button 
 {
-	height: 45px;
-	width: 45px;
+	height: 40.5px;
+	width: 40.5px;
 	float: left;
 }
 
@@ -190,27 +193,8 @@ body
 #colour-canvas-header2
 {
 	background-color: #efffff;
-	height: 2.25px;
+	height: 2px;
 	-webkit-box-shadow: 0px 0.1px #000000;
     -moz-box-shadow: 0px 0.1px #000000;
     box-shadow: 0px 0.1px #000000;
 }
-
-/*
-#advanced-search 
-{
-	float: left;
-	vertical-align: top;
-	padding-top: 0.62%;
-	padding-left: 0.6%;
-	background-color: #f9f9f9;
-	height: 68px;
-}
-
-#advanced-search-button 
-{
-	height: 45px;
-	width: 150px;
-	font-size: 16px;
-	float: left;
-} */

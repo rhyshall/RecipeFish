@@ -36,21 +36,33 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			<div id="chef-fish-panel">
 				<img id="chef-fish" src="/RecipeFish/images/standard/chef fish.png">
 			</div>
-		
-			<div id="speech-bubble-panel">
-				<img id="speech-bubble" src="/RecipeFish/images/standard/log in speech bubble.png">
-			</div>
+			
+			<!--if error occurs, display error in speech bubble, otherwise display default log-in prompt-->
+			<?php 
+				if ((isset($_SESSION["emptyField"]) == true) || (isset($_SESSION["nonExistingEmail"]) == true) || (isset($_SESSION["combinationInvalid"]) == true))
+				{
+					include($root . "view/logInError.php");	
+				}
+				
+				else 
+				{
+			?>
+					<!--display default log-in prompt-->
+					<div id="speech-bubble-panel">
+						<img id="speech-bubble" src="/RecipeFish/images/standard/speech bubble.png">
+								
+						<p id="speech-text">Sign in with your RecipeFish account</p>
+					</div>
+			<?php 
+				}
+			?>
+				
 			
 			<div id="clear-float1">
 				<!--clear float from previous content-->
 			</div>
 		
 			<form id="log-in-form" action="/RecipeFish/controller/logInController.php" method="post">
-				<!--invalid log-in error message (if necessary)-->
-				<?php 
-					include($root . "view/logInError.php");
-				?>
-			
 				<!--hidden input field to prevent form autofill-->
 				<div id="blank">
 					<input id="hidden-field" name="log-in-email" type="text" class="form-control" value="<?php echo $_SESSION["emailField"] ?>"></input>

@@ -24,6 +24,7 @@ $RECIPE_COUNT = 16;
 		
 		<!--stylesheet for tab icon-->
 		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
+		
 	</head>
 	
 	<body>
@@ -94,17 +95,21 @@ $RECIPE_COUNT = 16;
 										<hr>
 									</div>
 									
-									<p id="<?php echo "recipe-author" . $j ?>" class="recipe-author">Author</p>
-									
-									<span class="glyphicon glyphicon-time"></span><p id="<?php echo "recipe-time" . $j ?>" class="recipe-time">Time</p>
+									<span class="glyphicon glyphicon-user"></span><p id="<?php echo "recipe-author" . $j ?>" class="recipe-author">Author</p>
 									
 									<div id="clear-float2">
 										<!--clear float from previous content-->
 									</div>
 									
-									<span class="glyphicon glyphicon-book"></span><p id="<?php echo "recipe-cookbook" . $j ?>" class="cookbook-adds">0</p>
+									<span class="glyphicon glyphicon-time"></span><p id="<?php echo "recipe-time" . $j ?>" class="recipe-time">Time</p>
 									
 									<div id="clear-float3">
+										<!--clear float from previous content-->
+									</div>
+									
+									<span class="glyphicon glyphicon-book"></span><p id="<?php echo "recipe-cookbook" . $j ?>" class="cookbook-adds">0</p>
+									
+									<div id="clear-float4">
 										<!--clear float from previous content-->
 									</div>
 								</a>

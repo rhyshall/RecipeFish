@@ -9,11 +9,11 @@
 
 #skin-instructions 
 {
-	padding-top: 12px;
-	margin-top: 34px;
-	margin-left: 198px;
-	margin-right: 198px;
-	padding-bottom: 6px;
+	padding-top: 11px;
+	margin-top: 30.5px;
+	margin-left: 178px;
+	margin-right: 178px;
+	padding-bottom: 3px;
 	background-color: #f3fcf9;
 	border-style: solid;
 	border-left-width: 0.5px;
@@ -26,18 +26,18 @@
 #skin-instructions p
 {
 	text-align: center;
-	font-size: 17px;
+	font-size: 15px;
 	font-family: sans-serif;
 	color: grey;
 }
 
 #skin-gallery 
 {
-	padding-top: 30px;
-	margin-left: 198px;
-	width: 928px;
+	padding-top: 27px;
+	margin-left: 178px;
+	width: 835px;
 	background-color: #f2f2f2;
-	padding-bottom: 10px;
+	padding-bottom: 9px;
 	border-left-style: solid;
 	border-right-style: solid;
 	border-bottom-style: solid;
@@ -50,20 +50,20 @@
 
 .row
 {
-	width: 910px;
-	padding-left: 30px;
+	width: 819px;
+	padding-left: 27px;
 }
 
 .thumbnail
 {
-	height: 199px;
-	width: 199px;
+	height: 179px;
+	width: 179px;
 }
 
 .thumbnail > img
 {
-	height: 190px;
-	width: 190px;
+	height: 171px;
+	width: 171px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 }

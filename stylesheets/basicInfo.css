@@ -15,9 +15,9 @@ body
 
 #info-box 
 {
-	width: 838px;
-	margin-top: 50px;
-	margin-left: 242px;
+	width: 754px;
+	margin-top: 45px;
+	margin-left: 218px;
 	background-color: #f2f2f2;
 	border-style: solid;
 	border-left-width: 0.5px;
@@ -30,10 +30,10 @@ body
 #instructions-text 
 {
 	font-family: sans-serif;
-	padding-top: 12px;
-	padding-bottom: 6px;
+	padding-top: 11px;
+	padding-bottom: 2px;
 	text-align: center;
-	font-size: 17px;
+	font-size: 14px;
 	background-color: #f3fcf9;
 	border-bottom-style: solid;
 	border-bottom-width: 0.25px;
@@ -47,99 +47,101 @@ body
 
 #username
 {
-	padding-top: 80px;
-	padding-left: 180px;
+	padding-top: 64px;
+	padding-left: 162px;
 }
 
 #username-label
 {
-	padding-top: 8px;
-	font-size: 17.5px;
+	padding-top: 7.5px;
+	font-size: 14px;
 	float: left;
 }
 
 #username-field
 {
-	width: 380px;
+	height: 34px;
+	width: 342px;
 	float: left;
-	font-size: 17px;
+	font-size: 14px;
 	color: grey;
-	margin-left: 20px;
+	margin-left: 18px;
 }
 
 #email
 {
-	padding-top: 110px;
-	padding-left: 182px;
+	padding-top: 90px;
+	padding-left: 164px;
 }
 
 #email-label
 {
-	padding-top: 8px;
-	font-size: 17.5px;
+	padding-top: 7.5px;
+	font-size: 14px;
 	float: left;
 }
 
 #email-field
 {
-	width: 416px;
+	height: 34px;
+	width: 375px;
 	float: left;
-	font-size: 17px;
+	font-size: 14px;
 	color: grey;
-	margin-left: 20px;
+	margin-left: 18px;
 }
 
 #gender 
 {
-	padding-top: 110px;
-	padding-left: 304px;
+	padding-top: 90px;
+	padding-left: 272px;
 }
 
 #male-label 
 {
 	float: left;
-	padding-right: 10px;
-	font-size: 17px;
+	padding-right: 9px;
+	font-size: 14px;
 }
 
 #male-radio
 {
-	margin-top: 7px;
+	margin-top: 4.5px;
 	float: left;
 }
 
 #female-label 
 {
 	float: left;
-	padding-left: 90px;
-	padding-right: 9.5px;
-	font-size: 17px;
+	padding-left: 81px;
+	padding-right: 9px;
+	font-size: 14px;
 }
 
 #female-radio 
 {
-	margin-top: 7px;
+	margin-top: 4.5px;
 	float: left;
 }
 
 #save-info 
 {
-	padding-top: 110px;
+	padding-top: 70px;
 	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 24px;
 }
 
 #save-symbol
 {
-	font-size: 14px;
-	padding-left: 7px;
+	font-size: 12px;
+	padding-left: 6.5px;
 }
 
 #save-info-button 
 {
-	height: 39px;
-	width: 110px;
-	font-size: 16px;
+	height: 32px;
+	width: 92px;
+	font-size: 15px;
 	box-shadow: 1px 1px 1px #1f7a1f;
-	padding-bottom: 0.25px;
+	padding-bottom: 2px;
 }

@@ -7,52 +7,40 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-#empty-field-message #exclamation-mark 
+#empty-error-speech-bubble
 {
-	padding-right: 154px;
+	height: 47px;
+	width: 358px;
+	margin-top: 43px;
+	margin-left: 15px;
+	float: left;
 }
 
-#empty-field-message 
+#empty-error-speech-text 
 {
-	padding-left: 373.25px;
-	font-family: sans-serif;
-	font-size: 18px;
-	padding-bottom: 45px;
-	margin-top: -45px;
+	position: absolute;
+	padding-top: 70px;
+	padding-left: 546px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
 }
 
-#empty-field-message p 
+#confirm-error-speech-bubble
 {
-	color: #ffffff;
-	background-color: #ff3333;
-	height: 35px;
-	width: 680px;
-	padding-left: 24px;
-	padding-top: 5px;
-	border-radius: 5px;
+	height: 49px;
+	width: 421px;
+	margin-top: 41px;
+	margin-left: 15px;
+	float: left;
 }
 
-#confirm-message #exclamation-mark 
+#confirm-error-speech-text 
 {
-	padding-right: 116px;
-}
-
-#confirm-message
-{
-	padding-left: 373.25px;
-	font-family: sans-serif;
-	font-size: 18px;
-	padding-bottom: 45px;
-	margin-top: -45px;
-}
-
-#confirm-message p 
-{
-	color: #ffffff;
-	background-color: #ff3333;
-	height: 35px;
-	width: 680px;
-	padding-left: 20px;
-	padding-top: 5px;
-	border-radius: 5px;
+	position: absolute;
+	padding-top: 69px;
+	padding-left: 544px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
 }

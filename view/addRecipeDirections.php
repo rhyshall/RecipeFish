@@ -207,17 +207,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			</div>
 		
 			<div id="title">
-				<p>Add Your Recipe</p>
+				<p>Add Recipe</p>
 			</div>
 		
 			<div id="sub-title">
 				<p>Directions</p>
 			</div>
-			
-			<?php 
-				//add recipe direction count error message (if required)
-				include($root . "/view/directionCountError.php");
-			?>
 			
 			<div id="bar">
 				<div class="progress">
@@ -230,6 +225,11 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			<div id="add-direction">
 				<p id="add-instructions-1">Enter each direction required for your recipe into the text</p>
 				<p id="add-instructions-2">area below. Check your results with the given directions list.</p>
+				
+				<?php 
+					//add recipe direction count error message (if required)
+					include($root . "/view/directionCountError.php");
+				?>
 			
 				<?php 
 					//if direction input previously filled

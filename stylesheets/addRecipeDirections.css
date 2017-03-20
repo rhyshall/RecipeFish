@@ -23,7 +23,7 @@ body
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 218px;
+	width: 284px;
 }
 
 #container
@@ -33,8 +33,8 @@ body
 
 #title p 
 {
-	padding-top: 20px;
-	font-size: 21px;
+	padding-top: 18px;
+	font-size: 16px;
 	font-family: sans-serif;
 	color: #e62e00;
 	text-align: center;
@@ -42,18 +42,18 @@ body
 
 #sub-title p 
 {
-	padding-top: 20px;
-	margin-bottom: 40px;
-	font-size: 19px;
+	padding-top: 15px;
+	margin-bottom: 36px;
+	font-size: 14.5px;
 	font-family: sans-serif;
 	text-align: center;
 }
 
 #bar
 {
-	margin-left: 210.5px;
-	margin-bottom: 40px;
-	width: 900px;
+	margin-left: 374px;
+	margin-bottom: 36px;
+	width: 450px;
 }
 
 #blue-bar 
@@ -63,10 +63,9 @@ body
 
 #add-direction
 {
-	height: 477px;
-	width: 485px;
-	margin-top: 70px;
-	margin-left: 50px;
+	width: 436.5px;
+	margin-top: 90px;
+	margin-left: 45px;
 	float: left;
 	background-color: #f2f9f9;
 	border-style: ridge;
@@ -80,59 +79,61 @@ body
 #add-instructions-1 
 {
 	font-family: sans-serif;
-	padding-top: 38px;
-	text-align: center;
-	font-size: 16.5px;
+	padding-top: 34px;
+	padding-left: 32px;
+	font-size: 13.5px;
 	color: grey;
 }
 
 #add-instructions-2
 {
 	font-family: sans-serif;
-	text-align: center;
-	font-size: 16.5px;
+	padding-left: 32px;
+	font-size: 13.5px;
 	color: grey;
+	margin-top: -5px;
 }
 
 #direction p 
 {
-	padding-top: 40px;
-	padding-left: 27px;
+	padding-top: 36px;
+	padding-left: 24px;
 	color: #808080;
-	font-size: 18px;
+	font-size: 13px;
 }
 
 #direction-field 
 {
-	height: 172px;
-	width: 433px;
-	margin-left: 22px;
-	font-size: 17px;
+	height: 155px;
+	width: 390px;
+	margin-left: 20px;
+	font-size: 13px;
 	color: #808080;
 	background-color: #f9f9f9;
 }
 
 #add
 {
-	margin-top: 50px;
+	margin-top: 46px;
+	padding-bottom: 32px;
 	text-align: center;
 }
 
 #add-button
 {
-	height: 40px;
-	width: 120px;
-	font-size: 17px;
+	height: 32px;
+	width: 100px;
+	font-size: 14.5px;
 	box-shadow: 0.5px 0.5px 1.5px #00994d;
 }
 
 #view-directions
 {
-	height: 619px;
-	width: 641px;
-	margin-left: 92px;
-	margin-top: 20px;
-	margin-right: 50px;
+	height: 557px;
+	width: 577px;
+	margin-left: 83px;
+	margin-top: 18px;
+	margin-right: 45px;
 	float: left;
 	overflow: scroll;
 	background-color: #fffff9;
@@ -140,31 +141,33 @@ body
 
 #directions-table
 {
-	height: 538px;
-	width: 624px;
+	height: 484px;
+	width: 561.5px;
 } 
 
 #directions-table caption 
 {
-	font-size: 18px;
-	margin-left: 286px;
+	font-size: 13.5px;
+	margin-left: 257.5px;
 }
 
 #step-title 
 {
-	padding-left: 6px;
+	padding-left: 5.5px;
+	font-size: 13px;
 }
 
 #direction-title
 {
-	width: 420px;
-	padding-left: 20px;
+	width: 516px;
+	padding-left: 18px;
+	font-size: 13px;
 }
 
 td 
 {
-	height: 39px;
-	font-size: 15px;
+	height: 35px;
+	font-size: 13px;
 }
 
 .direction-input
@@ -176,32 +179,32 @@ td
 
 .direction-added 
 {
-	width: 420px;
-	padding-left: 16px;
+	width: 378px;
+	padding-left: 14.5px;
 }
 
 .glyphicon 
 {
-	padding-right: 14px;
+	padding-right: 12.5px;
 }
 
 .blank 
 {
-	height: 39px;
+	height: 35px;
 }
 
 #hidden-step
 {
-	width: 74px;
+	width: 66.5px;
 	color: transparent;
-	padding-left: 22px;
+	padding-left: 20px;
 }
 
 #hidden-direction
 {
-	width: 550px;
+	width: 495px;
 	color: transparent;
-	padding-left: 22px;
+	padding-left: 20px;
 }
 
 #clear-float1
@@ -211,15 +214,15 @@ td
 
 #next
 {
-	padding-top: 104px;
+	padding-top: 100px;
 	text-align: center;
 }
 
 #next-button
 {
-	height: 39px;
-	width: 136px;
-	font-size: 19px;
+	height: 30px;
+	width: 110px;
+	font-size: 14.5px;
 	box-shadow: 1px 1px 2.5px #e65c00;
 }
 
@@ -231,5 +234,5 @@ td
 #margin-canvas2
 {
 	background-color: #99ccff;
-	width: 218px;
+	width: 284px;
 }

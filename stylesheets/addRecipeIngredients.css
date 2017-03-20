@@ -23,7 +23,7 @@ body
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 218px;
+	width: 284px;
 }
 
 #container
@@ -33,8 +33,8 @@ body
 
 #title p 
 {
-	padding-top: 20px;
-	font-size: 21px;
+	padding-top: 18px;
+	font-size: 16px;
 	font-family: sans-serif;
 	color: #e62e00;
 	text-align: center;
@@ -42,18 +42,18 @@ body
 
 #sub-title p 
 {
-	padding-top: 20px;
-	margin-bottom: 40px;
-	font-size: 19px;
+	padding-top: 15px;
+	margin-bottom: 36px;
+	font-size: 14.5px;
 	font-family: sans-serif;
 	text-align: center;
 }
 
 #bar
 {
-	margin-left: 210.5px;
-	margin-bottom: 40px;
-	width: 900px;
+	margin-left: 374px;
+	margin-bottom: 36px;
+	width: 450px;
 }
 
 #blue-bar 
@@ -63,76 +63,75 @@ body
 
 #add-ingredient 
 {
-	height: 477px;
-	width: 485px;
-	margin-top:70px;
-	margin-left: 50px;
+	width: 436.5px;
+	margin-top: 90px;
+	margin-left: 45px;
 	float: left;
 	background-color: #f2f9f9;
 	border-style: ridge;
-	border-left-width: 3px;
-	border-top-width: 3px;
-	border-right-width: 3px;
-	border-bottom-width: 3px;
+	border-width: 3px;
 	border-color: #f2f2f2;
+	padding-right: 3px;
 }
 
 #add-instructions-1 
 {
 	font-family: sans-serif;
-	padding-top: 38px;
-	text-align: center;
-	font-size: 16.5px;
+	padding-top: 34px;
+	padding-left: 33px;
+	font-size: 13.5px;
 	color: grey;
 }
 
 #add-instructions-2
 {
 	font-family: sans-serif;
-	text-align: center;
-	font-size: 16.5px;
+	padding-left: 33.5px;
+	font-size: 13.5px;
 	color: grey;
+	margin-top: -5px;
 }
 
 #ingredient p 
 {
-	padding-top: 164px;
-	padding-left: 27px;
+	padding-top: 110px;
+	padding-left: 40px;
 	color: #808080;
-	font-size: 18px;
+	font-size: 13.5px;
 }
 
 #ingredient-field 
 {
-	height: 40.5px;
-	width: 433px;
-	margin-left: 22px;
-	font-size: 17px;
+	height: 34px;
+	width: 360px;
+	margin-left: 36px;
+	font-size: 13.5px;
 	color: #808080;
 	background-color: #f9f9f9;
 }
 
 #add
 {
-	margin-top: 60px;
+	margin-top: 46px;
+	padding-bottom: 32px;
 	text-align: center;
 }
 
 #add-button
 {
-	height: 40px;
-	width: 124px;
-	font-size: 17px;
+	height: 32px;
+	width: 90px;
+	font-size: 14.5px;
 	box-shadow: 0.5px 0.5px 1.5px #00994d;
 }
 
 #view-ingredients 
 {
-	height: 619px;
-	width: 641px;
-	margin-left: 96px;
-	margin-top: 20px;
-	margin-right: 50px;
+	height: 557px;
+	width: 577px;
+	margin-left: 86.5px;
+	margin-top: 18px;
+	margin-right: 45px;
 	float: left;
 	overflow: scroll;
 	background-color: #fffff9;
@@ -140,26 +139,27 @@ body
 
 #ingredients-table
 {
-	height: 538px;
-	width: 624px;
+	height: 484px;
+	width: 561.5px;
 } 
 
 #ingredients-table caption 
 {
-	font-size: 18px;
+	font-size: 13.5px;
 	margin-left: 286px;
 }
 
 #table-title
 {
-	width: 560px;
-	padding-left: 20px;
+	width: 516px;
+	padding-left: 18px;
+	font-size: 13px;
 }
 
 td 
 {
-	height: 39px;
-	font-size: 15px;
+	height: 35px;
+	font-size: 13px;
 }
 
 .ingredient-input
@@ -171,20 +171,20 @@ td
 
 .ingredient-added 
 {
-	width: 440px;
-	padding-left: 22px;
+	width: 396px;
+	padding-left: 20px;
 }
 
 .blank 
 {
-	height: 39px;
+	height: 35px;
 }
 
 #hidden-ingredient
 {
-	width: 550px;
+	width: 495px;
 	color: transparent;
-	padding-left: 22px;
+	padding-left: 20px;
 }
 
 #clear-float1
@@ -194,15 +194,15 @@ td
 
 #next
 {
-	padding-top: 114px;
+	padding-top: 100px;
 	text-align: center;
 }
 
 #next-button
 {
-	height: 42px;
-	width: 170px;
-	font-size: 19px;
+	height: 30px;
+	width: 110px;
+	font-size: 14.5px;
 	box-shadow: 1px 1px 2.5px #e65c00;
 }
 
@@ -214,5 +214,5 @@ td
 #margin-canvas2
 {
 	background-color: #99ccff;
-	width: 218px;
+	width: 284px;
 }

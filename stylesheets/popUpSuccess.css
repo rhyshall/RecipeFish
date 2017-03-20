@@ -22,27 +22,27 @@ body
 
 #message 
 {
-	padding-top: 60px;
+	padding-top: 62px;
 	background-color: #f5f5ef;
 }
 
 #message p 
 {
-	font-size: 18px;
+	font-size: 14px;
 	text-align: center;
 }
 
 #close 
 {
-	padding-top: 100px;
+	padding-top: 92px;
 	text-align: center;
 	background-color: #f5f5ef;
 }
 
 #close-button
 {
-	height: 40px;
-	width: 150px;
-	font-size: 19px;
+	height: 31px;
+	width: 100px;
+	font-size: 14.5px;
 	box-shadow: 1px 1px 2.5px #29a329;
 }

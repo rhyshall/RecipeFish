@@ -21,7 +21,7 @@
 			{
 		?>		<!--empty ethnicity field error message (if required)-->	
 				<div id="ethnicity-message">
-					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>One ethnicity feature must be selected</p>
+					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>You must select at least one ethnicity feature</p>
 				</div>
 				
 			<?php 
@@ -32,7 +32,7 @@
 			{
 			?>	<!--empty meal type field error message (if required)-->	
 				<div id="meal-type-message">
-					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>One meal type feature must be selected</p>
+					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>You must select at least one meal type feature</p>
 				</div>
 				
 			<?php 
@@ -43,7 +43,7 @@
 			{
 			?>	<!--empty holiday field error message (if required)-->	
 				<div id="holiday-message">
-					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>One holiday feature must be selected</p>
+					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>You must select at least one holiday feature</p>
 				</div>
 				
 			<?php 

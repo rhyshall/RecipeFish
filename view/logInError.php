@@ -19,9 +19,12 @@
 		<?php 
 			if (isset($_SESSION["emptyField"]) == true)
 			{
-		?>		<!--empty field(s) error message (if required)-->	
-				<div id="empty-field-message">
-					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Email and password must both be entered</p>
+		?>		
+				<!--display empty field(s) error message-->
+				<div id="empty-error-panel">
+					<img id="empty-error-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+							
+					<p id="empty-error-speech-text">Email and password must both be entered</p>
 				</div>
 				
 			<?php 
@@ -32,9 +35,12 @@
 			{
 				if (isset($_SESSION["nonExistingEmail"]) == true)
 				{
-			?>		<!--invalid log-in error message (if required)-->
-					<div id="exist-message">
-						<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>The given email is not registered</p>
+			?>		
+					<!--display existent email error message-->
+					<div id="email-error-panel">
+						<img id="email-error-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+								
+						<p id="email-error-speech-text">The given email is not registered</p>
 					</div>
 					
 				<?php 
@@ -45,16 +51,19 @@
 				{
 					if (isset($_SESSION["combinationInvalid"]) == true)
 					{
-				?>		<!--invalid log-in error message (if required)-->
-						<div id="invalid-message">
-							<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Invalid password....try again</p>
+				?>		
+						<!--display username/password combination error message-->
+						<div id="combination-error-panel">
+							<img id="combination-error-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+							
+							<p id="combination-error-speech-text">Invalid password....try again</p>
 						</div>
 					
-					<?php 
+		<?php 
 						unset($_SESSION["combinationInvalid"]);
 					}
 				}
 			}
-				?>
+		?>
 	</body>
 </html>

@@ -22,11 +22,11 @@
 			{
 		?>		<!--invalid username character(s) message-->
 				<div id="invalid-username-message-1">
-					<p id="invalid-username-message-p1"><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Username may only have 1-20 characters and consist of</p>
+					<p id="invalid-username-message-p1"><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Username may only have 1-20 characters and consist of symbols</p>
 				</div>
 				
 				<div id="invalid-username-message-2">
-					<p id="invalid-username-message-p2">symbols [A-Z], [a-z], [0-9], "-" and "_"</p>
+					<p id="invalid-username-message-p2">[A-Z], [a-z], [0-9], "-" and "_"</p>
 				</div>
 				
 			<?php 

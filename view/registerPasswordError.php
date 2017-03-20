@@ -20,9 +20,12 @@
 		<?php
 			if (isset($_SESSION["passwordLengthInvalid"]) == true)
 			{
-		?>		<!--invalid password length message-->
-				<div id="password-length-message">
-					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Password must be 6-25 characters</p>
+		?>		
+				<!--display invalid password length message-->
+				<div id="password-length-error-panel">
+					<img id="password-length-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+							
+					<p id="password-length-speech-text">Password may only consist of 6-25 characters</p>
 				</div>
 			
 			<?php 
@@ -33,9 +36,12 @@
 			{
 				if (isset($_SESSION["passwordSymbolsInvalid"]) == true)
 				{
-			?>		<!--invalid password symbols message-->
-					<div id="password-symbols-message">
-						<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Password may not contain any spacing</p>
+			?>		
+					<!--display invalid password symbols message-->
+					<div id="password-symbols-error-panel">
+						<img id="password-symbols-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+								
+						<p id="password-symbols-speech-text">Password may not contain any spaces</p>
 					</div>
 					
 				<?php 

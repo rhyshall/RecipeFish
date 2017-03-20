@@ -9,25 +9,25 @@
 
 #ingredient-count-message #exclamation-mark 
 {
-	padding-right: 236px;
+	padding-right: 14px;
 }
 
 #ingredient-count-message
 {
-	padding-left: 273.25px;
-	font-family: sans-serif;
-	font-size: 18px;
-	padding-bottom: 45px;
-	margin-top: 60px;
+	margin-top: 100px;
+	margin-left: 36px;
+	margin-right: 36px;
+	margin-bottom: -98px;
 }
 
 #ingredient-count-message p 
 {
+	font-family: sans-serif;
+	font-size: 13.5px;
 	color: #ffffff;
 	background-color: #ff3333;
-	height: 35px;
-	width: 880px;
-	padding-left: 24px;
-	padding-top: 5px;
-	border-radius: 5px;
+	padding-top: 3px;
+	padding-left: 20px;
+	padding-bottom: 2px;
+	border-radius: 2px;
 }

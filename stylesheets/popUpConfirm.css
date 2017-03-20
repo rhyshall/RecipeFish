@@ -28,41 +28,39 @@ body
 
 #message p 
 {
-	font-size: 18px;
+	font-size: 14px;
 	text-align: center;
 }
 
 #yes
 {
-	padding-top: 90px;
-	text-align: center;
+	padding-top: 82px;
 	background-color: #f5f5ef;
-	padding-left: 100px;
+	padding-left: 88px;
 	float: left;
 }
 
 #no
 {
-	padding-top: 90px;
-	text-align: center;
+	padding-top: 82px;
 	background-color: #f5f5ef;
-	padding-left: 100px;
+	padding-left: 80px;
 	float: left;
 }
 
 #yes-button
 {
-	height: 36px;
-	width: 90px;
-	font-size: 19px;
+	height: 30px;
+	width: 84px;
+	font-size: 14.5px;
 	box-shadow: 1px 1px 1.5px #29a329;
 }
 
 #no-button
 {
-	height: 36px;
-	width: 90px;
-	font-size: 19px;
+	height: 30px;
+	width: 84px;
+	font-size: 14.5px;
 	box-shadow: 1px 1px 1.5px #cc0000;
 }
 

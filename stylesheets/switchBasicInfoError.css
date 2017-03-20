@@ -14,23 +14,19 @@
 
 #invalid-username-message-1
 {
-	margin-top: 50px;
-	margin-left: 176px;
-	margin-right: 176px;
-	text-align: center;
+	margin-top: 48px;
+	margin-left: 135px;
+	margin-right: 135px;
 	font-family: sans-serif;
-	font-size: 16.5px;
 }
 
 #invalid-username-message-2
 {
-	text-align: center;
 	margin-top: -10px;
-	margin-bottom: -80px;
-	margin-left: 176px;
-	margin-right: 176px;
+	margin-bottom: -81px;
+	margin-left: 135px;
+	margin-right: 135px;
 	font-family: sans-serif;
-	font-size: 16.5px;
 	padding-bottom: 38px;
 }
 
@@ -39,15 +35,19 @@
 	color: #ffffff;
 	background-color: #ff3333;
 	padding-top: 5px;
+	padding-left: 20px;
 	border-radius: 5px 5px 0px 0px;
+	font-size: 14px;
 }
 
 #invalid-username-message-p2
 {
 	color: #ffffff;
 	background-color: #ff3333;
+	padding-left: 47px;
 	padding-bottom: 5px;
 	border-radius: 0px 0px 5px 5px;
+	font-size: 14px;
 }
 
 #existing-username-message #exclamation-mark 
@@ -57,13 +57,11 @@
 
 #existing-username-message 
 {
-	margin-top: 50px;
-	margin-left: 176px;
-	margin-right: 176px;
-	margin-bottom: -36px;
-	text-align: center;
+	margin-top: 52px;
+	margin-left: 162px;
+	margin-right: 162px;
+	margin-bottom: -44px;
 	font-family: sans-serif;
-	font-size: 16.5px;
 }
 
 #existing-username-message p 
@@ -71,8 +69,10 @@
 	color: #ffffff;
 	background-color: #3366ff;
 	padding-top: 5px;
+	padding-left: 20px;
 	padding-bottom: 5px;
 	border-radius: 5px 5px 5px 5px;
+	font-size: 14px;
 }
 
 #existing-email-message #exclamation-mark 
@@ -82,13 +82,11 @@
 
 #existing-email-message 
 {
-	margin-top: 50px;
-	margin-left: 176px;
-	margin-right: 176px;
-	margin-bottom: -36px;
-	text-align: center;
+	margin-top: 52px;
+	margin-left: 182px;
+	margin-right: 182px;
+	margin-bottom: -44px;
 	font-family: sans-serif;
-	font-size: 16.5px;
 }
 
 #existing-email-message p
@@ -96,8 +94,10 @@
 	color: #ffffff;
 	background-color: #3366ff;
 	padding-top: 5px;
+	padding-left: 20px;
 	padding-bottom: 5px;
 	border-radius: 5px 5px 5px 5px;
+	font-size: 14px;
 }
 
 #false-edit-message #exclamation-mark 
@@ -107,13 +107,11 @@
 
 #false-edit-message 
 {
-	margin-top: 50px;
-	margin-left: 176px;
-	margin-right: 176px;
-	margin-bottom: -36px;
-	text-align: center;
+	margin-top: 52px;
+	margin-left: 182px;
+	margin-right: 182px;
+	margin-bottom: -44px;
 	font-family: sans-serif;
-	font-size: 16.5px;
 }
 
 #false-edit-message p
@@ -121,6 +119,8 @@
 	color: #ffffff;
 	background-color: #3366ff;
 	padding-top: 5px;
+	padding-left: 20px;
 	padding-bottom: 5px;
 	border-radius: 5px 5px 5px 5px;
+	font-size: 14px;
 }

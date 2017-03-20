@@ -9,25 +9,25 @@
 
 #notes-length-message #exclamation-mark 
 {
-	padding-right: 226px;
+	padding-right: 18px;
 }
 
 #notes-length-message
 {
-	padding-left: 273.25px;
-	font-family: sans-serif;
-	font-size: 18px;
-	padding-bottom: 45px;
 	margin-top: 60px;
+	margin-left: 94px;
+	margin-right: 94px;
+	margin-bottom: -31px;
+	font-family: sans-serif;
+	font-size: 14px;
 }
 
 #notes-length-message p 
 {
 	color: #ffffff;
 	background-color: #ff3333;
-	height: 35px;
-	width: 880px;
-	padding-left: 24px;
-	padding-top: 5px;
-	border-radius: 5px;
+	padding-left: 20px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	border-radius: 3px;
 }

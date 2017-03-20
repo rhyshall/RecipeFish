@@ -646,7 +646,7 @@ function generateByUnderClock($heading)
 	$recipe = new Recipe;
 	$recipeSelector = new Recipe;
 	
-	$candidates = $recipeSelector->selectByTimeLimit(25);
+	$candidates = $recipeSelector->selectByTimeLimit(20);
 	
 	if (count($candidates) != 0)
 	{

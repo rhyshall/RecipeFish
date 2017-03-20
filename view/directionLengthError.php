@@ -22,7 +22,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	<body>
 		<div id="container">
 			<div id="message">
-				<p>Each step may not exceed 500 characters</p>
+				<p>Directions may not exceed 500 characters</p>
 			</div>
 		
 			<div id="close">

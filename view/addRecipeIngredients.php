@@ -178,17 +178,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			</div>
 		
 			<div id="title">
-				<p>Add Your Recipe</p>
+				<p>Add Recipe</p>
 			</div>
 		
 			<div id="sub-title">
 				<p>Ingredients</p>
 			</div>
-			
-			<?php 
-				//add recipe ingredient count error message (if required)
-				include($root . "/view/ingredientCountError.php");
-			?>
 			
 			<div id="bar">
 				<div class="progress">
@@ -201,6 +196,11 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			<div id="add-ingredient">
 				<p id="add-instructions-1">Enter each ingredient required for your recipe into the field</p>
 				<p id="add-instructions-2">below. Check your results with the given ingredients list.</p>
+				
+				<?php 
+					//add recipe ingredient count error message (if required)
+					include($root . "/view/ingredientCountError.php");
+				?>
 			
 				<?php 
 					//if ingredient name input previously filled

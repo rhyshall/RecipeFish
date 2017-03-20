@@ -21,7 +21,7 @@
 			{
 		?>		<!--ingredient count error message (if required)-->	
 				<div id="ingredient-count-message">
-					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Two or more ingredients must be entered</p>
+					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>At least 2 ingredients must be entered</p>
 				</div>
 				
 			<?php 

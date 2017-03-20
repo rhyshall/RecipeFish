@@ -79,17 +79,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			</div>
 		
 			<div id="title">
-				<p>Add Your Recipe</p>
+				<p>Add Recipe</p>
 			</div>
 		
 			<div id="sub-title">
 				<p>Features</p>
 			</div>
-			
-			<?php 
-				//add recipe features error messages (if required)
-				include($root . "view/recipeFeaturesError.php");
-			?>
 			
 			<div id="bar">
 				<div class="progress">
@@ -101,7 +96,14 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 		
 			<form id="categories-form" action="/RecipeFish/controller/recipeFeaturesController.php" method="post">
 				<div id="categories-box">
-					<p id="categories-instructions">Check the features from each category that relate to your recipe.</p>
+					<div id="categories-instructions">
+						<p>Check the features from each category that relate to your recipe</p>
+					</div>
+					
+					<?php 
+						//add recipe features error messages (if required)
+						include($root . "view/recipeFeaturesError.php");
+					?>
 					
 					<div id="ethnicity-categories">
 						<div id="ethnicity-step">

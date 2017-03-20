@@ -36,10 +36,45 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			<div id="chef-fish-panel">
 				<img id="chef-fish" src="/RecipeFish/images/standard/chef fish.png">
 			</div>
-		
-			<div id="speech-bubble-panel">
-				<img id="speech-bubble" src="/RecipeFish/images/standard/registration speech bubble.png">
-			</div>
+			
+			<!--display error message if required, otherwise display default register prompt-->
+			<?php 
+				//general register error message (if required)
+				if ((isset($_SESSION["emptyField"]) == true) || (isset($_SESSION["passwordConfirmInvalid"]) == true))
+				{
+					include($root . "view/registerGeneralError.php");	
+				}
+				
+				//username register error message (if required)
+				else if ((isset($_SESSION["registerUsernameInvalid"]) == true) || (isset($_SESSION["registerUsernameExists"]) == true))
+				{
+					include($root . "view/registerUsernameError.php");
+				}
+				
+				//email register error message (if required)
+				else if (isset($_SESSION["registerEmailExists"]) == true)
+				{
+					include($root . "view/registerEmailError.php");
+				}
+				
+				//password register error message (if required)
+				else if ((isset($_SESSION["passwordLengthInvalid"]) == true) || (isset($_SESSION["passwordSymbolsInvalid"]) == true))
+				{
+					include($root . "view/registerPasswordError.php");
+				}
+				
+				else 
+				{
+			?>
+					<!--display default register prompt-->
+					<div id="speech-bubble-panel">
+						<img id="speech-bubble" src="/RecipeFish/images/standard/speech bubble.png">
+						
+						<p id="speech-text">Register now. It's quick and easy!</p>
+					</div>
+			<?php
+				}
+			?>
 			
 			<div id="clear-float1">
 				<!--clear float from previous content-->
@@ -47,12 +82,6 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 		
 			<form id="register-form" action="/RecipeFish/controller/registerController.php" method="post">
 				<?php 
-					//sign-up error messages (if required)
-					include($root . "view/registerGeneralError.php");
-					include($root . "view/registerUsernameError.php");
-					include($root . "view/registerEmailError.php");
-					include($root . "view/registerPasswordError.php"); 
-
 					//if username input previously filled
 					if (isset($_SESSION["usernameField"]) == true)
 					{

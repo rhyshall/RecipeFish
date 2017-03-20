@@ -1,70 +1,65 @@
 /******************************************************************************************
 *******************************************************************************************
-** Name: registerGeneralError.css													   ****
-** Purpose: Provides style sheet for "registerGeneralError.php"					   	   ****
+** Name: logInError.css													   			   ****
+** Purpose: Provides style sheet for "logInError.php"					   	   		   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 04/26/2016														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
-#exclamation-mark 
+#empty-error-speech-bubble
 {
-	padding-right: 124px;
+	height: 53px;
+	width: 412px;
+	margin-top: 41px;
+	margin-left: 15px;
+	float: left;
 }
 
-#empty-field-message 
+#empty-error-speech-text 
 {
 	position: absolute;
-	padding-top: 50px;
-	padding-left: 373.25px;
-	font-family: sans-serif;
-	font-size: 18px;
+	padding-top: 69px;
+	padding-left: 546px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14.5px;
+	color: white;
 }
 
-#empty-field-message p 
+#email-error-speech-bubble
 {
-	color: #ffffff;
-	background-color: #ff3333;
-	height: 35px;
-	width: 680px;
-	padding-left: 24px;
-	padding-top: 5px;
+	height: 53px;
+	width: 354px;
+	margin-top: 41px;
+	margin-left: 15px;
+	float: left;
 }
 
-#exist-message
-{
-	position: absolute;
-	padding-top: 50px;
-	padding-left: 373.25px;
-	font-family: sans-serif;
-	font-size: 18px;
-}
-
-#exist-message p 
-{
-	color: #ffffff;
-	background-color: #ff3333;
-	height: 35px;
-	width: 680px;
-	padding-left: 24px;
-	padding-top: 5px;
-}
-
-#invalid-message
+#email-error-speech-text 
 {
 	position: absolute;
-	padding-top: 50px;
-	padding-left: 373.25px;
-	font-family: sans-serif;
-	font-size: 18px;
+	padding-top: 70px;
+	padding-left: 540px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14.5px;
+	color: white;
 }
 
-#invalid-message p 
+#combination-error-speech-bubble
 {
-	color: #ffffff;
-	background-color: #ff3333;
-	height: 35px;
-	width: 680px;
-	padding-left: 24px;
-	padding-top: 5px;
+	height: 48px;
+	width: 340px;
+	margin-top: 41px;
+	margin-left: 15px;
+	float: left;
+}
+
+#combination-error-speech-text 
+{
+	position: absolute;
+	padding-top: 68px;
+	padding-left: 545px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14.5px;
+	color: white;
 }

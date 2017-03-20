@@ -20,9 +20,12 @@
 		<?php 
 			if (isset($_SESSION["registerEmailExists"]) == true)
 			{
-		?>		<!--existing email message-->
-				<div id="existing-email-message">
-					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>A user has already registered with the given email</p>
+		?>		
+				<!--display existing email error message-->
+				<div id="email-exists-error-panel">
+					<img id="email-exists-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+							
+					<p id="email-exists-speech-text">A user has already registered with the given email</p>
 				</div>
 				
 			<?php 

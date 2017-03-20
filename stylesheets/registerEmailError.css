@@ -7,27 +7,21 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-#existing-email-message #exclamation-mark 
+#email-exists-speech-bubble
 {
-	padding-right: 100px;
+	height: 53px;
+	width: 436px;
+	margin-top: 38px;
+	margin-left: 15px;
+	float: left;
 }
 
-#existing-email-message 
+#email-exists-speech-text 
 {
-	padding-left: 373.25px;
-	font-family: sans-serif;
-	font-size: 18px;
-	padding-bottom: 45px;
-	margin-top: -45px;
-}
-
-#existing-email-message p
-{
-	color: #ffffff;
-	background-color: #3366ff;
-	height: 35px;
-	width: 680px;
-	padding-left: 22px;
-	padding-top: 5px;
-	border-radius: 5px;
+	position: absolute;
+	padding-top: 68px;
+	padding-left: 546px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
 }

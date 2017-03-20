@@ -24,7 +24,7 @@ body
 #margin-canvas1
 {
 	background-color: #99ccff;
-	width: 218px;
+	width: 284px;
 }
 
 #container
@@ -35,15 +35,15 @@ body
 #title
 {
 	background-color: #ffd699;
-	padding-bottom: 4px;
+	padding-bottom: 3.5px;
 	box-shadow: 1px 1px 1px #ffad33;
 }
 
 #title p 
 {
-	padding-top: 20px;
+	padding-top: 18px;
 	text-align: center;
-	font-size: 20px;
+	font-size: 15.5px;
 	font-family: sans-serif;
 	color: #000000;
 }
@@ -51,55 +51,55 @@ body
 #recipe-photo 
 {
 	padding-top: 1px;
-	padding-left: 150px;
+	padding-left: 135px;
 	float: left;
 }
 
 #recipe-photo img 
 {
-	height: 288px;
-	width: 363px;
+	height: 259px;
+	width: 327px;
 }
 
 #photo-stats
 {
 	background-color: #f2f2f2;
-	height: 60px;
-	width: 363px;
+	height: 54px;
+	width: 327px;
 }
 
 #header-info1
 {
 	margin-top: 1px;
-	height: 348px;
-	width: 329px;
+	height: 313px;
+	width: 296px;
 	background-color: #f2f2f2;
 	float: left;
 }
 
 .colon
 {
-	font-size: 17px;
+	font-size: 13.5px;
 	font-weight: bold;
 }
 
 #prep-time
 {
-	padding-top: 42px;
-	padding-left: 60px;
+	padding-top: 38px;
+	padding-left: 54px;
 }
 
 #clock
 {
-	font-size: 17px;
+	font-size: 13px;
 	padding-top: 2px;
 	float: left;
 }
 
 #prep-time p
 {
-	font-size: 17.5px;
-	padding-left: 6px;
+	font-size: 13.5px;
+	padding-left: 5.5px;
 	float: left;
 }
 
@@ -110,21 +110,21 @@ body
 
 #wait-time
 {
-	padding-top: 30px;
-	padding-left: 60px;
+	padding-top: 27px;
+	padding-left: 54px;
 }
 
 #clock3
 {
-	font-size: 17px;
+	font-size: 13px;
 	padding-top: 2px;
 	float: left;
 }
 
 #wait-time p
 {
-	font-size: 17.5px;
-	padding-left: 6px;
+	font-size: 13.5px;
+	padding-left: 5.5px;
 	float: left;
 }
 
@@ -135,21 +135,21 @@ body
 
 #author
 {
-	padding-top: 60px;
-	padding-left: 60px;
+	padding-top: 54px;
+	padding-left: 54px;
 }
 
 #author p
 {
-	font-size: 17.5px;
+	font-size: 13.5px;
 	float: left
 }
 
 #author a 
 {
-	font-size: 17.5px;
+	font-size: 13.5px;
 	float: left;
-	padding-left: 6.5px;
+	padding-left: 6px;
 }
 
 #clear-float3
@@ -159,41 +159,41 @@ body
 
 #date-uploaded
 {
-	padding-top: 30px;
-	padding-left: 60px;
+	padding-top: 27px;
+	padding-left: 54px;
 }
 
 #date-uploaded p
 {
-	font-size: 17.5px;
+	font-size: 13.5px;
 }
 
 #header-info2
 {
 	margin-top: 1px;
-	height: 348px;
-	width: 329px;
+	height: 313px;
+	width: 296px;
 	background-color: #f2f2f2;
 	float: left;
 }
 
 #cook-time
 {
-	padding-top: 42px;
-	padding-left: 20px;
+	padding-top: 38px;
+	padding-left: 18px;
 }
 
 #clock2
 {
-	font-size: 17px;
+	font-size: 13px;
 	padding-top: 2px;
 	float: left;
 }
 
 #cook-time p
 {
-	font-size: 17.5px;
-	padding-left: 6px;
+	font-size: 13.5px;
+	padding-left: 5.5px;
 	float: left;
 }
 
@@ -204,21 +204,21 @@ body
 
 #servings
 {
-	padding-top: 30px;
-	padding-left: 20px;
+	padding-top: 27px;
+	padding-left: 18px;
 }
 
 #cutlery
 {
-	font-size: 17px;
+	font-size: 13px;
 	padding-top: 2px;
 	float: left;
 }
 
 #servings p
 {
-	font-size: 17.5px;
-	padding-left: 8px;
+	font-size: 13.5px;
+	padding-left: 7px;
 	float: left;
 }
 
@@ -234,19 +234,19 @@ body
 
 #description-title
 {
-	margin-top: 90px;
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-top: 81px;
+	margin-left: 135px;
+	margin-right: 135px;
 	background-color: #ffd699;
 	box-shadow: 1px 1px 1px #ffad33;
 }
 
 #description-title p 
 {
-	padding-top: 10px;
-	padding-bottom: 4px;
+	padding-top: 9px;
+	padding-bottom: 3.5px;
 	text-align: center;
-	font-size: 19px;
+	font-size: 14.5px;
 	font-family: sans-serif;
 	color: #000000;
 }
@@ -254,36 +254,36 @@ body
 #description-text 
 {
 	background-color: #f6f6f6;
-	margin-top: -8px;
-	margin-left: 150px;
-	margin-right: 150px;
-	height: 276px;
+	margin-top: -7px;
+	margin-left: 135px;
+	margin-right: 135px;
+	height: 248.5px;
 }
 
 #description-text p 
 {
-	padding-top: 30px;
-	padding-left: 52px;
-	padding-right: 44px;
-	font-size: 16px;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 13px;
 	color: #000000;
 }
 
 #ingredients-title
 {
-	margin-top: 90px;
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-top: 81px;
+	margin-left: 135px;
+	margin-right: 135px;
 	background-color: #ffd699;
 	box-shadow: 1px 1px 1px #ffad33;
 }
 
 #ingredients-title p 
 {
-	padding-top: 10px;
-	padding-bottom: 4px;
+	padding-top: 9px;
+	padding-bottom: 3.5px;
 	text-align: center;
-	font-size: 19px;
+	font-size: 14.5px;
 	font-family: sans-serif;
 	color: #000000;
 }
@@ -291,40 +291,40 @@ body
 .glyphicon-plus
 {
 	float: left;
-	padding-top: 32px;
-	padding-left: 38px;
-	padding-right: 10px;
-	font-size: 15px;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 8px;
+	font-size: 13px;
 }
 
 .ingredient 
 {
-	margin-bottom: -8px;
+	margin-bottom: -7px;
 	float: left;
 }
 
 #ingredients-text 
 {
 	background-color: #f6f6f6;
-	padding-bottom: 30px;
-	margin-top: -8px;
-	margin-left: 150px;
-	margin-right: 150px;
-	width: 1023px;
+	padding-bottom: 27px;
+	margin-top: -7px;
+	margin-left: 135px;
+	margin-right: 135px;
+	width: 921px;
 }
 
 #ingredients-text1
 {
 	background-color: #f6f6f6;
-	width: 488px;
+	width: 439px;
 	float: left;
 }
 
 #ingredients-text1 p 
 {
-	padding-top: 30px;
-	padding-right: 44px;
-	font-size: 15.5px;
+	padding-top: 25px;
+	padding-right: 39.5px;
+	font-size: 13px;
 	color: #000000;
 }
 
@@ -336,15 +336,15 @@ body
 #ingredients-text2
 {
 	background-color: #f6f6f6;
-	width: 488px;
+	width: 439px;
 	float: left;
 }
 
 #ingredients-text2 p 
 {
-	padding-top: 30px;
-	padding-right: 44px;
-	font-size: 15.5px;
+	padding-top: 25px;
+	padding-right: 39.5px;
+	font-size: 13px;
 	color: #000000;
 }
 
@@ -360,31 +360,32 @@ body
 
 .step 
 {
-	padding-left: 42px;
+	padding-left: 25px;
 	font-weight: bold;
+	font-size: 13px;
 }
 
 .direction 
 {
-	padding-right: 42px;
-	padding-left: 10px;
+	padding-right: 38px;
+	padding-left: 9px;
 }
 
 #directions-title
 {
-	margin-top: 90px;
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-top: 81px;
+	margin-left: 135px;
+	margin-right: 135px;
 	background-color: #ffd699;
 	box-shadow: 1px 1px 1px #ffad33;
 }
 
 #directions-title p 
 {
-	padding-top: 10px;
-	padding-bottom: 4px;
+	padding-top: 9px;
+	padding-bottom: 3.5px;
 	text-align: center;
-	font-size: 19px;
+	font-size: 14.5px;
 	font-family: sans-serif;
 	color: #000000;
 }
@@ -397,23 +398,23 @@ body
 .direction-area 
 {
 	float: left;
-	width: 920px;
+	width: 828px;
 }
 
 #directions-text
 {
 	background-color: #f6f6f6;
-	padding-bottom: 30px;
-	margin-top: -8px;
-	margin-left: 150px;
-	margin-right: 150px;
-	width: 1023px;
+	padding-bottom: 25px;
+	margin-top: -7px;
+	margin-left: 135px;
+	margin-right: 135px;
+	width: 921px;
 }
 
 #directions-text p 
 {
-	padding-top: 30px;
-	font-size: 16px;
+	padding-top: 25px;
+	font-size: 13px;
 	color: #000000;
 }
 
@@ -421,18 +422,18 @@ body
 #notes-title
 {
 	background-color: #ffd699;
-	margin-top: 90px;
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-top: 81px;
+	margin-left: 135px;
+	margin-right: 135px;
 	box-shadow: 1px 1px 1px #ffad33;
 }
 
 #notes-title p 
 {
-	padding-top: 10px;
-	padding-bottom: 4px;
+	padding-top: 9px;
+	padding-bottom: 3.5px;
 	text-align: center;
-	font-size: 19px;
+	font-size: 14.5px;
 	font-family: sans-serif;
 	color: #000000;
 }
@@ -440,18 +441,18 @@ body
 #notes-text 
 {
 	background-color: #f6f6f6;
-	margin-top: -8px;
-	margin-left: 150px;
-	margin-right: 150px;
-	height: 276px;
+	margin-top: -7px;
+	margin-left: 135px;
+	margin-right: 135px;
+	height: 248.5px;
 }
 
 #notes-text p 
 {
-	padding-top: 30px;
-	padding-left: 52px;
-	padding-right: 44px;
-	font-size: 16px;
+	padding-top: 27px;
+	padding-left: 47px;
+	padding-right: 39.5px;
+	font-size: 13px;
 	color: #000000;
 }
 
@@ -468,5 +469,5 @@ body
 #margin-canvas2
 {
 	background-color: #99ccff;
-	width: 218px;
+	width: 284px;
 }

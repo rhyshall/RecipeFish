@@ -19,9 +19,12 @@
 		<?php 
 			if (isset($_SESSION["emptyField"]) == true)
 			{
-		?>		<!--empty field(s) error message (if required)-->	
-				<div id="empty-field-message">
-					<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>One or more fields were left empty</p>
+		?>		
+				<!--display empty field(s) error message-->
+				<div id="empty-error-panel">
+					<img id="empty-error-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+							
+					<p id="empty-error-speech-text">One or more fields were left empty</p>
 				</div>
 				
 			<?php 
@@ -32,9 +35,12 @@
 			{
 				if (isset($_SESSION["passwordConfirmInvalid"]) == true)
 				{
-			?>		<!--password confirmation error message (if required)-->
-					<div id="confirm-message">
-						<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Confirmed password does not match password</p>
+			?>		
+					<!--password confirmation error message (if required)-->
+					<div id="confirm-error-panel">
+						<img id="confirm-error-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+								
+						<p id="confirm-error-speech-text">Confirmed password does not match password</p>
 					</div>
 					
 				<?php 

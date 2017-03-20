@@ -26,7 +26,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			</div>
 		
 			<div id="yes">
-				<button id="yes-button" class="btn btn-success" type="button" onclick="parent.window.opener.location='<?php echo "/RecipeMingle/controller/deleteRecipeController.php?id=" . $_GET["id"] ?>'; window.close();">Yes</button>
+				<button id="yes-button" class="btn btn-success" type="button" onclick="parent.window.opener.location='<?php echo "/RecipeFish/controller/deleteRecipeController.php?id=" . $_GET["id"] ?>'; window.close();">Yes</button>
 			</div>
 			
 			<div id="no">

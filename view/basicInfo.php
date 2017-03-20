@@ -50,7 +50,7 @@ $gender = $user->getGender();
 	
 		<div id="info-box">
 			<div id="instructions-text">
-				<p>View or modify registered profile information below.</p>
+				<p>View or modify registered profile information below</p>
 			</div>
 			
 		<?php 

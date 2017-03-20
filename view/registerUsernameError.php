@@ -20,27 +20,30 @@
 		<?php 
 			if (isset($_SESSION["registerUsernameInvalid"]) == true)
 			{
-		?>		<!--invalid username character(s) message-->
-				<div id="invalid-message-1">
-					<p id="invalid-message-p1"><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>Username may only have 1-20 characters and consist of</p>
+		?>		
+				<!--display invalid username error message-->
+				<div id="username-invalid-error-panel">
+					<img id="username-invalid-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+							
+					<p id="username-invalid-speech-text1">Username may only have 1-20 characters and consist</p>
+					<p id="username-invalid-speech-text2">of symbols [A-Z], [a-z], [0-9], "-" and "_"</p>
 				</div>
 				
-				<div id="invalid-message-2">
-					<p id="invalid-message-p2">symbols [A-Z], [a-z], [0-9], "-" and "_"</p>
-				</div>
+		<?php 
+				unset($_SESSION["registerUsernameInvalid"]);
+			}
 				
-			<?php 
-					unset($_SESSION["registerUsernameInvalid"]);
-				}
-				
-				else 
+			else 
+			{
+				if (isset($_SESSION["registerUsernameExists"]) == true)
 				{
-					if (isset($_SESSION["registerUsernameExists"]) == true)
-					{
-				?>		<!--existing username message-->
-						<div id="existing-username-message">
-							<p><span id="exclamation-mark" class="glyphicon glyphicon-exclamation-sign"></span>A user has already registered with the given username</p>
-						</div>
+				?>		
+					<!--display existing username error message-->
+					<div id="username-exists-error-panel">
+						<img id="username-exists-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
+								
+						<p id="username-exists-speech-text">The given username has already been taken</p>
+					</div>
 				<?php 
 						unset($_SESSION["registerUsernameExists"]);
 					}

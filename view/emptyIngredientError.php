@@ -22,7 +22,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	<body>
 		<div id="container">
 			<div id="message">
-				<p>Cannot enter empty ingredient value</p>
+				<p>Cannot enter empty ingredient input</p>
 			</div>
 		
 			<div id="close">

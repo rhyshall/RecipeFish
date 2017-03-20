@@ -34,17 +34,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			</div>
 		
 			<div id="title">
-				<p>Add Your Recipe</p>
+				<p>Add Recipe</p>
 			</div>
 		
 			<div id="sub-title">
 				<p>Notes</p>
 			</div>
-			
-			<?php 
-				//notes length error (if required)
-				include($root . "view/addNotesError.php");
-			?>
 			
 			<div id="bar">
 				<div class="progress">
@@ -56,7 +51,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 		
 			<form id="notes-form" action="/RecipeFish/controller/addRecipeController.php" method="post">
 				<div id="notes-box">
-					<p id="notes-instructions-1">Enter any additional comments about your recipe. (maximum 500 characters)</p>
+					<p id="notes-instructions-1">Enter any additional comments about your recipe (maximum 500 characters)</p>
+					
+					<?php 
+						//notes length error (if required)
+						include($root . "view/addNotesError.php");
+					?>
 				
 					<div id="notes">
 						<p id="notes-title">Notes (Optional)</p>
