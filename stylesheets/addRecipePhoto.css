@@ -1,16 +1,16 @@
 /******************************************************************************************
 *******************************************************************************************
-** Name: addRecipeNotes.css													   		   ****
-** Purpose: Provides style sheet for "addRecipeNotes.php"					   	       ****
+** Name: addRecipePhoto.css															   ****
+** Purpose: Provides style sheet for "addRecipePhoto.php"					   		   ****
 ** Author: Rhys Hall																   ****
-** Date Created: 06/04/2016														   	   ****
+** Date Created: 03/20/2017														   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
 body
 {
-	margin: 0px;
-	padding: 0px;
+	margin: 0%;
+	padding: 0%;
 }
 
 #margin-canvas1, #container, #margin-canvas2 
@@ -52,20 +52,21 @@ body
 #bar
 {
 	margin-left: 374px;
-	margin-bottom: 60px;
+	margin-bottom: 36px;
 	width: 450px;
 }
 
 #blue-bar 
 {
-	width: 86%;
+	width: 29%;
 }
 
-#notes-box
+#panel
 {
-	width: 632px;
-	margin-left: 279.5px;
-	background-color: #f2f9f9;
+	margin-top: 45px;
+	margin-left: 310px;
+	margin-right: 310px;
+	background-color: #f3fcf9;
 	border-style: ridge;
 	border-left-width: 3px;
 	border-top-width: 3px;
@@ -74,50 +75,77 @@ body
 	border-color: #f2f2f2;
 }
 
-#notes-instructions-1 
+#photo-instructions
+{
+	padding-top: 32px;
+}
+
+#photo-instructions p 
 {
 	font-family: sans-serif;
-	padding-top: 27px;
 	text-align: center;
-	font-size: 13.5px;
 	color: grey;
-}
-
-#notes
-{
-	padding-top: 40px;
-	padding-bottom: 22px;
-}
-
-#notes-title
-{
-	color: #808080;
 	font-size: 13.5px;
-	padding-left: 100px;
 }
 
-#notes-field
+#tip 
 {
-	height: 214px;
-	width: 444px;
-	font-size: 13.5px;
-	color: #808080;
-	background-color: #f9f9f9;
-	margin-left: 94px;
+	margin-top: 68px;
+	margin-left: 149px;
 }
 
-#submit
+#lightbulb
 {
-	padding-top: 81px;
+	height: 26px;
+	width: 26px;
+	margin-top: 2px;
+	float: left;
+}
+
+#tip p
+{
+	padding-top: 12px;
+	padding-left: 8px;
+	font-size: 13px;
+	color: grey;
+	float: left;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
+#recipe-image
+{
+	padding-top: 48px;
+	padding-left: 243px;
+	padding-bottom: 29px;
+}
+
+#photo-icon 
+{
+	font-size: 80px;
+	cursor: pointer;
+}
+
+#recipe-image-field
+{
+	font-size: 13px;
+}
+
+#next
+{
+	padding-top: 78px;
 	text-align: center;
 }
 
-#submit-button
+#next-button
 {
-	height: 34px;
-	width: 210px;
-	font-size: 15px;
-	box-shadow: 1px 1px 2.5px #29a329;
+	height: 30px;
+	width: 110px;
+	font-size: 14.5px;
+	box-shadow: 1px 1px 2.5px #e65c00;
 }
 
 #footer

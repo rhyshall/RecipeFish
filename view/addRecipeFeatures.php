@@ -88,8 +88,8 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			
 			<div id="bar">
 				<div class="progress">
-					<div id="blue-bar" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-						<span class="sr-only">40% Complete</span>
+					<div id="blue-bar" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">
+						<span class="sr-only">43% Complete</span>
 					</div>
 				</div>
 			</div>

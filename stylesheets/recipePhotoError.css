@@ -1,0 +1,83 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: recipePhotoError.css											   			   ****
+** Purpose: Provides style sheet for "recipePhotoError.php"				   			   ****
+** Author: Rhys Hall																   ****
+** Date Created: 03/24/2017  													   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#empty-field-message  #exclamation-mark 
+{
+	padding-right: 15px;
+}
+
+#empty-field-message 
+{
+	margin-top: 66px;
+	margin-left: 99px;
+	margin-right: 99px;
+	margin-bottom: -56px;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+#empty-field-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	padding-top: 3px;
+	padding-left: 17px;
+	padding-bottom: 2px;
+	border-radius: 3px;
+}
+
+#image-type-message  #exclamation-mark 
+{
+	padding-right: 15px;
+}
+
+#image-type-message
+{
+	margin-top: 66px;
+	margin-left: 99px;
+	margin-right: 99px;
+	margin-bottom: -56px;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+#image-type-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	padding-top: 3px;
+	padding-left: 17px;
+	padding-bottom: 2px;
+	border-radius: 3px;
+}
+
+#image-size-message  #exclamation-mark 
+{
+	padding-right: 15px;
+}
+
+#image-size-message
+{
+	margin-top: 66px;
+	margin-left: 64px;
+	margin-right: 64px;
+	margin-bottom: -56px;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+#image-size-message p 
+{
+	color: #ffffff;
+	background-color: #ff3333;
+	padding-top: 3px;
+	padding-left: 17px;
+	padding-bottom: 2px;
+	border-radius: 3px;
+}

@@ -1,0 +1,104 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: recipeCharacterizationError.css											   ****
+** Purpose: Provides style sheet for "recipeCharacterizationError.php"				   ****
+** Author: Rhys Hall																   ****
+** Date Created: 03/24/2017  													   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+#empty-speech-bubble
+{
+	height: 47px;
+	width: 336px;
+	margin-top: 50px;
+	margin-left: 15px;
+	float: left;
+}
+
+#empty-speech-text 
+{
+	position: absolute;
+	padding-top: 77px;
+	padding-left: 546px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
+}
+
+#name-length-speech-bubble
+{
+	height: 51px;
+	width: 453px;
+	margin-top: 47px;
+	margin-left: 15px;
+	float: left;
+}
+
+#name-length-speech-text 
+{
+	position: absolute;
+	padding-top: 76px;
+	padding-left: 558px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
+}
+
+#name-symbols-speech-bubble
+{
+	height: 74px;
+	width: 372px;
+	margin-top: 25px;
+	margin-left: 15px;
+	float: left;
+}
+
+#name-symbols-speech-text1
+{
+	position: absolute;
+	padding-top: 56px;
+	padding-left: 546px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
+}
+
+#name-symbols-speech-text2
+{
+	position: absolute;
+	padding-top: 76px;
+	padding-left: 546px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
+}
+
+#description-length-speech-bubble
+{
+	height: 76px;
+	width: 386px;
+	margin-top: 24px;
+	margin-left: 15px;
+	float: left;
+}
+
+#description-length-speech-text1
+{
+	position: absolute;
+	padding-top: 55px;
+	padding-left: 546px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
+}
+
+#description-length-speech-text2
+{
+	position: absolute;
+	padding-top: 75px;
+	padding-left: 546px;
+	font-family: "Segoe UI Semibold";
+	font-size: 14px;
+	color: white;
+}

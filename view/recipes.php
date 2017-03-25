@@ -263,7 +263,7 @@ $REVERSE_ALPHABETICAL = 4;
 					<!--display sort, page, and upload options-->
 					<div id="options-menu">
 						<div id="add-recipe">
-							<button id="add-recipe-button" class="btn btn-success" type="button" onclick="window.location.href='/RecipeFish/view/addRecipeInfo.php'">Add
+							<button id="add-recipe-button" class="btn btn-success" type="button" onclick="window.location.href='/RecipeFish/view/addRecipeCharacterization.php'">Add
 							<span id="plus-symbol" class="glyphicon glyphicon-plus"></span></button>
 						</div>
 						

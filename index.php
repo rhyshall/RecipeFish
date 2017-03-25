@@ -138,5 +138,9 @@ $RECIPE_COUNT = 16;
 		<div id="margin-canvas2">
 			<!--right-side coloured border-->
 		</div>
+		
+		<div id="clear-float5">
+			<!--clear float from previous content-->
+		</div>
 	</body>
 </html>

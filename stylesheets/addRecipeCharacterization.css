@@ -1,0 +1,143 @@
+/******************************************************************************************
+*******************************************************************************************
+** Name: addRecipeCharacterization.css												   ****
+** Purpose: Provides style sheet for "addRecipePhoto.php"					   		   ****
+** Author: Rhys Hall																   ****
+** Date Created: 03/20/2017														   	   ****
+*******************************************************************************************
+******************************************************************************************/
+
+body
+{
+	margin: 0%;
+	padding: 0%;
+}
+
+#margin-canvas1, #container, #margin-canvas2 
+{
+	display: table-cell;
+	height: auto;
+	overflow: hidden;
+}
+
+#margin-canvas1
+{
+	background-color: #99ccff;
+	width: 284px;
+}
+
+#container
+{
+	background-color: #ffffff;
+}
+
+#chef-fish 
+{
+	margin-top: 50px;
+	margin-left: 372px;
+	height: 63px;
+	width: 78.5px;
+	float: left;
+}
+
+#speech-bubble
+{
+	height: 81px;
+	width: 438px;
+	margin-top: 25px;
+	margin-left: 15px;
+	float: left;
+}
+
+#speech-text1
+{
+	position: absolute;
+	padding-top: 57px;
+	padding-left: 558px;
+	font-family: "Segoe UI Semibold";
+	font-size: 15px;
+	color: white;
+}
+
+#speech-text2
+{
+	position: absolute;
+	padding-top: 80px;
+	padding-left: 558px;
+	font-family: "Segoe UI Semibold";
+	font-size: 15px;
+	color: white;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
+#recipe-name 
+{
+	padding-top: 82px;
+	padding-left: 428px;
+}
+
+#recipe-name p 
+{
+	padding-left: 3.5px;
+	color: #000000;
+	font-size: 15px;
+}
+
+#recipe-name-field 
+{
+	height: 37px;
+	width: 360px;
+	font-size: 15px;
+	color: #000000;
+	background-color: #f9f9f9;
+}
+
+#description
+ {
+    padding-top: 50px;
+	padding-left: 428px;
+}
+
+#description p 
+{
+	padding-left: 3.5px;
+	color: #000000;
+	font-size: 15px;
+}
+
+#description-field
+{
+	height: 175px;
+	width: 360px;
+	font-size: 14px;
+	background-color: #f9f9f9;
+}
+
+#next
+{
+	padding-top: 90px;
+	text-align: center;
+}
+
+#next-button
+{
+	height: 30px;
+	width: 110px;
+	font-size: 14.5px;
+	box-shadow: 1px 1px 2.5px #e65c00;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 284px;
+}

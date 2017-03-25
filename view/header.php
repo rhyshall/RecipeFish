@@ -3,7 +3,7 @@
 *******************************************************************************************
 ** Name: header.php																       ****
 ** Description: Provides header interface (such as recipe search field and sign-in 	   ****
-** 				button) for all Recipe Fish pages.		   						   ****
+** 				button) for all Recipe Fish pages		   						   	   ****
 ** Author: Rhys Hall																   ****
 ** Date Created: 04/13/2016														   	   ****
 *******************************************************************************************
