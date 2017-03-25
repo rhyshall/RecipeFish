@@ -15,6 +15,9 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	<head>
 		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/popUpConfirm.css">
 		
+		<!--stylesheet for tab icon-->
+		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
+		
 		<!--Bootstrap stylesheets-->
 		<link rel="stylesheet" href="/RecipeFish/Bootstrap/css/bootstrap.min.css">
 	</head>

@@ -58,18 +58,19 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			{
 				var isValid = true;
 				
-				var parameters = "height=250,width=425,left=" + ((screen.width/2)-(425/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
+				var emptyParameters = "height=200,width=340,left=" + ((screen.width/2)-(340/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
+				var lengthParameters = "height=200,width=374,left=" + ((screen.width/2)-(374/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
 				
 				if (direction.length == 0)
 				{
-					popUpWindow = window.open("emptyDirectionError.php", "Empty Direction Message", parameters);
+					popUpWindow = window.open("emptyDirectionError.php", "Empty Direction Message", emptyParameters);
 					
 					isValid = false;
 				}
 				
 				if (direction.length > 500)
 				{
-					popUpWindow = window.open("directionLengthError.php", "Direction Length Message", parameters);
+					popUpWindow = window.open("directionLengthError.php", "Direction Length Message", lengthParameters);
 					
 					isValid = false;
 				}

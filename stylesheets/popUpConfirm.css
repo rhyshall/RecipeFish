@@ -22,7 +22,7 @@ body
 
 #message 
 {
-	padding-top: 60px;
+	padding-top: 42px;
 	background-color: #f5f5ef;
 }
 
@@ -34,7 +34,7 @@ body
 
 #yes
 {
-	padding-top: 82px;
+	padding-top: 62px;
 	background-color: #f5f5ef;
 	padding-left: 88px;
 	float: left;
@@ -42,7 +42,7 @@ body
 
 #no
 {
-	padding-top: 82px;
+	padding-top: 62px;
 	background-color: #f5f5ef;
 	padding-left: 80px;
 	float: left;
@@ -50,17 +50,17 @@ body
 
 #yes-button
 {
-	height: 30px;
-	width: 84px;
+	height: 28px;
+	width: 74px;
 	font-size: 14.5px;
 	box-shadow: 1px 1px 1.5px #29a329;
 }
 
 #no-button
 {
-	height: 30px;
-	width: 84px;
-	font-size: 14.5px;
+	height: 28px;
+	width: 74px;
+	font-size: 14px;
 	box-shadow: 1px 1px 1.5px #cc0000;
 }
 

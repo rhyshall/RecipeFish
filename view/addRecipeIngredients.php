@@ -56,18 +56,19 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 			{
 				var isValid = true;
 				
-				var parameters = "height=250,width=425,left=" + ((screen.width/2)-(425/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
+				var emptyParameters = "height=200,width=340,left=" + ((screen.width/2)-(340/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
+				var lengthParameters = "height=200,width=400,left=" + ((screen.width/2)-(400/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
 				
 				if (ingredient.length == 0)
 				{
-					popUpWindow = window.open("emptyIngredientError.php", "Empty Ingredient Message", parameters);
+					popUpWindow = window.open("emptyIngredientError.php", "Empty Ingredient Message", emptyParameters);
 					
 					isValid = false;
 				}
 				
 				if (ingredient.length > 75)
 				{
-					popUpWindow = window.open("ingredientLengthError.php", "Ingredient Length Message", parameters);
+					popUpWindow = window.open("ingredientLengthError.php", "Ingredient Length Message", lengthParameters);
 					
 					isValid = false;
 				}
