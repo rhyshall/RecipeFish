@@ -34,7 +34,7 @@ body
 
 #chef-fish 
 {
-	margin-top: 42px;
+	margin-top: 91px;
 	margin-left: 360px;
 	height: 63px;
 	width: 78.5px;
@@ -43,9 +43,9 @@ body
 
 #speech-bubble
 {
-	height: 53px;
-	width: 398px;
-	margin-top: 41px;
+	height: 51px;
+	width: 372px;
+	margin-top: 87px;
 	margin-left: 15px;
 	float: left;
 }
@@ -53,10 +53,10 @@ body
 #speech-text 
 {
 	position: absolute;
-	padding-top: 69px;
-	padding-left: 554px;
+	padding-top: 115px;
+	padding-left: 545px;
 	font-family: "Segoe UI Semibold";
-	font-size: 15px;
+	font-size: 14px;
 	color: white;
 }
 
@@ -74,7 +74,7 @@ body
 
 #log-in-email 
 {
-	padding-top: 108px;
+	padding-top: 44px;
 	padding-left: 449px;
 }
 
@@ -126,9 +126,9 @@ body
 
 #log-in-submit-button
 {
-	height: 34px;
-	width: 160px;
-	font-size: 15.5px;
+	height: 32px;
+	width: 140px;
+	font-size: 15px;
 	box-shadow: 1px 1px 2.5px #007399;
 }
 

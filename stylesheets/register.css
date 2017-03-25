@@ -34,7 +34,7 @@ body
 
 #chef-fish 
 {
-	margin-top: 42px;
+	margin-top: 68px;
 	margin-left: 360px;
 	height: 63px;
 	width: 78.5px;
@@ -43,9 +43,9 @@ body
 
 #speech-bubble
 {
-	height: 50px;
-	width: 370px;
-	margin-top: 43px;
+	height: 51px;
+	width: 356px;
+	margin-top: 65px;
 	margin-left: 15px;
 	float: left;
 }
@@ -53,10 +53,10 @@ body
 #speech-text 
 {
 	position: absolute;
-	padding-top: 69px;
-	padding-left: 548px;
+	padding-top: 93px;
+	padding-left: 546px;
 	font-family: "Segoe UI Semibold";
-	font-size: 15px;
+	font-size: 14px;
 	color: white;
 }
 
@@ -67,7 +67,7 @@ body
 
 #register-username 
 {
-	padding-top: 82px;
+	padding-top: 52px;
 	padding-left: 445.5px;
 	background-color: #ffffff;
 }
@@ -83,7 +83,7 @@ body
 
 #register-email 
 {
-	padding-top: 40px;
+	padding-top: 38px;
 	padding-left: 445.5px;
 	background-color: #ffffff;
 }
@@ -99,7 +99,7 @@ body
 
 #register-password 
 {
-	padding-top: 45px;
+	padding-top: 42px;
 	padding-left: 445.5px;
 	background-color: #ffffff;
 }
@@ -115,7 +115,7 @@ body
 
 #register-password-confirmation 
 {
-	padding-top: 42px;
+	padding-top: 38px;
 	padding-left: 445.5px;
 	background-color: #ffffff;
 }
@@ -131,7 +131,7 @@ body
 
 #register-gender
 {
-	padding-top: 32px;
+	padding-top: 30px;
 	padding-left: 503px;
 	background-color: #ffffff;
 }
@@ -164,16 +164,16 @@ body
 
 #register-submit 
 {
-	padding-top: 54px;
+	padding-top: 63px;
 	text-align: center;
 	background-color: #ffffff;
 }
 
 #register-submit-button
 {
-	height: 34px;
-	width: 180px;
-	font-size: 15.5px;
+	height: 32px;
+	width: 158px;
+	font-size: 15px;
 	box-shadow: 1px 1px 2.5px #e65c00;
 }
 

@@ -9,9 +9,9 @@
 
 #username-invalid-speech-bubble
 {
-	height: 76px;
-	width: 470px;
-	margin-top: 18px;
+	height: 84px;
+	width: 484px;
+	margin-top: 34px;
 	margin-left: 15px;
 	float: left;
 }
@@ -19,8 +19,8 @@
 #username-invalid-speech-text1
 {
 	position: absolute;
-	padding-top: 50px;
-	padding-left: 546px;
+	padding-top: 69px;
+	padding-left: 554px;
 	font-family: "Segoe UI Semibold";
 	font-size: 14px;
 	color: white;
@@ -29,8 +29,8 @@
 #username-invalid-speech-text2
 {
 	position: absolute;
-	padding-top: 70px;
-	padding-left: 546px;
+	padding-top: 91px;
+	padding-left: 554px;
 	font-family: "Segoe UI Semibold";
 	font-size: 14px;
 	color: white;
@@ -38,9 +38,9 @@
 
 #username-exists-speech-bubble
 {
-	height: 49px;
-	width: 410px;
-	margin-top: 41px;
+	height: 55px;
+	width: 430px;
+	margin-top: 60px;
 	margin-left: 15px;
 	float: left;
 }
@@ -48,8 +48,8 @@
 #username-exists-speech-text 
 {
 	position: absolute;
-	padding-top: 69px;
-	padding-left: 544px;
+	padding-top: 91px;
+	padding-left: 550px;
 	font-family: "Segoe UI Semibold";
 	font-size: 14px;
 	color: white;

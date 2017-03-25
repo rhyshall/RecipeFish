@@ -27,8 +27,8 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	<body>
 		<div id="container">
 			<div id="message">
-				<p>Sorry! Undergoing database maintenance.</p>
-				<p>Please try again later.</p>
+				<p>A problem occurred while uploading recipe data to the server.</p>
+				<p>Sorry for the inconvenience!</p>
 			</div>
 		
 			<div id="close">

@@ -9,9 +9,9 @@
 
 #email-exists-speech-bubble
 {
-	height: 53px;
-	width: 436px;
-	margin-top: 38px;
+	height: 57px;
+	width: 464px;
+	margin-top: 58px;
 	margin-left: 15px;
 	float: left;
 }
@@ -19,8 +19,8 @@
 #email-exists-speech-text 
 {
 	position: absolute;
-	padding-top: 68px;
-	padding-left: 546px;
+	padding-top: 90px;
+	padding-left: 552px;
 	font-family: "Segoe UI Semibold";
 	font-size: 14px;
 	color: white;

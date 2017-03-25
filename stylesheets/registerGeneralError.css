@@ -9,28 +9,29 @@
 
 #empty-error-speech-bubble
 {
-	height: 47px;
-	width: 358px;
-	margin-top: 43px;
+	height: 53px;
+	width: 372px;
+	margin-top: 62px;
 	margin-left: 15px;
 	float: left;
 }
 
 #empty-error-speech-text 
-{
+{	
 	position: absolute;
-	padding-top: 70px;
+	padding-top: 92px;
 	padding-left: 546px;
 	font-family: "Segoe UI Semibold";
 	font-size: 14px;
 	color: white;
+	
 }
 
 #confirm-error-speech-bubble
 {
-	height: 49px;
-	width: 421px;
-	margin-top: 41px;
+	height: 55px;
+	width: 442px;
+	margin-top: 60px;
 	margin-left: 15px;
 	float: left;
 }
@@ -38,8 +39,8 @@
 #confirm-error-speech-text 
 {
 	position: absolute;
-	padding-top: 69px;
-	padding-left: 544px;
+	padding-top: 91px;
+	padding-left: 548px;
 	font-family: "Segoe UI Semibold";
 	font-size: 14px;
 	color: white;

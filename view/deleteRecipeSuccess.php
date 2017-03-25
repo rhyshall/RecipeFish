@@ -25,7 +25,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 	<body>
 		<div id="container">
 			<div id="message">
-				<p><?php echo $_GET["name"] ?> successfully removed from Recipes</p>
+				<p><?php echo $_GET["name"] ?> successfully removed from recipes</p>
 			</div>
 		
 			<div id="close">

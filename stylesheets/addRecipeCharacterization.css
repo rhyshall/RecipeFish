@@ -33,7 +33,7 @@ body
 
 #chef-fish 
 {
-	margin-top: 50px;
+	margin-top: 70px;
 	margin-left: 372px;
 	height: 63px;
 	width: 78.5px;
@@ -42,9 +42,9 @@ body
 
 #speech-bubble
 {
-	height: 81px;
-	width: 438px;
-	margin-top: 25px;
+	height: 75px;
+	width: 430px;
+	margin-top: 47px;
 	margin-left: 15px;
 	float: left;
 }
@@ -52,20 +52,20 @@ body
 #speech-text1
 {
 	position: absolute;
-	padding-top: 57px;
+	padding-top: 76px;
 	padding-left: 558px;
 	font-family: "Segoe UI Semibold";
-	font-size: 15px;
+	font-size: 14px;
 	color: white;
 }
 
 #speech-text2
 {
 	position: absolute;
-	padding-top: 80px;
+	padding-top: 98px;
 	padding-left: 558px;
 	font-family: "Segoe UI Semibold";
-	font-size: 15px;
+	font-size: 14px;
 	color: white;
 }
 
@@ -76,7 +76,7 @@ body
 
 #recipe-name 
 {
-	padding-top: 82px;
+	padding-top: 54px;
 	padding-left: 428px;
 }
 

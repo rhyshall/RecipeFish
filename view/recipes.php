@@ -43,7 +43,7 @@ $REVERSE_ALPHABETICAL = 4;
 			<!--displays success pop-up window if add recipe was successful
 			function displayAddSuccessPopUp()
 			{
-				var parameters = "height=250,width=425,left=" + ((screen.width/2)-(425/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
+				var parameters = "height=200,width=320,left=" + ((screen.width/2)-(320/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
 				
 				popUpWindow = window.open("addRecipeSuccess.php", "Add Recipe Success Message", parameters);
 			}
@@ -51,7 +51,7 @@ $REVERSE_ALPHABETICAL = 4;
 			<!--displays error pop-up window if add recipe was unsuccessful
 			function displayAddErrorPopUp()
 			{
-				var parameters = "height=275,width=425,left=" + ((screen.width/2)-(425/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
+				var parameters = "height=226,width=454,left=" + ((screen.width/2)-(454/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
 				
 				popUpWindow = window.open("addRecipeError.php", "Add Recipe Error Message", parameters);
 			}
@@ -59,7 +59,7 @@ $REVERSE_ALPHABETICAL = 4;
 			<!--confirm deletion of given recipe-->
 			function confirmRecipeDelete(id)
 			{
-				var parameters = "height=275,width=425,left=" + ((screen.width/2)-(425/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
+				var parameters = "height=200,width=375,left=" + ((screen.width/2)-(375/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
 				
 				popUpWindow = window.open("confirmRecipeDelete.php?id=" + id, "Confirm Recipe Deletion", parameters);
 			}
@@ -67,7 +67,7 @@ $REVERSE_ALPHABETICAL = 4;
 			<!--displays success pop-up window if add recipe was successful
 			function displayDeleteSuccessPopUp(name)
 			{
-				var parameters = "height=275,width=575,left=" + ((screen.width/2)-(575/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
+				var parameters = "height=200,width=450,left=" + ((screen.width/2)-(450/2)) + ",top=" + ((screen.height/2)-(screen.height/4));
 				
 				popUpWindow = window.open("deleteRecipeSuccess.php?name=" + name, "Delete Recipe Success Message", parameters);
 			}
