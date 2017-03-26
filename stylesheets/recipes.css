@@ -48,19 +48,19 @@ body
 
 #add-first-recipe-messages 
 {
-	padding-top: 41.5px;
+	padding-top: 62px;
 }
 
 #recipe-message1
 {
-	font-size: 17px;
+	font-size: 15px;
 	text-align: center;
 }
 
 #recipe-message2
 {
 	padding-top: 50px;
-	font-size: 16.5px;
+	font-size: 15px;
 	text-align: center;
 }
 
@@ -73,11 +73,11 @@ body
 
 #add-first-recipe-button
 {
-	height: 40.5px;
-	width: 360px;
-	font-size: 17px;
+	height: 38px;
+	width: 300px;
+	font-size: 15px;
 	box-shadow: 1px 1px 2.5px #29a329;
-	margin-bottom: 194.5px;
+	margin-bottom: 194px;
 }
 
 #recipes
