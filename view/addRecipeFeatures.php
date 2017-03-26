@@ -1271,7 +1271,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									<p>Carrots</p>
 								</input>
 								
-								<input id="popular-type13" type="checkbox" name="popular-type[]" value="Cheese"
+								<input id="popular-type13" type="checkbox" name="popular-type[]" value="Cauliflower"
 									<?php if (isset($_SESSION["popular-type13"]) == true) 
 									      {
 									?> 
@@ -1283,10 +1283,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Cheese</p>
+									<p>Cauliflower</p>
 								</input>
 								
-								<input id="popular-type14" type="checkbox" name="popular-type[]" value="Chicken"
+								<input id="popular-type14" type="checkbox" name="popular-type[]" value="Cheese"
 									<?php if (isset($_SESSION["popular-type14"]) == true) 
 									      {
 									?> 
@@ -1298,10 +1298,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Chicken</p>
+									<p>Cheese</p>
 								</input>
 								
-								<input id="popular-type15" type="checkbox" name="popular-type[]" value="Chocolate"
+								<input id="popular-type15" type="checkbox" name="popular-type[]" value="Chicken"
 									<?php if (isset($_SESSION["popular-type15"]) == true) 
 									      {
 									?> 
@@ -1313,12 +1313,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Chocolate</p>
+									<p>Chicken</p>
 								</input>
-							</div>
-				
-							<div id="popular-type-column2" class="column">
-								<input id="popular-type16" type="checkbox" name="popular-type[]" value="Citrus fruits"
+								
+								<input id="popular-type16" type="checkbox" name="popular-type[]" value="Chips"
 									<?php if (isset($_SESSION["popular-type16"]) == true) 
 									      {
 									?> 
@@ -1330,10 +1328,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Citrus fruits</p>
+									<p>Chips</p>
 								</input>
-							
-								<input id="popular-type17" type="checkbox" name="popular-type[]" value="Cocktail"
+								
+								<input id="popular-type17" type="checkbox" name="popular-type[]" value="Chocolate"
 									<?php if (isset($_SESSION["popular-type17"]) == true) 
 									      {
 									?> 
@@ -1345,25 +1343,27 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Cocktail</p>
+									<p>Chocolate</p>
 								</input>
-								
-								<input id="popular-type18" type="checkbox" name="popular-type[]" value="Coffee"
+							
+								<input id="popular-type18" type="checkbox" name="popular-type[]" value="Citrus fruits"
 									<?php if (isset($_SESSION["popular-type18"]) == true) 
-									      {
+										  {
 									?> 
-										       checked
+											   checked
 									<?php 
 										  }
-										  
+											  
 										  unset($_SESSION["popular-type18"]);
 									?>
 								>
-										       
-									<p>Coffee</p>
+												   
+									<p>Citrus fruits</p>
 								</input>
-								
-								<input id="popular-type19" type="checkbox" name="popular-type[]" value="Cookies"
+							</div>
+				
+							<div id="popular-type-column2" class="column">
+								<input id="popular-type19" type="checkbox" name="popular-type[]" value="Cocktail"
 									<?php if (isset($_SESSION["popular-type19"]) == true) 
 									      {
 									?> 
@@ -1375,10 +1375,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Cookies</p>
+									<p>Cocktail</p>
 								</input>
 								
-								<input id="popular-type20" type="checkbox" name="popular-type[]" value="Corn"
+								<input id="popular-type20" type="checkbox" name="popular-type[]" value="Coconut"
 									<?php if (isset($_SESSION["popular-type20"]) == true) 
 									      {
 									?> 
@@ -1390,10 +1390,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Corn</p>
+									<p>Coconut</p>
 								</input>
 								
-								<input id="popular-type21" type="checkbox" name="popular-type[]" value="Crackers"
+								<input id="popular-type21" type="checkbox" name="popular-type[]" value="Coffee"
 									<?php if (isset($_SESSION["popular-type21"]) == true) 
 									      {
 									?> 
@@ -1405,10 +1405,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Crackers</p>
+									<p>Coffee</p>
 								</input>
 								
-								<input id="popular-type22" type="checkbox" name="popular-type[]" value="Cream"
+								<input id="popular-type22" type="checkbox" name="popular-type[]" value="Cookies"
 									<?php if (isset($_SESSION["popular-type22"]) == true) 
 									      {
 									?> 
@@ -1420,10 +1420,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Cream</p>
+									<p>Cookies</p>
 								</input>
 								
-								<input id="popular-type23" type="checkbox" name="popular-type[]" value="Dip"
+								<input id="popular-type23" type="checkbox" name="popular-type[]" value="Corn"
 									<?php if (isset($_SESSION["popular-type23"]) == true) 
 									      {
 									?> 
@@ -1435,10 +1435,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Dip</p>
+									<p>Corn</p>
 								</input>
 								
-								<input id="popular-type24" type="checkbox" name="popular-type[]" value="Doughnuts"
+								<input id="popular-type24" type="checkbox" name="popular-type[]" value="Crackers"
 									<?php if (isset($_SESSION["popular-type24"]) == true) 
 									      {
 									?> 
@@ -1450,10 +1450,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Doughnuts</p>
+									<p>Crackers</p>
 								</input>
 								
-								<input id="popular-type25" type="checkbox" name="popular-type[]" value="Eggs"
+								<input id="popular-type25" type="checkbox" name="popular-type[]" value="Cream"
 									<?php if (isset($_SESSION["popular-type25"]) == true) 
 									      {
 									?> 
@@ -1465,10 +1465,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Eggs</p>
+									<p>Cream</p>
 								</input>
 								
-								<input id="popular-type26" type="checkbox" name="popular-type[]" value="Garlic"
+								<input id="popular-type26" type="checkbox" name="popular-type[]" value="Cucumbers"
 									<?php if (isset($_SESSION["popular-type26"]) == true) 
 									      {
 									?> 
@@ -1480,10 +1480,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Garlic</p>
+									<p>Cucumbers</p>
 								</input>
 								
-								<input id="popular-type27" type="checkbox" name="popular-type[]" value="Gin"
+								<input id="popular-type27" type="checkbox" name="popular-type[]" value="Dip"
 									<?php if (isset($_SESSION["popular-type27"]) == true) 
 									      {
 									?> 
@@ -1495,10 +1495,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Gin</p>
+									<p>Dip</p>
 								</input>
 								
-								<input id="popular-type28" type="checkbox" name="popular-type[]" value="Ice"
+								<input id="popular-type28" type="checkbox" name="popular-type[]" value="Doughnuts"
 									<?php if (isset($_SESSION["popular-type28"]) == true) 
 									      {
 									?> 
@@ -1510,10 +1510,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Ice</p>
+									<p>Doughnuts</p>
 								</input>
 								
-								<input id="popular-type29" type="checkbox" name="popular-type[]" value="Juice"
+								<input id="popular-type29" type="checkbox" name="popular-type[]" value="Eggs"
 									<?php if (isset($_SESSION["popular-type29"]) == true) 
 									      {
 									?> 
@@ -1525,10 +1525,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Juice</p>
+									<p>Eggs</p>
 								</input>
 								
-								<input id="popular-type30" type="checkbox" name="popular-type[]" value="Lamb"
+								<input id="popular-type30" type="checkbox" name="popular-type[]" value="Garlic"
 									<?php if (isset($_SESSION["popular-type30"]) == true) 
 									      {
 									?> 
@@ -1540,12 +1540,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Lamb</p>
+									<p>Garlic</p>
 								</input>
-							</div>
-							
-							<div id="popular-type-column3" class="column">
-								<input id="popular-type31" type="checkbox" name="popular-type[]" value="Liqueur"
+								
+								<input id="popular-type31" type="checkbox" name="popular-type[]" value="Gin"
 									<?php if (isset($_SESSION["popular-type31"]) == true) 
 									      {
 									?> 
@@ -1557,10 +1555,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Liqueur (sweet liquor)</p>
+									<p>Gin</p>
 								</input>
-							
-								<input id="popular-type32" type="checkbox" name="popular-type[]" value="Melons"
+								
+								<input id="popular-type32" type="checkbox" name="popular-type[]" value="Grapes"
 									<?php if (isset($_SESSION["popular-type32"]) == true) 
 									      {
 									?> 
@@ -1572,10 +1570,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Melons</p>
+									<p>Grapes</p>
 								</input>
 								
-								<input id="popular-type33" type="checkbox" name="popular-type[]" value="Milk"
+								<input id="popular-type33" type="checkbox" name="popular-type[]" value="Ice"
 									<?php if (isset($_SESSION["popular-type33"]) == true) 
 									      {
 									?> 
@@ -1587,10 +1585,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Milk</p>
+									<p>Ice</p>
 								</input>
 								
-								<input id="popular-type34" type="checkbox" name="popular-type[]" value="Muffins"
+								<input id="popular-type34" type="checkbox" name="popular-type[]" value="Juice"
 									<?php if (isset($_SESSION["popular-type34"]) == true) 
 									      {
 									?> 
@@ -1602,10 +1600,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Muffins</p>
+									<p>Juice</p>
 								</input>
 								
-								<input id="popular-type35" type="checkbox" name="popular-type[]" value="Nuts"
+								<input id="popular-type35" type="checkbox" name="popular-type[]" value="Lamb"
 									<?php if (isset($_SESSION["popular-type35"]) == true) 
 									      {
 									?> 
@@ -1617,10 +1615,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Nuts</p>
+									<p>Lamb</p>
 								</input>
 								
-								<input id="popular-type36" type="checkbox" name="popular-type[]" value="Pasta"
+								<input id="popular-type36" type="checkbox" name="popular-type[]" value="Liqueur"
 									<?php if (isset($_SESSION["popular-type36"]) == true) 
 									      {
 									?> 
@@ -1632,10 +1630,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Pasta</p>
+									<p>Liqueur (sweet liquor)</p>
 								</input>
-								
-								<input id="popular-type37" type="checkbox" name="popular-type[]" value="Pastries"
+							</div>
+							
+							<div id="popular-type-column3" class="column">
+								<input id="popular-type37" type="checkbox" name="popular-type[]" value="Melons"
 									<?php if (isset($_SESSION["popular-type37"]) == true) 
 									      {
 									?> 
@@ -1647,10 +1647,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Pastries</p>
+									<p>Melons</p>
 								</input>
 								
-								<input id="popular-type38" type="checkbox" name="popular-type[]" value="Pears"
+								<input id="popular-type38" type="checkbox" name="popular-type[]" value="Milk"
 									<?php if (isset($_SESSION["popular-type38"]) == true) 
 									      {
 									?> 
@@ -1662,10 +1662,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Pears</p>
+									<p>Milk</p>
 								</input>
 								
-								<input id="popular-type39" type="checkbox" name="popular-type[]" value="Pies"
+								<input id="popular-type39" type="checkbox" name="popular-type[]" value="Muffins"
 									<?php if (isset($_SESSION["popular-type39"]) == true) 
 									      {
 									?> 
@@ -1677,10 +1677,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Pies</p>
+									<p>Muffins</p>
 								</input>
 								
-								<input id="popular-type40" type="checkbox" name="popular-type[]" value="Pop"
+								<input id="popular-type40" type="checkbox" name="popular-type[]" value="Nuts"
 									<?php if (isset($_SESSION["popular-type40"]) == true) 
 									      {
 									?> 
@@ -1692,10 +1692,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Pop</p>
+									<p>Nuts</p>
 								</input>
 								
-								<input id="popular-type41" type="checkbox" name="popular-type[]" value="Pork"
+								<input id="popular-type41" type="checkbox" name="popular-type[]" value="Onions"
 									<?php if (isset($_SESSION["popular-type41"]) == true) 
 									      {
 									?> 
@@ -1707,10 +1707,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Pork</p>
+									<p>Onions</p>
 								</input>
 								
-								<input id="popular-type42" type="checkbox" name="popular-type[]" value="Potatoes"
+								<input id="popular-type42" type="checkbox" name="popular-type[]" value="Pasta"
 									<?php if (isset($_SESSION["popular-type42"]) == true) 
 									      {
 									?> 
@@ -1722,10 +1722,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Potatoes</p>
+									<p>Pasta</p>
 								</input>
 								
-								<input id="popular-type43" type="checkbox" name="popular-type[]" value="Pudding"
+								<input id="popular-type43" type="checkbox" name="popular-type[]" value="Pastries"
 									<?php if (isset($_SESSION["popular-type43"]) == true) 
 									      {
 									?> 
@@ -1737,10 +1737,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Pudding</p>
+									<p>Pastries</p>
 								</input>
 								
-								<input id="popular-type44" type="checkbox" name="popular-type[]" value="Rice"
+								<input id="popular-type44" type="checkbox" name="popular-type[]" value="Peaches"
 									<?php if (isset($_SESSION["popular-type44"]) == true) 
 									      {
 									?> 
@@ -1752,10 +1752,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Rice</p>
+									<p>Peaches</p>
 								</input>
 								
-								<input id="popular-type45" type="checkbox" name="popular-type[]" value="Rum"
+								<input id="popular-type45" type="checkbox" name="popular-type[]" value="Pears"
 									<?php if (isset($_SESSION["popular-type45"]) == true) 
 									      {
 									?> 
@@ -1767,12 +1767,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Rum</p>
+									<p>Pears</p>
 								</input>
-							</div>
-							
-							<div id="popular-type-column4">
-								<input id="popular-type46" type="checkbox" name="popular-type[]" value="Salad"
+								
+								<input id="popular-type46" type="checkbox" name="popular-type[]" value="Peas"
 									<?php if (isset($_SESSION["popular-type46"]) == true) 
 									      {
 									?> 
@@ -1784,10 +1782,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Salad</p>
+									<p>Peas</p>
 								</input>
-							
-								<input id="popular-type47" type="checkbox" name="popular-type[]" value="Sandwiches"
+								
+								<input id="popular-type47" type="checkbox" name="popular-type[]" value="Peppers"
 									<?php if (isset($_SESSION["popular-type47"]) == true) 
 									      {
 									?> 
@@ -1799,10 +1797,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Sandwiches</p>
+									<p>Peppers</p>
 								</input>
 								
-								<input id="popular-type48" type="checkbox" name="popular-type[]" value="Sausage"
+								<input id="popular-type48" type="checkbox" name="popular-type[]" value="Pies"
 									<?php if (isset($_SESSION["popular-type48"]) == true) 
 									      {
 									?> 
@@ -1814,10 +1812,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Sausage</p>
+									<p>Pies</p>
 								</input>
 								
-								<input id="popular-type49" type="checkbox" name="popular-type[]" value="Seafood"
+								<input id="popular-type49" type="checkbox" name="popular-type[]" value="Pineapple"
 									<?php if (isset($_SESSION["popular-type49"]) == true) 
 									      {
 									?> 
@@ -1829,10 +1827,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Seafood</p>
+									<p>Pineapple</p>
 								</input>
 								
-								<input id="popular-type50" type="checkbox" name="popular-type[]" value="Shake"
+								<input id="popular-type50" type="checkbox" name="popular-type[]" value="Pop"
 									<?php if (isset($_SESSION["popular-type50"]) == true) 
 									      {
 									?> 
@@ -1844,10 +1842,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Shake</p>
+									<p>Pop</p>
 								</input>
 								
-								<input id="popular-type51" type="checkbox" name="popular-type[]" value="Smoothie"
+								<input id="popular-type51" type="checkbox" name="popular-type[]" value="Pork"
 									<?php if (isset($_SESSION["popular-type51"]) == true) 
 									      {
 									?> 
@@ -1859,10 +1857,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Smoothie</p>
+									<p>Pork</p>
 								</input>
 								
-								<input id="popular-type52" type="checkbox" name="popular-type[]" value="Soup"
+								<input id="popular-type52" type="checkbox" name="popular-type[]" value="Potatoes"
 									<?php if (isset($_SESSION["popular-type52"]) == true) 
 									      {
 									?> 
@@ -1874,10 +1872,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Soup</p>
+									<p>Potatoes</p>
 								</input>
 								
-								<input id="popular-type53" type="checkbox" name="popular-type[]" value="Tea"
+								<input id="popular-type53" type="checkbox" name="popular-type[]" value="Pudding"
 									<?php if (isset($_SESSION["popular-type53"]) == true) 
 									      {
 									?> 
@@ -1889,10 +1887,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Tea</p>
+									<p>Pudding</p>
 								</input>
 								
-								<input id="popular-type54" type="checkbox" name="popular-type[]" value="Tequila"
+								<input id="popular-type54" type="checkbox" name="popular-type[]" value="Rice"
 									<?php if (isset($_SESSION["popular-type54"]) == true) 
 									      {
 									?> 
@@ -1904,10 +1902,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Tequila</p>
+									<p>Rice</p>
 								</input>
-								
-								<input id="popular-type55" type="checkbox" name="popular-type[]" value="Tofu"
+							</div>
+							
+							<div id="popular-type-column4">
+								<input id="popular-type55" type="checkbox" name="popular-type[]" value="Rum"
 									<?php if (isset($_SESSION["popular-type55"]) == true) 
 									      {
 									?> 
@@ -1919,25 +1919,25 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Tofu</p>
+									<p>Rum</p>
 								</input>
-								
-								<input id="popular-type56" type="checkbox" name="popular-type[]" value="Tomatoes"
+							
+								<input id="popular-type56" type="checkbox" name="popular-type[]" value="Salad"
 									<?php if (isset($_SESSION["popular-type56"]) == true) 
-									      {
+										  {
 									?> 
-										       checked
+											   checked
 									<?php 
 										  }
-										  
+											  
 										  unset($_SESSION["popular-type56"]);
 									?>
 								>
 										       
-									<p>Tomatoes</p>
+									<p>Salad</p>
 								</input>
-								
-								<input id="popular-type57" type="checkbox" name="popular-type[]" value="Turkey"
+							
+								<input id="popular-type57" type="checkbox" name="popular-type[]" value="Sandwiches"
 									<?php if (isset($_SESSION["popular-type57"]) == true) 
 									      {
 									?> 
@@ -1949,10 +1949,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Turkey</p>
+									<p>Sandwiches</p>
 								</input>
 								
-								<input id="popular-type58" type="checkbox" name="popular-type[]" value="Vodka"
+								<input id="popular-type58" type="checkbox" name="popular-type[]" value="Sauce"
 									<?php if (isset($_SESSION["popular-type58"]) == true) 
 									      {
 									?> 
@@ -1964,10 +1964,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Vodka</p>
+									<p>Sauce</p>
 								</input>
 								
-								<input id="popular-type59" type="checkbox" name="popular-type[]" value="Whisky"
+								<input id="popular-type59" type="checkbox" name="popular-type[]" value="Sausage"
 									<?php if (isset($_SESSION["popular-type59"]) == true) 
 									      {
 									?> 
@@ -1979,10 +1979,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Whisky</p>
+									<p>Sausage</p>
 								</input>
 								
-								<input id="popular-type60" type="checkbox" name="popular-type[]" value="Wine"
+								<input id="popular-type60" type="checkbox" name="popular-type[]" value="Seafood"
 									<?php if (isset($_SESSION["popular-type60"]) == true) 
 									      {
 									?> 
@@ -1994,7 +1994,187 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
+									<p>Seafood</p>
+								</input>
+								
+								<input id="popular-type61" type="checkbox" name="popular-type[]" value="Shake"
+									<?php if (isset($_SESSION["popular-type61"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type61"]);
+									?>
+								>
+										       
+									<p>Shake</p>
+								</input>
+								
+								<input id="popular-type62" type="checkbox" name="popular-type[]" value="Smoothie"
+									<?php if (isset($_SESSION["popular-type62"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type62"]);
+									?>
+								>
+										       
+									<p>Smoothie</p>
+								</input>
+								
+								<input id="popular-type63" type="checkbox" name="popular-type[]" value="Soup"
+									<?php if (isset($_SESSION["popular-type63"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type63"]);
+									?>
+								>
+										       
+									<p>Soup</p>
+								</input>
+								
+								<input id="popular-type64" type="checkbox" name="popular-type[]" value="Tea"
+									<?php if (isset($_SESSION["popular-type64"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type64"]);
+									?>
+								>
+										       
+									<p>Tea</p>
+								</input>
+								
+								<input id="popular-type65" type="checkbox" name="popular-type[]" value="Tequila"
+									<?php if (isset($_SESSION["popular-type65"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type65"]);
+									?>
+								>
+										       
+									<p>Tequila</p>
+								</input>
+								
+								<input id="popular-type66" type="checkbox" name="popular-type[]" value="Tofu"
+									<?php if (isset($_SESSION["popular-type66"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type66"]);
+									?>
+								>
+										       
+									<p>Tofu</p>
+								</input>
+								
+								<input id="popular-type67" type="checkbox" name="popular-type[]" value="Tomatoes"
+									<?php if (isset($_SESSION["popular-type67"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type67"]);
+									?>
+								>
+										       
+									<p>Tomatoes</p>
+								</input>
+								
+								<input id="popular-type68" type="checkbox" name="popular-type[]" value="Turkey"
+									<?php if (isset($_SESSION["popular-type68"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type68"]);
+									?>
+								>
+										       
+									<p>Turkey</p>
+								</input>
+								
+								<input id="popular-type69" type="checkbox" name="popular-type[]" value="Vodka"
+									<?php if (isset($_SESSION["popular-type69"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type69"]);
+									?>
+								>
+										       
+									<p>Vodka</p>
+								</input>
+								
+								<input id="popular-type70" type="checkbox" name="popular-type[]" value="Whisky"
+									<?php if (isset($_SESSION["popular-type70"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type70"]);
+									?>
+								>
+										       
+									<p>Whisky</p>
+								</input>
+								
+								<input id="popular-type71" type="checkbox" name="popular-type[]" value="Wine"
+									<?php if (isset($_SESSION["popular-type71"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type71"]);
+									?>
+								>
+										       
 									<p>Wine</p>
+								</input>
+								
+								<input id="popular-type72" type="checkbox" name="popular-type[]" value="Yogurt"
+									<?php if (isset($_SESSION["popular-type72"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["popular-type72"]);
+									?>
+								>
+										       
+									<p>Yogurt</p>
 								</input>
 							</div>
 						

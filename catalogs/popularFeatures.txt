@@ -10,21 +10,26 @@ Broccoli
 Cabbage
 Cake
 Carrots
+Cauliflower
 Cheese
 Chicken
+Chips
 Chocolate
 Citrus fruits
 Cocktail
+Coconut
 Coffee
 Cookies
 Corn
 Crackers
 Cream
+Cucumbers
 Dip
 Doughnuts
 Eggs
 Garlic
 Gin
+Grapes
 Ice
 Juice
 Lamb
@@ -33,10 +38,15 @@ Melons
 Milk
 Muffins
 Nuts
+Onions
 Pasta
 Pastries
+Peaches
 Pears
+Peas
+Peppers
 Pies
+Pineapple
 Pop
 Pork
 Potatoes
@@ -45,6 +55,7 @@ Rice
 Rum
 Salad
 Sandwiches
+Sauce
 Sausage
 Seafood
 Shake
@@ -58,3 +69,4 @@ Turkey
 Vodka
 Whisky
 Wine
+Yogurt

@@ -84,7 +84,7 @@ function getNextHolidayHeading()
 function getPopularIngredientHeading()
 {
 	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
-	$INGREDIENT_PRIORITY_TOTAL = 239;
+	$INGREDIENT_PRIORITY_TOTAL = 276;
 	$ingredientHeading = "None";
 	
 	$randomNum = rand(1, $INGREDIENT_PRIORITY_TOTAL);

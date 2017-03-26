@@ -142,7 +142,7 @@ $REVERSE_ALPHABETICAL = 4;
 				if (hasRecipe() == false)
 				{
 			?>		<!--prompt user to add first recipe-->
-					<form id="add-first-recipe-form" action="/RecipeFish/view/addRecipeInfo.php" method="post">
+					<form id="add-first-recipe-form" action="/RecipeFish/view/addRecipeCharacterization.php" method="post">
 						<div id="add-first-recipe-messages">
 							<p id="recipe-message1">You have not added any personal recipes</p>
 						
