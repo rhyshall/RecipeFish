@@ -32,8 +32,6 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 				var directionString = "Step ";
 				
 				directionTitle.innerHTML = directionString.concat(directionCount + 1);
-				
-				document
 			}
 			
 			<!--removes direction input after added to directions table-->
@@ -166,6 +164,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 				table.deleteRow(row.rowIndex); 
 				
 				directionCount--;
+				directionId--;
 				
 				if (directionCount < 13)
 				{

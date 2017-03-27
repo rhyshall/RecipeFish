@@ -16,7 +16,7 @@ include($root . "/utilities/recipesUtilities.php");
 include($root . "utilities/database.php");
 include($root . "/model/recipe.php");
 
-$MAX_DISPLAY_COUNT = 7; /* maximum recipes to display for 1 page */
+$MAX_DISPLAY_COUNT = 10; /* maximum recipes to display for 1 page */
 $ALPHABETICAL = 1;
 $NEWEST_TO_OLDEST = 2;
 $OLDEST_TO_NEWEST = 3;
