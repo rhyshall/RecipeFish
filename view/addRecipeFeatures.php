@@ -215,7 +215,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									<p>Australian</p>
 								</input>
 								
-								<input id="ethnicity7" type="checkbox" name="ethnicity" value="Brazilian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity7" type="checkbox" name="ethnicity" value="Bulgarian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity7"]) == true) 
 									      {
 									?> 
@@ -227,10 +227,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Brazilian</p>
+									<p>Bulgarian</p>
 								</input>
-								
-								<input id="ethnicity8" type="checkbox" name="ethnicity" value="Bulgarian" onclick="selectThisOnly(this.id)" 
+
+								<input id="ethnicity8" type="checkbox" name="ethnicity" value="Cajun" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity8"]) == true) 
 									      {
 									?> 
@@ -242,10 +242,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Bulgarian</p>
+									<p>Cajun</p>
 								</input>
-
-								<input id="ethnicity9" type="checkbox" name="ethnicity" value="Cajun" onclick="selectThisOnly(this.id)" 
+								
+								<input id="ethnicity9" type="checkbox" name="ethnicity" value="Canadian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity9"]) == true) 
 									      {
 									?> 
@@ -257,10 +257,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Cajun</p>
+									<p>Canadian</p>
 								</input>
 								
-								<input id="ethnicity10" type="checkbox" name="ethnicity" value="Canadian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity10" type="checkbox" name="ethnicity" value="Caribbean" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity10"]) == true) 
 									      {
 									?> 
@@ -272,10 +272,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Canadian</p>
+									<p>Caribbean</p>
 								</input>
 								
-								<input id="ethnicity11" type="checkbox" name="ethnicity" value="Caribbean" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity11" type="checkbox" name="ethnicity" value="Central American" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity11"]) == true) 
 									      {
 									?> 
@@ -287,7 +287,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Caribbean</p>
+									<p>Central American</p>
 								</input>
 
 								<input id="ethnicity12" type="checkbox" name="ethnicity" value="Chinese" onclick="selectThisOnly(this.id)" 
@@ -304,8 +304,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 										       
 									<p>Chinese</p>
 								</input>
-								
-								<input id="ethnicity13" type="checkbox" name="ethnicity" value="Cuban" onclick="selectThisOnly(this.id)" 
+							</div>
+							
+							<div id="ethnicity-column2" class="column">
+								<input id="ethnicity13" type="checkbox" name="ethnicity" value="Dutch" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity13"]) == true) 
 									      {
 									?> 
@@ -317,12 +319,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Cuban</p>
+									<p>Dutch</p>
 								</input>
-							</div>
-				
-							<div id="ethnicity-column2" class="column">
-								<input id="ethnicity14" type="checkbox" name="ethnicity" value="Dominican" onclick="selectThisOnly(this.id)" 
+							
+								<input id="ethnicity14" type="checkbox" name="ethnicity" value="Egyptian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity14"]) == true) 
 									      {
 									?> 
@@ -334,10 +334,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Dominican</p>
+									<p>Egyptian</p>
 								</input>
 								
-								<input id="ethnicity15" type="checkbox" name="ethnicity" value="Egyptian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity15" type="checkbox" name="ethnicity" value="English" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity15"]) == true) 
 									      {
 									?> 
@@ -349,10 +349,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Egyptian</p>
+									<p>English</p>
 								</input>
 								
-								<input id="ethnicity16" type="checkbox" name="ethnicity" value="English" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity16" type="checkbox" name="ethnicity" value="French" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity16"]) == true) 
 									      {
 									?> 
@@ -364,10 +364,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>English</p>
+									<p>French</p>
 								</input>
 								
-								<input id="ethnicity17" type="checkbox" name="ethnicity" value="French" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity17" type="checkbox" name="ethnicity" value="German" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity17"]) == true) 
 									      {
 									?> 
@@ -379,10 +379,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>French</p>
+									<p>German</p>
 								</input>
 								
-								<input id="ethnicity18" type="checkbox" name="ethnicity" value="German" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity18" type="checkbox" name="ethnicity" value="Greek" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity18"]) == true) 
 									      {
 									?> 
@@ -394,10 +394,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>German</p>
+									<p>Greek</p>
 								</input>
 								
-								<input id="ethnicity19" type="checkbox" name="ethnicity" value="Greek" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity19" type="checkbox" name="ethnicity" value="Hawaiian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity19"]) == true) 
 									      {
 									?> 
@@ -409,10 +409,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Greek</p>
+									<p>Hawaiian</p>
 								</input>
 								
-								<input id="ethnicity20" type="checkbox" name="ethnicity" value="Guatemalan" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity20" type="checkbox" name="ethnicity" value="Indian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity20"]) == true) 
 									      {
 									?> 
@@ -424,10 +424,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Guatemalan</p>
+									<p>Indian</p>
 								</input>
 								
-								<input id="ethnicity21" type="checkbox" name="ethnicity" value="Hawaiian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity21" type="checkbox" name="ethnicity" value="Indonesian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity21"]) == true) 
 									      {
 									?> 
@@ -439,10 +439,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Hawaiian</p>
+									<p>Indonesian</p>
 								</input>
 								
-								<input id="ethnicity22" type="checkbox" name="ethnicity" value="Indian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity22" type="checkbox" name="ethnicity" value="Irish" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity22"]) == true) 
 									      {
 									?> 
@@ -454,10 +454,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Indian</p>
+									<p>Irish</p>
 								</input>
 								
-								<input id="ethnicity23" type="checkbox" name="ethnicity" value="Indonesian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity23" type="checkbox" name="ethnicity" value="Italian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity23"]) == true) 
 									      {
 									?> 
@@ -469,10 +469,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Indonesian</p>
+									<p>Italian</p>
 								</input>
 								
-								<input id="ethnicity24" type="checkbox" name="ethnicity" value="Irish" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity24" type="checkbox" name="ethnicity" value="Japanese" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity24"]) == true) 
 									      {
 									?> 
@@ -484,10 +484,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Irish</p>
+									<p>Japanese</p>
 								</input>
-								
-								<input id="ethnicity25" type="checkbox" name="ethnicity" value="Italian" onclick="selectThisOnly(this.id)" 
+							</div>
+							
+							<div id="ethnicity-column3" class="column">
+								<input id="ethnicity25" type="checkbox" name="ethnicity" value="Jewish" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity25"]) == true) 
 									      {
 									?> 
@@ -499,10 +501,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Italian</p>
+									<p>Jewish</p>
 								</input>
 								
-								<input id="ethnicity26" type="checkbox" name="ethnicity" value="Jamaican" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity26" type="checkbox" name="ethnicity" value="Korean" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity26"]) == true) 
 									      {
 									?> 
@@ -514,12 +516,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Jamaican</p>
+									<p>Korean</p>
 								</input>
-							</div>
-							
-							<div id="ethnicity-column3" class="column">
-								<input id="ethnicity27" type="checkbox" name="ethnicity" value="Japanese" onclick="selectThisOnly(this.id)" 
+								
+								<input id="ethnicity27" type="checkbox" name="ethnicity" value="Kurdish" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity27"]) == true) 
 									      {
 									?> 
@@ -531,10 +531,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Japanese</p>
+									<p>Kurdish</p>
 								</input>
-							
-								<input id="ethnicity28" type="checkbox" name="ethnicity" value="Jewish" onclick="selectThisOnly(this.id)" 
+								
+								<input id="ethnicity28" type="checkbox" name="ethnicity" value="Lebanese" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity28"]) == true) 
 									      {
 									?> 
@@ -546,10 +546,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Jewish</p>
+									<p>Lebanese</p>
 								</input>
-								
-								<input id="ethnicity29" type="checkbox" name="ethnicity" value="Korean" onclick="selectThisOnly(this.id)" 
+	
+								<input id="ethnicity29" type="checkbox" name="ethnicity" value="Malaysian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity29"]) == true) 
 									      {
 									?> 
@@ -561,10 +561,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Korean</p>
+									<p>Malaysian</p>
 								</input>
 								
-								<input id="ethnicity30" type="checkbox" name="ethnicity" value="Kurdish" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity30" type="checkbox" name="ethnicity" value="Mediterranean" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity30"]) == true) 
 									      {
 									?> 
@@ -576,10 +576,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Kurdish</p>
+									<p>Mediterranean</p>
 								</input>
 								
-								<input id="ethnicity31" type="checkbox" name="ethnicity" value="Latin American" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity31" type="checkbox" name="ethnicity" value="Mexican" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity31"]) == true) 
 									      {
 									?> 
@@ -591,10 +591,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Latin American</p>
+									<p>Mexican</p>
 								</input>
 								
-								<input id="ethnicity32" type="checkbox" name="ethnicity" value="Lebanese" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity32" type="checkbox" name="ethnicity" value="Mongolian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity32"]) == true) 
 									      {
 									?> 
@@ -606,10 +606,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Lebanese</p>
+									<p>Mongolian</p>
 								</input>
-	
-								<input id="ethnicity33" type="checkbox" name="ethnicity" value="Malaysian" onclick="selectThisOnly(this.id)" 
+								
+								<input id="ethnicity33" type="checkbox" name="ethnicity" value="Moroccan" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity33"]) == true) 
 									      {
 									?> 
@@ -621,10 +621,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Malaysian</p>
+									<p>Moroccan</p>
 								</input>
 								
-								<input id="ethnicity34" type="checkbox" name="ethnicity" value="Mediterranean" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity34" type="checkbox" name="ethnicity" value="Native American" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity34"]) == true) 
 									      {
 									?> 
@@ -636,10 +636,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Mediterranean</p>
+									<p>Native American</p>
 								</input>
 								
-								<input id="ethnicity35" type="checkbox" name="ethnicity" value="Mexican" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity35" type="checkbox" name="ethnicity" value="Pakistani" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity35"]) == true) 
 									      {
 									?> 
@@ -651,10 +651,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Mexican</p>
+									<p>Pakistani</p>
 								</input>
 								
-								<input id="ethnicity36" type="checkbox" name="ethnicity" value="Mongolian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity36" type="checkbox" name="ethnicity" value="Persian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity36"]) == true) 
 									      {
 									?> 
@@ -666,10 +666,12 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Mongolian</p>
+									<p>Persian</p>
 								</input>
-								
-								<input id="ethnicity37" type="checkbox" name="ethnicity" value="Moroccan" onclick="selectThisOnly(this.id)" 
+							</div>
+							
+							<div id="ethnicity-column4" class="column">
+								<input id="ethnicity37" type="checkbox" name="ethnicity" value="Philippine" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity37"]) == true) 
 									      {
 									?> 
@@ -681,10 +683,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Moroccan</p>
+									<p>Philippine</p>
 								</input>
-								
-								<input id="ethnicity38" type="checkbox" name="ethnicity" value="Native American" onclick="selectThisOnly(this.id)" 
+							
+								<input id="ethnicity38" type="checkbox" name="ethnicity" value="Polish" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity38"]) == true) 
 									      {
 									?> 
@@ -696,10 +698,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Native American</p>
+									<p>Polish</p>
 								</input>
 								
-								<input id="ethnicity39" type="checkbox" name="ethnicity" value="Pakistani" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity39" type="checkbox" name="ethnicity" value="Portuguese" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity39"]) == true) 
 									      {
 									?> 
@@ -711,12 +713,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Pakistani</p>
+									<p>Portuguese</p>
 								</input>
-							</div>
-							
-							<div id="ethnicity-column4" class="column">
-								<input id="ethnicity40" type="checkbox" name="ethnicity" value="Persian" onclick="selectThisOnly(this.id)" 
+								
+								<input id="ethnicity40" type="checkbox" name="ethnicity" value="Russian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity40"]) == true) 
 									      {
 									?> 
@@ -728,10 +728,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Persian</p>
+									<p>Russian</p>
 								</input>
-							
-								<input id="ethnicity41" type="checkbox" name="ethnicity" value="Polish" onclick="selectThisOnly(this.id)" 
+								
+								<input id="ethnicity41" type="checkbox" name="ethnicity" value="Scandinavian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity41"]) == true) 
 									      {
 									?> 
@@ -743,10 +743,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Polish</p>
+									<p>Scandinavian</p>
 								</input>
 								
-								<input id="ethnicity42" type="checkbox" name="ethnicity" value="Portuguese" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity42" type="checkbox" name="ethnicity" value="Scottish" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity42"]) == true) 
 									      {
 									?> 
@@ -758,10 +758,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Portuguese</p>
+									<p>Scottish</p>
 								</input>
 								
-								<input id="ethnicity43" type="checkbox" name="ethnicity" value="Puerto Rican" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity43" type="checkbox" name="ethnicity" value="Spanish" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity43"]) == true) 
 									      {
 									?> 
@@ -773,10 +773,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Puerto Rican</p>
+									<p>Spanish</p>
 								</input>
 								
-								<input id="ethnicity44" type="checkbox" name="ethnicity" value="Russian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity44" type="checkbox" name="ethnicity" value="Swiss" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity44"]) == true) 
 									      {
 									?> 
@@ -788,10 +788,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Russian</p>
+									<p>Swiss</p>
 								</input>
 								
-								<input id="ethnicity45" type="checkbox" name="ethnicity" value="Scandinavian" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity45" type="checkbox" name="ethnicity" value="Thai" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity45"]) == true) 
 									      {
 									?> 
@@ -803,10 +803,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Scandinavian</p>
+									<p>Thai</p>
 								</input>
 								
-								<input id="ethnicity46" type="checkbox" name="ethnicity" value="Scottish" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity46" type="checkbox" name="ethnicity" value="Turkish" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity46"]) == true) 
 									      {
 									?> 
@@ -818,10 +818,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>Scottish</p>
+									<p>Turkish</p>
 								</input>
 								
-								<input id="ethnicity47" type="checkbox" name="ethnicity" value="South American" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity47" type="checkbox" name="ethnicity" value="Ukrainian" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity47"]) == true) 
 									      {
 									?> 
@@ -833,10 +833,10 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 									?>
 								>
 										       
-									<p>South American</p>
+									<p>Ukrainian</p>
 								</input>
 								
-								<input id="ethnicity48" type="checkbox" name="ethnicity" value="Spanish" onclick="selectThisOnly(this.id)" 
+								<input id="ethnicity48" type="checkbox" name="ethnicity" value="Vietnamese" onclick="selectThisOnly(this.id)" 
 									<?php if (isset($_SESSION["ethnicity48"]) == true) 
 									      {
 									?> 
@@ -845,66 +845,6 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 										  }
 										  
 										  unset($_SESSION["ethnicity48"]);
-									?>
-								>
-										       
-									<p>Spanish</p>
-								</input>
-								
-								<input id="ethnicity49" type="checkbox" name="ethnicity" value="Thai" onclick="selectThisOnly(this.id)" 
-									<?php if (isset($_SESSION["ethnicity49"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["ethnicity49"]);
-									?>
-								>
-										       
-									<p>Thai</p>
-								</input>
-								
-								<input id="ethnicity50" type="checkbox" name="ethnicity" value="Ukrainian" onclick="selectThisOnly(this.id)" 
-									<?php if (isset($_SESSION["ethnicity50"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["ethnicity50"]);
-									?>
-								>
-										       
-									<p>Ukrainian</p>
-								</input>
-								
-								<input id="ethnicity51" type="checkbox" name="ethnicity" value="Venezuelan" onclick="selectThisOnly(this.id)" 
-									<?php if (isset($_SESSION["ethnicity51"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["ethnicity51"]);
-									?>
-								>
-										       
-									<p>Venezuelan</p>
-								</input>
-								
-								<input id="ethnicity52" type="checkbox" name="ethnicity" value="Vietnamese" onclick="selectThisOnly(this.id)" 
-									<?php if (isset($_SESSION["ethnicity52"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["ethnicity52"]);
 									?>
 								>
 										       

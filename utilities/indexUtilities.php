@@ -170,7 +170,7 @@ function getOtherFeatureHeading()
 function getEthnicityHeading()
 {
 	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
-	$ETHNICITY_PRIORITY_TOTAL = 157;
+	$ETHNICITY_PRIORITY_TOTAL = 149;
 	$ethnicityHeading = "None";
 	
 	$randomNum = rand(1, $ETHNICITY_PRIORITY_TOTAL);

@@ -4,31 +4,27 @@ American
 Arab
 Armenian
 Australian
-Brazilian
 Bulgarian
 Cajun
 Canadian
 Caribbean
+Central American
 Chinese
-Cuban
-Dominican
+Dutch
 Egyptian
 English
 French
 German
 Greek
-Guatemalan
 Hawaiian
 Indian
 Indonesian
 Irish
 Italian
-Jamaican
 Japanese
 Jewish
 Korean
 Kurdish
-Latin American
 Lebanese
 Malaysian
 Mediterranean
@@ -38,15 +34,15 @@ Moroccan
 Native American
 Pakistani
 Persian
+Philippine
 Polish
 Portuguese
-Puerto Rican
 Russian
 Scandinavian
 Scottish
-South American
 Spanish
+Swiss
 Thai
+Turkish
 Ukrainian
-Venezuelan
 Vietnamese
