@@ -1,8 +1,5 @@
-Afghan
 African
 American
-Arab
-Armenian
 Australian
 Bulgarian
 Cajun
@@ -24,16 +21,12 @@ Italian
 Japanese
 Jewish
 Korean
-Kurdish
-Lebanese
 Malaysian
 Mediterranean
 Mexican
+Middle Eastern
 Mongolian
 Moroccan
-Native American
-Pakistani
-Persian
 Philippine
 Polish
 Portuguese
@@ -43,6 +36,5 @@ Scottish
 Spanish
 Swiss
 Thai
-Turkish
 Ukrainian
 Vietnamese
