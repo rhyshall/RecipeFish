@@ -58,7 +58,7 @@ class User
 	}
 	
 	/****
-	** retrieve user data from CookBook database corresponding to given 
+	** retrieve user data from Recipe Fish database corresponding to given 
 	** username
 	**
 	** @param    str  $username  account username  	
@@ -93,7 +93,7 @@ class User
 	}
 	
 	/****
-	** retrieve user data from CookBook database corresponding to 
+	** retrieve user data from Recipe Fish database corresponding to 
 	** given email
 	**
 	** @param    str  $email  account email 	

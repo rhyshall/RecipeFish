@@ -20,6 +20,81 @@ class Review
 	private $rating;
 	private $comment;
 	
+	/****
+	** retrieve review data from Recipe Fish database corresponding to given 
+	** recipe ID
+	**
+	** @param    int  $recipeID  ID of corresponding recipe  	
+	** @return    double array  data of all reviews corresponding to given recipe
+	*/
+	function selectByRecipeID($recipeID)
+	{
+		$connection = RecipeFish::connect();
+	
+		$query = "select id, recipe_id, author_id, date_uploaded, rating, comment from review where recipe_id=:recipe_id;";
+		
+		$statement = $connection->prepare($query);
+
+		$statement->bindValue(":recipe_id", $recipeID);				
+
+		$statement->execute();
+		$result = $statement->fetchAll();
+		
+		RecipeFish::close($connection);
+		
+		return $result;
+	}
+	
+	/****
+	** retrieve review data from Recipe Fish database corresponding to given 
+	** author ID
+	**
+	** @param    int  $authorID  ID of corresponding author 	
+	** @return    double array  data of all reviews corresponding to given author
+	*/
+	function selectByAuthorID($authorID)
+	{
+		$connection = RecipeFish::connect();
+	
+		$query = "select id, recipe_id, author_id, date_uploaded, rating, comment from review where author_id=:author_id;";
+		
+		$statement = $connection->prepare($query);
+
+		$statement->bindValue(":author_id", $authorID);				
+
+		$statement->execute();
+		$result = $statement->fetchAll();
+		
+		RecipeFish::close($connection);
+		
+		return $result;
+	}
+	
+	/****
+	** retrieve review data from Recipe Fish database corresponding to given 
+	** rating value
+	**
+	** @param    int  $rating  value of corresponding rating	
+	** @return    double array  data of all reviews corresponding to given rating
+	*/
+	function selectByRating($rating)
+	{
+		$connection = RecipeFish::connect();
+	
+		$query = "select id, recipe_id, author_id, date_uploaded, rating, comment from review where rating=:rating;";
+		
+		$statement = $connection->prepare($query);
+
+		$statement->bindValue(":rating", $rating);				
+
+		$statement->execute();
+		$result = $statement->fetchAll();
+		
+		RecipeFish::close($connection);
+		
+		return $result;
+	}
+	
 	function getID()
 	{
 		return $this->ID;
