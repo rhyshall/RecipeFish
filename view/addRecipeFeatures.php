@@ -341,1095 +341,44 @@ $ETHNICITY_COUNT = 40;
 							<!--color underline for type category title-->
 						</div>
 					
-						<!--popular food/drink type category check-box list-->
+						<!--popular ingredients category check-box list-->
 						<div id="popular-type-columns">
-							<div id="popular-type-column1">
-								<input id="popular-type1" type="checkbox" name="popular-type[]" value="Apples"
-									<?php if (isset($_SESSION["popular-type1"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type1"]);
-									?>
-								>
-										       
-									<p>Apples</p>
-								</input>
+							<?php 
+								$handle = fopen($root . "catalogs/popularIngredients.txt", "r");
+								$count = 0;
 								
-								<input id="popular-type2" type="checkbox" name="popular-type[]" value="Bacon"
-									<?php if (isset($_SESSION["popular-type2"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type2"]);
-									?>
-								>
-										       
-									<p>Bacon</p>
-								</input>
+								echo '<div id="popular-type-column1">';
 								
-								<input id="popular-type3" type="checkbox" name="popular-type[]" value="Bananas"
-									<?php if (isset($_SESSION["popular-type3"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type3"]);
-									?>
-								>
-										       
-									<p>Bananas</p>
-								</input>
-								
-								<input id="popular-type4" type="checkbox" name="popular-type[]" value="Beans"
-									<?php if (isset($_SESSION["popular-type4"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type4"]);
-									?>
-								>
-										       
-									<p>Beans</p>
-								</input>
-								
-								<input id="popular-type5" type="checkbox" name="popular-type[]" value="Beef"
-									<?php if (isset($_SESSION["popular-type5"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type5"]);
-									?>
-								>
-										       
-									<p>Beef</p>
-								</input>
-								
-								<input id="popular-type6" type="checkbox" name="popular-type[]" value="Beer"
-									<?php if (isset($_SESSION["popular-type6"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type6"]);
-									?>
-								>
-										       
-									<p>Beer</p>
-								</input>
-								
-								<input id="popular-type7" type="checkbox" name="popular-type[]" value="Berries"
-									<?php if (isset($_SESSION["popular-type7"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type7"]);
-									?>
-								>
-										       
-									<p>Berries</p>
-								</input>
-								
-								<input id="popular-type8" type="checkbox" name="popular-type[]" value="Bread"
-									<?php if (isset($_SESSION["popular-type8"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type8"]);
-									?>
-								>
-										       
-									<p>Bread</p>
-								</input>
-								
-								<input id="popular-type9" type="checkbox" name="popular-type[]" value="Broccoli"
-									<?php if (isset($_SESSION["popular-type9"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type9"]);
-									?>
-								>
-										       
-									<p>Broccoli</p>
-								</input>
-								
-								<input id="popular-type10" type="checkbox" name="popular-type[]" value="Cabbage"
-									<?php if (isset($_SESSION["popular-type10"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type10"]);
-									?>
-								>
-										       
-									<p>Cabbage</p>
-								</input>
-								
-								<input id="popular-type11" type="checkbox" name="popular-type[]" value="Cake"
-									<?php if (isset($_SESSION["popular-type11"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type11"]);
-									?>
-								>
-										       
-									<p>Cake</p>
-								</input>
-								
-								<input id="popular-type12" type="checkbox" name="popular-type[]" value="Carrots"
-									<?php if (isset($_SESSION["popular-type12"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type12"]);
-									?>
-								>
-										       
-									<p>Carrots</p>
-								</input>
-								
-								<input id="popular-type13" type="checkbox" name="popular-type[]" value="Cauliflower"
-									<?php if (isset($_SESSION["popular-type13"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type13"]);
-									?>
-								>
-										       
-									<p>Cauliflower</p>
-								</input>
-								
-								<input id="popular-type14" type="checkbox" name="popular-type[]" value="Cheese"
-									<?php if (isset($_SESSION["popular-type14"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type14"]);
-									?>
-								>
-										       
-									<p>Cheese</p>
-								</input>
-								
-								<input id="popular-type15" type="checkbox" name="popular-type[]" value="Chicken"
-									<?php if (isset($_SESSION["popular-type15"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type15"]);
-									?>
-								>
-										       
-									<p>Chicken</p>
-								</input>
-								
-								<input id="popular-type16" type="checkbox" name="popular-type[]" value="Chips"
-									<?php if (isset($_SESSION["popular-type16"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type16"]);
-									?>
-								>
-										       
-									<p>Chips</p>
-								</input>
-								
-								<input id="popular-type17" type="checkbox" name="popular-type[]" value="Chocolate"
-									<?php if (isset($_SESSION["popular-type17"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type17"]);
-									?>
-								>
-										       
-									<p>Chocolate</p>
-								</input>
-							
-								<input id="popular-type18" type="checkbox" name="popular-type[]" value="Citrus fruits"
-									<?php if (isset($_SESSION["popular-type18"]) == true) 
-										  {
-									?> 
-											   checked
-									<?php 
-										  }
+								while (($ingredient = fgets($handle)) !== false)
+								{
+							?>
+									<input id="popular-type<?php echo ($count+1) ?>" type="checkbox" name="popular-type[]" value="<?php echo $ingredient ?>" onclick="selectThisOnly(this.id)" 
+										<?php if (isset($_SESSION["popular-type" . $count]) == true) 
+											  {
+										?> 
+												   checked
+										<?php 
+											  }
 											  
-										  unset($_SESSION["popular-type18"]);
-									?>
-								>
+											  unset($_SESSION["popular-type" . ($count+1)]);
+										?>
+									>
 												   
-									<p>Citrus fruits</p>
-								</input>
-							</div>
-				
-							<div id="popular-type-column2" class="column">
-								<input id="popular-type19" type="checkbox" name="popular-type[]" value="Cocktail"
-									<?php if (isset($_SESSION["popular-type19"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type19"]);
-									?>
-								>
-										       
-									<p>Cocktail</p>
-								</input>
-								
-								<input id="popular-type20" type="checkbox" name="popular-type[]" value="Coconut"
-									<?php if (isset($_SESSION["popular-type20"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type20"]);
-									?>
-								>
-										       
-									<p>Coconut</p>
-								</input>
-								
-								<input id="popular-type21" type="checkbox" name="popular-type[]" value="Coffee"
-									<?php if (isset($_SESSION["popular-type21"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type21"]);
-									?>
-								>
-										       
-									<p>Coffee</p>
-								</input>
-								
-								<input id="popular-type22" type="checkbox" name="popular-type[]" value="Cookies"
-									<?php if (isset($_SESSION["popular-type22"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type22"]);
-									?>
-								>
-										       
-									<p>Cookies</p>
-								</input>
-								
-								<input id="popular-type23" type="checkbox" name="popular-type[]" value="Corn"
-									<?php if (isset($_SESSION["popular-type23"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type23"]);
-									?>
-								>
-										       
-									<p>Corn</p>
-								</input>
-								
-								<input id="popular-type24" type="checkbox" name="popular-type[]" value="Crackers"
-									<?php if (isset($_SESSION["popular-type24"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type24"]);
-									?>
-								>
-										       
-									<p>Crackers</p>
-								</input>
-								
-								<input id="popular-type25" type="checkbox" name="popular-type[]" value="Cream"
-									<?php if (isset($_SESSION["popular-type25"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type25"]);
-									?>
-								>
-										       
-									<p>Cream</p>
-								</input>
-								
-								<input id="popular-type26" type="checkbox" name="popular-type[]" value="Cucumbers"
-									<?php if (isset($_SESSION["popular-type26"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type26"]);
-									?>
-								>
-										       
-									<p>Cucumbers</p>
-								</input>
-								
-								<input id="popular-type27" type="checkbox" name="popular-type[]" value="Dip"
-									<?php if (isset($_SESSION["popular-type27"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type27"]);
-									?>
-								>
-										       
-									<p>Dip</p>
-								</input>
-								
-								<input id="popular-type28" type="checkbox" name="popular-type[]" value="Doughnuts"
-									<?php if (isset($_SESSION["popular-type28"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type28"]);
-									?>
-								>
-										       
-									<p>Doughnuts</p>
-								</input>
-								
-								<input id="popular-type29" type="checkbox" name="popular-type[]" value="Eggs"
-									<?php if (isset($_SESSION["popular-type29"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type29"]);
-									?>
-								>
-										       
-									<p>Eggs</p>
-								</input>
-								
-								<input id="popular-type30" type="checkbox" name="popular-type[]" value="Garlic"
-									<?php if (isset($_SESSION["popular-type30"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type30"]);
-									?>
-								>
-										       
-									<p>Garlic</p>
-								</input>
-								
-								<input id="popular-type31" type="checkbox" name="popular-type[]" value="Gin"
-									<?php if (isset($_SESSION["popular-type31"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type31"]);
-									?>
-								>
-										       
-									<p>Gin</p>
-								</input>
-								
-								<input id="popular-type32" type="checkbox" name="popular-type[]" value="Grapes"
-									<?php if (isset($_SESSION["popular-type32"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type32"]);
-									?>
-								>
-										       
-									<p>Grapes</p>
-								</input>
-								
-								<input id="popular-type33" type="checkbox" name="popular-type[]" value="Ice"
-									<?php if (isset($_SESSION["popular-type33"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type33"]);
-									?>
-								>
-										       
-									<p>Ice</p>
-								</input>
-								
-								<input id="popular-type34" type="checkbox" name="popular-type[]" value="Juice"
-									<?php if (isset($_SESSION["popular-type34"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type34"]);
-									?>
-								>
-										       
-									<p>Juice</p>
-								</input>
-								
-								<input id="popular-type35" type="checkbox" name="popular-type[]" value="Lamb"
-									<?php if (isset($_SESSION["popular-type35"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type35"]);
-									?>
-								>
-										       
-									<p>Lamb</p>
-								</input>
-								
-								<input id="popular-type36" type="checkbox" name="popular-type[]" value="Liqueur"
-									<?php if (isset($_SESSION["popular-type36"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type36"]);
-									?>
-								>
-										       
-									<p>Liqueur (sweet liquor)</p>
-								</input>
-							</div>
-							
-							<div id="popular-type-column3" class="column">
-								<input id="popular-type37" type="checkbox" name="popular-type[]" value="Melons"
-									<?php if (isset($_SESSION["popular-type37"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type37"]);
-									?>
-								>
-										       
-									<p>Melons</p>
-								</input>
-								
-								<input id="popular-type38" type="checkbox" name="popular-type[]" value="Milk"
-									<?php if (isset($_SESSION["popular-type38"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type38"]);
-									?>
-								>
-										       
-									<p>Milk</p>
-								</input>
-								
-								<input id="popular-type39" type="checkbox" name="popular-type[]" value="Muffins"
-									<?php if (isset($_SESSION["popular-type39"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type39"]);
-									?>
-								>
-										       
-									<p>Muffins</p>
-								</input>
-								
-								<input id="popular-type40" type="checkbox" name="popular-type[]" value="Nuts"
-									<?php if (isset($_SESSION["popular-type40"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type40"]);
-									?>
-								>
-										       
-									<p>Nuts</p>
-								</input>
-								
-								<input id="popular-type41" type="checkbox" name="popular-type[]" value="Onions"
-									<?php if (isset($_SESSION["popular-type41"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type41"]);
-									?>
-								>
-										       
-									<p>Onions</p>
-								</input>
-								
-								<input id="popular-type42" type="checkbox" name="popular-type[]" value="Pasta"
-									<?php if (isset($_SESSION["popular-type42"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type42"]);
-									?>
-								>
-										       
-									<p>Pasta</p>
-								</input>
-								
-								<input id="popular-type43" type="checkbox" name="popular-type[]" value="Pastries"
-									<?php if (isset($_SESSION["popular-type43"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type43"]);
-									?>
-								>
-										       
-									<p>Pastries</p>
-								</input>
-								
-								<input id="popular-type44" type="checkbox" name="popular-type[]" value="Peaches"
-									<?php if (isset($_SESSION["popular-type44"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type44"]);
-									?>
-								>
-										       
-									<p>Peaches</p>
-								</input>
-								
-								<input id="popular-type45" type="checkbox" name="popular-type[]" value="Pears"
-									<?php if (isset($_SESSION["popular-type45"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type45"]);
-									?>
-								>
-										       
-									<p>Pears</p>
-								</input>
-								
-								<input id="popular-type46" type="checkbox" name="popular-type[]" value="Peas"
-									<?php if (isset($_SESSION["popular-type46"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type46"]);
-									?>
-								>
-										       
-									<p>Peas</p>
-								</input>
-								
-								<input id="popular-type47" type="checkbox" name="popular-type[]" value="Peppers"
-									<?php if (isset($_SESSION["popular-type47"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type47"]);
-									?>
-								>
-										       
-									<p>Peppers</p>
-								</input>
-								
-								<input id="popular-type48" type="checkbox" name="popular-type[]" value="Pies"
-									<?php if (isset($_SESSION["popular-type48"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type48"]);
-									?>
-								>
-										       
-									<p>Pies</p>
-								</input>
-								
-								<input id="popular-type49" type="checkbox" name="popular-type[]" value="Pineapple"
-									<?php if (isset($_SESSION["popular-type49"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type49"]);
-									?>
-								>
-										       
-									<p>Pineapple</p>
-								</input>
-								
-								<input id="popular-type50" type="checkbox" name="popular-type[]" value="Pop"
-									<?php if (isset($_SESSION["popular-type50"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type50"]);
-									?>
-								>
-										       
-									<p>Pop</p>
-								</input>
-								
-								<input id="popular-type51" type="checkbox" name="popular-type[]" value="Pork"
-									<?php if (isset($_SESSION["popular-type51"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type51"]);
-									?>
-								>
-										       
-									<p>Pork</p>
-								</input>
-								
-								<input id="popular-type52" type="checkbox" name="popular-type[]" value="Potatoes"
-									<?php if (isset($_SESSION["popular-type52"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type52"]);
-									?>
-								>
-										       
-									<p>Potatoes</p>
-								</input>
-								
-								<input id="popular-type53" type="checkbox" name="popular-type[]" value="Pudding"
-									<?php if (isset($_SESSION["popular-type53"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type53"]);
-									?>
-								>
-										       
-									<p>Pudding</p>
-								</input>
-								
-								<input id="popular-type54" type="checkbox" name="popular-type[]" value="Rice"
-									<?php if (isset($_SESSION["popular-type54"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type54"]);
-									?>
-								>
-										       
-									<p>Rice</p>
-								</input>
-							</div>
-							
-							<div id="popular-type-column4">
-								<input id="popular-type55" type="checkbox" name="popular-type[]" value="Rum"
-									<?php if (isset($_SESSION["popular-type55"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type55"]);
-									?>
-								>
-										       
-									<p>Rum</p>
-								</input>
-							
-								<input id="popular-type56" type="checkbox" name="popular-type[]" value="Salad"
-									<?php if (isset($_SESSION["popular-type56"]) == true) 
-										  {
-									?> 
-											   checked
-									<?php 
-										  }
-											  
-										  unset($_SESSION["popular-type56"]);
-									?>
-								>
-										       
-									<p>Salad</p>
-								</input>
-							
-								<input id="popular-type57" type="checkbox" name="popular-type[]" value="Sandwiches"
-									<?php if (isset($_SESSION["popular-type57"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type57"]);
-									?>
-								>
-										       
-									<p>Sandwiches</p>
-								</input>
-								
-								<input id="popular-type58" type="checkbox" name="popular-type[]" value="Sauce"
-									<?php if (isset($_SESSION["popular-type58"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type58"]);
-									?>
-								>
-										       
-									<p>Sauce</p>
-								</input>
-								
-								<input id="popular-type59" type="checkbox" name="popular-type[]" value="Sausage"
-									<?php if (isset($_SESSION["popular-type59"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type59"]);
-									?>
-								>
-										       
-									<p>Sausage</p>
-								</input>
-								
-								<input id="popular-type60" type="checkbox" name="popular-type[]" value="Seafood"
-									<?php if (isset($_SESSION["popular-type60"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type60"]);
-									?>
-								>
-										       
-									<p>Seafood</p>
-								</input>
-								
-								<input id="popular-type61" type="checkbox" name="popular-type[]" value="Shake"
-									<?php if (isset($_SESSION["popular-type61"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type61"]);
-									?>
-								>
-										       
-									<p>Shake</p>
-								</input>
-								
-								<input id="popular-type62" type="checkbox" name="popular-type[]" value="Smoothie"
-									<?php if (isset($_SESSION["popular-type62"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type62"]);
-									?>
-								>
-										       
-									<p>Smoothie</p>
-								</input>
-								
-								<input id="popular-type63" type="checkbox" name="popular-type[]" value="Soup"
-									<?php if (isset($_SESSION["popular-type63"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type63"]);
-									?>
-								>
-										       
-									<p>Soup</p>
-								</input>
-								
-								<input id="popular-type64" type="checkbox" name="popular-type[]" value="Tea"
-									<?php if (isset($_SESSION["popular-type64"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type64"]);
-									?>
-								>
-										       
-									<p>Tea</p>
-								</input>
-								
-								<input id="popular-type65" type="checkbox" name="popular-type[]" value="Tequila"
-									<?php if (isset($_SESSION["popular-type65"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type65"]);
-									?>
-								>
-										       
-									<p>Tequila</p>
-								</input>
-								
-								<input id="popular-type66" type="checkbox" name="popular-type[]" value="Tofu"
-									<?php if (isset($_SESSION["popular-type66"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type66"]);
-									?>
-								>
-										       
-									<p>Tofu</p>
-								</input>
-								
-								<input id="popular-type67" type="checkbox" name="popular-type[]" value="Tomatoes"
-									<?php if (isset($_SESSION["popular-type67"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type67"]);
-									?>
-								>
-										       
-									<p>Tomatoes</p>
-								</input>
-								
-								<input id="popular-type68" type="checkbox" name="popular-type[]" value="Turkey"
-									<?php if (isset($_SESSION["popular-type68"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type68"]);
-									?>
-								>
-										       
-									<p>Turkey</p>
-								</input>
-								
-								<input id="popular-type69" type="checkbox" name="popular-type[]" value="Vodka"
-									<?php if (isset($_SESSION["popular-type69"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type69"]);
-									?>
-								>
-										       
-									<p>Vodka</p>
-								</input>
-								
-								<input id="popular-type70" type="checkbox" name="popular-type[]" value="Whisky"
-									<?php if (isset($_SESSION["popular-type70"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type70"]);
-									?>
-								>
-										       
-									<p>Whisky</p>
-								</input>
-								
-								<input id="popular-type71" type="checkbox" name="popular-type[]" value="Wine"
-									<?php if (isset($_SESSION["popular-type71"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type71"]);
-									?>
-								>
-										       
-									<p>Wine</p>
-								</input>
-								
-								<input id="popular-type72" type="checkbox" name="popular-type[]" value="Yogurt"
-									<?php if (isset($_SESSION["popular-type72"]) == true) 
-									      {
-									?> 
-										       checked
-									<?php 
-										  }
-										  
-										  unset($_SESSION["popular-type72"]);
-									?>
-								>
-										       
-									<p>Yogurt</p>
-								</input>
-							</div>
+										<p><?php echo $ingredient?></p>
+									</input>
+							<?php 
+									$count++;
+									
+									//start new column on multiple of 10 
+									if (($count % 19) == 0)
+									{
+										echo '</div>';
+										echo '<div id="popular-type-column' . (($count/19)+1) . '" class="column">';
+									}
+								}
+
+								echo '</div>';
+							?>
 						
 							<div id="clear-float6">
 								<!--clear float from previous content-->
@@ -1472,7 +421,7 @@ $ETHNICITY_COUNT = 40;
 									<p>BBQ & Grilling</p>
 								</input>
 								
-								<input id="other2" type="checkbox" name="other[]" value="Fine Dining"
+								<input id="other2" type="checkbox" name="other[]" value="Deep Fryer"
 									<?php if (isset($_SESSION["other2"]) == true) 
 									      {
 									?> 
@@ -1484,10 +433,10 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Fine Dining</p>
+									<p>Deep Fryer</p>
 								</input>
 								
-								<input id="other3" type="checkbox" name="other[]" value="Frozen"
+								<input id="other3" type="checkbox" name="other[]" value="Fine Dining"
 									<?php if (isset($_SESSION["other3"]) == true) 
 									      {
 									?> 
@@ -1499,10 +448,10 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Frozen</p>
+									<p>Fine Dining</p>
 								</input>
 								
-								<input id="other4" type="checkbox" name="other[]" value="Gluten-free"
+								<input id="other4" type="checkbox" name="other[]" value="Frozen"
 									<?php if (isset($_SESSION["other4"]) == true) 
 									      {
 									?> 
@@ -1514,12 +463,12 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Gluten-free</p>
+									<p>Frozen</p>
 								</input>
 							</div>
 				
 							<div id="other-column2" class="column">
-								<input id="other5" type="checkbox" name="other[]" value="Healthy"
+								<input id="other5" type="checkbox" name="other[]" value="Gluten-free"
 									<?php if (isset($_SESSION["other5"]) == true) 
 									      {
 									?> 
@@ -1531,10 +480,10 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Healthy</p>
+									<p>Gluten-free</p>
 								</input>
-								
-								<input id="other6" type="checkbox" name="other[]" value="Main Dish"
+							
+								<input id="other6" type="checkbox" name="other[]" value="Healthy"
 									<?php if (isset($_SESSION["other6"]) == true) 
 									      {
 									?> 
@@ -1546,10 +495,10 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Main Dish</p>
+									<p>Healthy</p>
 								</input>
 								
-								<input id="other7" type="checkbox" name="other[]" value="Oven-baked"
+								<input id="other7" type="checkbox" name="other[]" value="Main Dish"
 									<?php if (isset($_SESSION["other7"]) == true) 
 									      {
 									?> 
@@ -1561,12 +510,10 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Oven-baked</p>
+									<p>Main Dish</p>
 								</input>
-							</div>
-							
-							<div id="other-column3" class="column">
-								<input id="other8" type="checkbox" name="other[]" value="Quick & Easy"
+								
+								<input id="other8" type="checkbox" name="other[]" value="Oven-baked"
 									<?php if (isset($_SESSION["other8"]) == true) 
 									      {
 									?> 
@@ -1578,10 +525,12 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Quick & Easy</p>
+									<p>Oven-baked</p>
 								</input>
-								
-								<input id="other9" type="checkbox" name="other[]" value="Side Dish"
+							</div>
+							
+							<div id="other-column3" class="column">
+								<input id="other9" type="checkbox" name="other[]" value="Quick & Easy"
 									<?php if (isset($_SESSION["other9"]) == true) 
 									      {
 									?> 
@@ -1593,10 +542,10 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Side Dish</p>
+									<p>Quick & Easy</p>
 								</input>
-
-								<input id="other10" type="checkbox" name="other[]" value="Slow Cooker"
+								
+								<input id="other10" type="checkbox" name="other[]" value="Side Dish"
 									<?php if (isset($_SESSION["other10"]) == true) 
 									      {
 									?> 
@@ -1608,12 +557,10 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Slow Cooker</p>
+									<p>Side Dish</p>
 								</input>
-							</div>
-							
-							<div id="other-column4" class="column">
-								<input id="other11" type="checkbox" name="other[]" value="Stove-top"
+
+								<input id="other11" type="checkbox" name="other[]" value="Slow Cooker"
 									<?php if (isset($_SESSION["other11"]) == true) 
 									      {
 									?> 
@@ -1625,10 +572,12 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Stove-top</p>
+									<p>Slow Cooker</p>
 								</input>
+							</div>
 							
-								<input id="other12" type="checkbox" name="other[]" value="Vegan"
+							<div id="other-column4" class="column">
+								<input id="other12" type="checkbox" name="other[]" value="Stove-top"
 									<?php if (isset($_SESSION["other12"]) == true) 
 									      {
 									?> 
@@ -1640,10 +589,10 @@ $ETHNICITY_COUNT = 40;
 									?>
 								>
 										       
-									<p>Vegan</p>
+									<p>Stove-top</p>
 								</input>
-								
-								<input id="other13" type="checkbox" name="other[]" value="Vegetarian"
+							
+								<input id="other13" type="checkbox" name="other[]" value="Vegan"
 									<?php if (isset($_SESSION["other13"]) == true) 
 									      {
 									?> 
@@ -1652,6 +601,21 @@ $ETHNICITY_COUNT = 40;
 										  }
 										  
 										  unset($_SESSION["other13"]);
+									?>
+								>
+										       
+									<p>Vegan</p>
+								</input>
+								
+								<input id="other14" type="checkbox" name="other[]" value="Vegetarian"
+									<?php if (isset($_SESSION["other14"]) == true) 
+									      {
+									?> 
+										       checked
+									<?php 
+										  }
+										  
+										  unset($_SESSION["other14"]);
 									?>
 								>
 										       

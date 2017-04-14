@@ -104,5 +104,19 @@ function isValidDescriptionLength($description)
 	
 	return $isValid;
 }
+
+/****
+ ** Capitalizes first letter of recipe name if not already 
+ ** capitalized 
+ **
+ ** @param    str  $name  recipe name
+ ** @return    str  recipe name with first letter capitalized 
+ **/
+function capitalizeName($name)
+{
+	$name = ucfirst($name);
+	
+	return $name;
+}
 ?>
  

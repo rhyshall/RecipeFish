@@ -18,11 +18,12 @@ include($root . "model/recipe.php");
 function getMealTypeHeading()
 {
 	$mealTypeHeading = "";
-	$mealTypeHeadings = array("Jump-Start the Day", "Delicious Desserts", "Luscious Lunches", "Dinner Dining", "Appetizers & Snacks", "Adult Drinks", "Quench Your Thirst!", "Dinner Dining");
+	$mealTypeHeadings = array("Jump-Start the Day", "Breakfast Ideas", "Delicious Desserts", "Sweet Treats", "Time for Dessert", "Lunch Time", "Lovable Lunches", "Dinner Dining", "Supper Time", 
+							"Appetizers", "Starters", "Snacks", "Snack Ideas", "Adult Drinks", "Alcoholic Beverages", "Quench Your Thirst!", "Tasty Beverages");
 	
-	$randomNum = rand(0, 7);
+	$randomNum = rand(0, 16);
 	
-	for ($i = 0; $i <= 7; $i++)
+	for ($i = 0; $i <= 16; $i++)
 	{
 		if ($randomNum == $i)
 		{
@@ -52,7 +53,7 @@ function getNextHolidayHeading()
 	
 	if ((strcmp($currentMonth, "04") > 0) && (strcmp($currentMonth, "09") < 0))
 	{
-		$nextHolidayHeading = "None";
+		$nextHolidayHeading = "None"; 
 	}
 	
 	else 
@@ -84,7 +85,7 @@ function getNextHolidayHeading()
 function getPopularIngredientHeading()
 {
 	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
-	$INGREDIENT_PRIORITY_TOTAL = 276;
+	$INGREDIENT_PRIORITY_TOTAL = 292;
 	$ingredientHeading = "None";
 	
 	$randomNum = rand(1, $INGREDIENT_PRIORITY_TOTAL);
@@ -127,7 +128,7 @@ function getPopularIngredientHeading()
 function getOtherFeatureHeading()
 {
 	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
-	$OTHER_PRIORITY_TOTAL = 33;
+	$OTHER_PRIORITY_TOTAL = 35;
 	$otherFeatureHeading = "None";
 	
 	$randomNum = rand(1, $OTHER_PRIORITY_TOTAL);
@@ -170,7 +171,7 @@ function getOtherFeatureHeading()
 function getEthnicityHeading()
 {
 	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
-	$ETHNICITY_PRIORITY_TOTAL = 140;
+	$ETHNICITY_PRIORITY_TOTAL = 141;
 	$ethnicityHeading = "None";
 	
 	$randomNum = rand(1, $ETHNICITY_PRIORITY_TOTAL);
@@ -226,22 +227,22 @@ function generateHeading()
 	    $heading = "Under the Clock";
 	}
 
-	if (($randomNum >= 29) && ($randomNum <= 31))
+	if (($randomNum >= 29) && ($randomNum <= 30))
 	{
 		$heading = "Newest";
 	}
 	
-	if (($randomNum >= 32) && ($randomNum <= 42))
+	if (($randomNum >= 31) && ($randomNum <= 41))
 	{
 		$heading = "Top Hit";
 	}
 	
-	if (($randomNum >= 43) && ($randomNum <= 53))
+	if (($randomNum >= 42) && ($randomNum <= 52))
 	{
 		$heading = "Trending Now";
 	}
 	
-	if (($randomNum >= 54) && ($randomNum <= 58))
+	if (($randomNum >= 53) && ($randomNum <= 57))
 	{
 		$heading = getNextHolidayHeading();
 		
@@ -251,7 +252,7 @@ function generateHeading()
 		}
 	}
 	
-	if (($randomNum >= 59) && ($randomNum <= 63))
+	if (($randomNum >= 58) && ($randomNum <= 63))
 	{
 		$heading = "New";
 	}
@@ -283,7 +284,8 @@ function generateHeading()
 function isMealType($heading)
 {
 	$isMealType = false;
-	$mealHeadings = array("Jump-Start the Day", "Delicious Desserts", "Luscious Lunches", "Dinner Dining", "Appetizers & Snacks", "Adult Drinks", "Quench Your Thirst!");
+	$mealHeadings = array("Jump-Start the Day", "Breakfast Ideas", "Delicious Desserts", "Sweet Treats", "Time for Dessert", "Lunch Time", "Lovable Lunches", "Dinner Dining", "Supper Time", 
+							"Appetizers", "Starters", "Snacks", "Snack Ideas", "Adult Drinks", "Alcoholic Beverages", "Quench Your Thirst!", "Tasty Beverages");
 	
 	$mealHeadingCount = count($mealHeadings);
 	
@@ -557,11 +559,21 @@ function generateByMealType($heading)
 	$recipeSelector = new Recipe;
 	$mealType = "";
 	$candidates = array();
+	
+	array("Jump-Start the Day", "Breakfast Ideas", "Delicious Desserts", "Sweet Treats", "Time for Dessert", "Lunch Time", "Lovable Lunches", "Dinner Dining", "Supper Time", 
+							"Appetizers", "Starters", "Snacks", "Snack Ideas", "Adult Drinks", "Alcoholic Beverages", "Quench Your Thirst!", "Tasty Beverages");
 
 	//get recipe based on given meal category
 	switch ($heading)
 	{
 		case "Jump-Start the Day":
+		{
+			$candidates = $recipeSelector->selectByMealType("Breakfast");
+			
+			break;
+		}
+		
+		case "Breakfast Ideas":
 		{
 			$candidates = $recipeSelector->selectByMealType("Breakfast");
 			
@@ -575,7 +587,28 @@ function generateByMealType($heading)
 			break;
 		}
 		
-		case "Luscious Lunches":
+		case "Sweet Treats":
+		{
+			$candidates = $recipeSelector->selectByMealType("Dessert");
+			
+			break;
+		}
+		
+		case "Time for Dessert":
+		{
+			$candidates = $recipeSelector->selectByMealType("Dessert");
+			
+			break;
+		}
+		
+		case "Lunch Time":
+		{
+			$candidates = $recipeSelector->selectByMealType("Lunch");
+			
+			break;
+		}
+		
+		case "Lovable Lunches":
 		{
 			$candidates = $recipeSelector->selectByMealType("Lunch");
 			
@@ -589,20 +622,37 @@ function generateByMealType($heading)
 			break;
 		}
 		
-		case "Appetizers & Snacks":
+		case "Supper Time":
 		{
-			//40% chance to choose from appetizers, 60% for snacks
-			$randomNum = rand(1, 5);
+			$candidates = $recipeSelector->selectByMealType("Dinner");
 			
-			if ($randomNum <= 2)
-			{
-				$candidates = $recipeSelector->selectByMealType("Appetizer");
-			}
+			break;
+		}
+
+		case "Appetizers":
+		{
+			$candidates = $recipeSelector->selectByMealType("Appetizer");
 			
-			else 
-			{
-				$candidates = $recipeSelector->selectByMealType("Snack");
-			}
+			break;
+		}
+		
+		case "Starters":
+		{
+			$candidates = $recipeSelector->selectByMealType("Appetizer");
+			
+			break;
+		}
+		
+		case "Snacks":
+		{
+			$candidates = $recipeSelector->selectByMealType("Snack");
+			
+			break;
+		}
+		
+		case "Snack Ideas":
+		{
+			$candidates = $recipeSelector->selectByMealType("Snack");
 			
 			break;
 		}
@@ -614,7 +664,21 @@ function generateByMealType($heading)
 			break;
 		}
 		
+		case "Alcoholic Beverages":
+		{
+			$candidates = $recipeSelector->selectByMealType("Alcohol");
+			
+			break;
+		}
+		
 		case "Quench Your Thirst!":
+		{
+			$candidates = $recipeSelector->selectByMealType("Beverage");
+			
+			break;
+		}
+		
+		case "Tasty Beverages":
 		{
 			$candidates = $recipeSelector->selectByMealType("Beverage");
 			

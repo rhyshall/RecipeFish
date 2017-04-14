@@ -38,6 +38,10 @@ include($root . "utilities/database.php");
 			<?php 
 				include($root . "view/profileHeader.php");
 			?>
+			
+			<div id="title">
+				<p>Profile</p>
+			</div>
 		
 			<?php 
 				include($root . "view/profileMenu.php");

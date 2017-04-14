@@ -14,6 +14,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 class Review
 {
 	private $ID;
+	private $recipeID;
 	private $authorID;
 	private $dateUploaded;
 	private $rating;
@@ -24,9 +25,14 @@ class Review
 		return $this->ID;
 	}
 	
+	function getRecipeID()
+	{
+		return $this->recipeID;
+	}
+	
 	function getAuthorID()
 	{
-		return $this->ID;
+		return $this->authorID;
 	}
 	
 	function getDateUploaded()
@@ -47,6 +53,11 @@ class Review
 	function setID($param)
 	{
 		$this->ID = $param;	
+	}
+	
+	function setRecipeID($param)
+	{
+		$this->recipeID = $param;	
 	}
 	
 	function setAuthorID($param)

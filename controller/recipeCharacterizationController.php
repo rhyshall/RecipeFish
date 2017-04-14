@@ -23,7 +23,7 @@ $missingField = false; /* becomes true if any field is left empty */
 if (strlen($_POST["recipe-name"]) > 0)
 {
 	//assign name value to global variable
-	$_SESSION["recipeNameField"] = $_POST["recipe-name"];
+	$_SESSION["recipeNameField"] = capitalizeName($_POST["recipe-name"]);
 }
 
 else 

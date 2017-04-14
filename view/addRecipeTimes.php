@@ -86,7 +86,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 											}
 										?>
 						
-										<option value=">24">24+</option>
+										<option value="24+">24+</option>
 									</select>
 					
 									<p>Hour(s)</p>
@@ -111,7 +111,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 											}
 										?>
 						
-										<option value=">24">24+</option>
+										<option value="24+">24+</option>
 									</select>
 					
 									<p>Hour(s)</p>
@@ -202,7 +202,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 											}
 										?>
 						
-										<option value=">24">24+</option>
+										<option value="24+">24+</option>
 									</select>
 					
 									<p>Hour(s)</p>
@@ -227,7 +227,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 											}
 										?>
 						
-										<option value=">24">24+</option>
+										<option value="24+">24+</option>
 									</select>
 					
 									<p>Hour(s)</p>
@@ -318,7 +318,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 											}
 										?>
 						
-										<option value=">24">24+</option>
+										<option value="24+">24+</option>
 									</select>
 					
 									<p>Hour(s)</p>
@@ -343,7 +343,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 											}
 										?>
 						
-										<option value=">24">24+</option>
+										<option value="24+">24+</option>
 									</select>
 					
 									<p>Hour(s)</p>

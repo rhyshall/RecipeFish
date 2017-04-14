@@ -297,7 +297,7 @@ body
 
 #popular-type-columns p 
 {
-	padding-left: 18px;
+	padding-left: 21px;
 	margin-top: -14.5px;
 	font-size: 13px;
 }
@@ -320,7 +320,6 @@ body
 #popular-type-column4
 {
 	float: left;
-	padding-left: 72px;
 }
 
 #clear-float6

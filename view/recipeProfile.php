@@ -168,7 +168,7 @@ $authorUsername = $userObj->getUsername();
 					<div id="prep-time">
 						<span id="clock" class="glyphicon glyphicon-time"></span> 
 					
-						<p>Prep Time<span class="colon">:</span> <?php if ($prepHour > 0) echo $prepHour . " Hr"; if (($prepHour > 0) && ($prepMin > 0)) echo ", "; if ($prepMin > 0) echo $prepMin . " Min"; if (($prepMin <= 0) && ($prepHour <=0)) echo "N/A"; ?></p>
+						<p>Prep Time<span class="colon">:</span> <?php if (($prepHour > 0) || (strpos($prepHour, "+") == true)) echo $prepHour . " Hr"; if (($prepHour > 0) && ($prepMin > 0)) echo ", "; if ($prepMin > 0) echo $prepMin . " Min"; if (($prepMin <= 0) && ($prepHour <=0)) echo "N/A"; ?></p>
 					
 						<div id="clear-float">
 							<!--clear float from previous content-->
@@ -178,7 +178,7 @@ $authorUsername = $userObj->getUsername();
 					<div id="wait-time">
 						<span id="clock" class="glyphicon glyphicon-time"></span> 
 					
-						<p>Wait Time<span class="colon">:</span> <?php if ($waitHour > 0) echo $waitHour . " Hr"; if (($waitHour > 0) && ($waitMin > 0)) echo ", "; if ($waitMin > 0) echo $waitMin . " Min"; if (($waitMin <= 0) && ($waitHour <=0)) echo "N/A"; ?></p>
+						<p>Wait Time<span class="colon">:</span> <?php if (($waitHour > 0) || (strpos($waitHour, "+") == true)) echo $waitHour . " Hr"; if (($waitHour > 0) && ($waitMin > 0)) echo ", "; if ($waitMin > 0) echo $waitMin . " Min"; if (($waitMin <= 0) && ($waitHour <=0)) echo "N/A"; ?></p>
 					
 						<div id="clear-float2">
 							<!--clear float from previous content-->
@@ -203,7 +203,7 @@ $authorUsername = $userObj->getUsername();
 					<div id="cook-time">
 						<span id="clock2" class="glyphicon glyphicon-time"></span> 
 					
-						<p>Cook Time<span class="colon">:</span> <?php if ($cookHour > 0) echo $cookHour . " Hr"; if (($cookHour > 0) && ($cookMin > 0)) echo ", "; if ($cookMin > 0) echo $cookMin . " Min"; if (($cookMin <= 0) && ($cookHour <=0)) echo "N/A"; ?></p>
+						<p>Cook Time<span class="colon">:</span> <?php if (($cookHour > 0) || (strpos($cookHour, "+") == true)) echo $cookHour . " Hr"; if (($cookHour > 0) && ($cookMin > 0)) echo ", "; if ($cookMin > 0) echo $cookMin . " Min"; if (($cookMin <= 0) && ($cookHour <=0)) echo "N/A"; ?></p>
 					
 						<div id="clear-float4">
 							<!--clear float from previous content-->
