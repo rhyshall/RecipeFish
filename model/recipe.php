@@ -59,7 +59,7 @@ class Recipe
 	**
 	** @return    array  data of given recipe  
 	*/
-	function selectByRecipeID($id)
+	function selectByRecipeID($recipeID)
 	{
 		$connection = RecipeFish::connect();
 		
@@ -68,7 +68,7 @@ class Recipe
 		$statement = $connection->prepare($query);	
 		
 		// bind class values to query values
-		$statement->bindValue(":recipe_id", $id);	
+		$statement->bindValue(":recipe_id", $recipeID);	
 
 		$statement->execute();
 		$result = $statement->fetch();
@@ -83,16 +83,16 @@ class Recipe
 	**
 	** @return    double array  class data of all user's recipes 
 	*/
-	function selectByUserID($id)
+	function selectByUserID($userID)
 	{
 		$connection = RecipeFish::connect();
 		
-		$query = "select * from recipe where author_id=:author_id;";
+		$query = "select * from recipe where author_id=:user_id;";
 		
 		$statement = $connection->prepare($query);	
 		
 		// bind class values to query values
-		$statement->bindValue(":author_id", $id);	
+		$statement->bindValue(":user_id", $userID);	
 
 		$statement->execute();
 		$result = $statement->fetchAll();

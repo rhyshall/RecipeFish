@@ -9,6 +9,8 @@
 ******************************************************************************************/
 
 include($root . "model/recipe.php");
+include($root . "model/review.php");
+include($root . "model/cookbook.php");
 
 /****
  ** Generates random meal type heading for given recipe slot on home page
@@ -733,7 +735,7 @@ function generateByUnderClock($heading)
  **/
 function generateByNewest($heading)
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	$recipeSelector = new Recipe;
 	
 	$newestID = $recipeSelector->selectNextID() - 1;
@@ -757,7 +759,12 @@ function generateByNewest($heading)
 function generateByTopHit($heading)
 {
 	$recipe = new Recipe;
+	$review = new Review;
 	$recipeSelector = new Recipe;
+	$reviewSelector = new Review;
+	$candidates = array();
+	
+	
 	
 	return $recipe;
 }
@@ -771,7 +778,9 @@ function generateByTopHit($heading)
 function generateByTrendingNow($heading)
 {
 	$recipe = new Recipe;
+	$cookbook = new Cookbook;
 	$recipeSelector = new Recipe;
+	$cookbookSelector = new Cookbook;
 	
 	return $recipe;
 }
@@ -870,18 +879,35 @@ function generateByHoliday($heading)
  **/
 function generateByNew($heading)
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	$recipeSelector = new Recipe;
+	$newOdds = array(10, 11, 12, 13, 14, 15, 16, 17, 18, 19); /* odds of randomly selecting newest recipes IDs (oldest to newest)*/ 
+	$newOddsTotal = 145;
+	$sum = 0;
+	$chosenID = 0;
 	
 	$newestID = $recipeSelector->selectNextID() - 1;
 	
-	$lowerBound = $newestID - 10;
-	$upperBound = $newestID - 1;
+	$eleventhNewest = $newestID - 10;
 	
-	//choose random recipe ranging from 11th newest to 2nd newest 
-	$randomNum = rand($lowerBound, $upperBound);
+	//choose random number within odds range 
+	$randomNum = rand(1, 145);
+	
+	$upperBound = count($newOdds);
+	
+	for ($i = 0; $i < $upperBound; $i++)
+	{
+		$sum = $sum + $newOdds[$i];
 		
-	$recipe = $recipeSelector->selectByRecipeID($randomNum);
+		if ($randomNum <= $sum)
+		{
+			$chosenID = $eleventhNewest + $i;
+			
+			break;
+		}
+	}
+		
+	$recipe = $recipeSelector->selectByRecipeID($chosenID);
 	
 	if (count($recipe) == 0)
 	{
