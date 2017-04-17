@@ -159,7 +159,8 @@ class Recipe
 	{
 		$connection = RecipeFish::connect();
 		
-		$query = "select * from recipe where prep_time_hour=0 and cook_time_hour=0 and wait_time_hour=0 and (prep_time_minute+cook_time_minute+wait_time_minute)<=:time_limit";
+		$query = "select * from recipe where prep_time_hour=0 and cook_time_hour=0 and wait_time_hour=0 and (prep_time_minute+cook_time_minute+wait_time_minute)<=:time_limit 
+					and (meal_type='Appetizer' or meal_type='Breakfast' or meal_type='Dinner' or meal_type='Lunch')";
 		
 		$statement = $connection->prepare($query);	
 		
@@ -207,12 +208,9 @@ class Recipe
 	{
 		$connection = RecipeFish::connect();
 		
-		$query = "select * from recipe where popular_features like %:popular_feature%;";
+		$query = "select * from recipe where popular_features like '%" . $popularIngredient . "%';";
 		
 		$statement = $connection->prepare($query);	
-		
-		// bind class values to query values
-		$statement->bindValue(":popular_feature", $popularIngredient);	
 
 		$statement->execute();
 		$result = $statement->fetchAll();
@@ -231,7 +229,7 @@ class Recipe
 	{
 		$connection = RecipeFish::connect();
 		
-		$query = "select * from recipe where other_features like %:other_feature%;";
+		$query = "select * from recipe where other_features like '%" . $otherFeature . "%';";
 		
 		$statement = $connection->prepare($query);	
 		

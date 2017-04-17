@@ -74,20 +74,24 @@ body
 {
 	font-style: italic;
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
+	margin-bottom: -10px;
 }
 
 .recipe-name 
 {
-	font-size: 14px;
+	font-size: 13px;
+	margin-top: 38px;
 	padding-left: 5px;
+	color: grey;
 }
 
 /* 5-star rating system widget: retrieved from https://codepen.io/jamesbarnett/pen/vlpkh */
 .rating 
 { 
-  border: none;
-  float: left;
+	margin-top: -8px;
+    border: none;
+    float: left;
 }
 
 .rating > input 
@@ -135,6 +139,7 @@ body
 {
 	font-size: 12px;
 	padding-left: 5px;
+	margin-bottom: -5px;
 	color: grey;
 }
 

@@ -14,7 +14,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 class Cookbook
 {
 	private $ID;
-	private $userID
+	private $userID;
 	private $recipeID;
 	private $dateAdded;
 	

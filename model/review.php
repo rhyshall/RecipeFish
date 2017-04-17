@@ -71,21 +71,17 @@ class Review
 	}
 	
 	/****
-	** retrieve review data from Recipe Fish database corresponding to given 
-	** rating value
+	** retrieve average ratings of each recipe in the Recipe Fish database
 	**
-	** @param    int  $rating  value of corresponding rating	
-	** @return    double array  data of all reviews corresponding to given rating
+	** @return    double array  recipe IDs and their average ratings
 	*/
-	function selectByRating($rating)
+	function selectAverageRatings()
 	{
 		$connection = RecipeFish::connect();
 	
-		$query = "select id, recipe_id, author_id, date_uploaded, rating, comment from review where rating=:rating;";
+		$query = "select recipe_id, avg(rating) as avg_rating from review group by recipe_id order by avg_rating desc";
 		
-		$statement = $connection->prepare($query);
-
-		$statement->bindValue(":rating", $rating);				
+		$statement = $connection->prepare($query);				
 
 		$statement->execute();
 		$result = $statement->fetchAll();

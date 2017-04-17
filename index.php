@@ -60,16 +60,16 @@ $RECIPE_COUNT = 16;
 								<?php 
 									$heading = generateHeading();
 								
-									$recipe = new Recipe;
+									$recipe = array();
 									$recipe = generateRecipe($heading);
 								?>
 							
 								<a href="#" class="thumbnail">
 									<img class="recipe-image" src="/RecipeFish/images/skins/skin1.png">
 									
-									<p id="<?php echo "recipe-heading" . $j ?>" class="recipe-heading"><?php echo $heading?></p>
+									<p id="<?php echo "recipe-heading" . $j ?>" class="recipe-heading"><?php echo $heading ?></p>
 									
-									<p id="<?php echo "recipe-name" . $j ?>" class="recipe-name">Name</p>
+									<p id="<?php echo "recipe-name" . $j ?>" class="recipe-name"><?php echo $recipe["name"] ?></p>
 									
 									<!--5-star rating system widget: retrieved from https://codepen.io/jamesbarnett/pen/vlpkh-->
 									<fieldset class="rating">

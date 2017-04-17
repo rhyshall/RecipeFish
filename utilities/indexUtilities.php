@@ -219,29 +219,39 @@ function generateHeading()
 	 
     $randomNum = rand(1, 100);
 	 
-	if (($randomNum >= 1) && ($randomNum <= 24))
+	if (($randomNum >= 1) && ($randomNum <= 26))
 	{
 		$heading = getMealTypeHeading();
 	}
 
-	if (($randomNum >= 25) && ($randomNum <= 28))
+	if (($randomNum >= 27) && ($randomNum <= 30))
 	{
 	    $heading = "Under the Clock";
 	}
 
-	if (($randomNum >= 29) && ($randomNum <= 30))
+	if (($randomNum >= 31) && ($randomNum <= 32))
 	{
 		$heading = "Newest";
 	}
 	
-	if (($randomNum >= 31) && ($randomNum <= 41))
+	if (($randomNum >= 33) && ($randomNum <= 40))
 	{
-		$heading = "Top Hit";
+		$heading = "Top Hits";
 	}
 	
-	if (($randomNum >= 42) && ($randomNum <= 52))
+	if (($randomNum >= 41) && ($randomNum <= 42))
+	{
+		$heading = "Chef Favourites";
+	}
+	
+	if (($randomNum >= 43) && ($randomNum <= 50))
 	{
 		$heading = "Trending Now";
+	}
+	
+	if (($randomNum >= 51) && ($randomNum <= 52))
+	{
+		$heading = "Spotlight";
 	}
 	
 	if (($randomNum >= 53) && ($randomNum <= 57))
@@ -254,22 +264,22 @@ function generateHeading()
 		}
 	}
 	
-	if (($randomNum >= 58) && ($randomNum <= 63))
+	if (($randomNum >= 58) && ($randomNum <= 62))
 	{
 		$heading = "New";
 	}
 	
-	if (($randomNum >= 64) && ($randomNum <= 79))
+	if (($randomNum >= 63) && ($randomNum <= 77))
 	{
 		$heading = getPopularIngredientHeading();
 	}
 	
-	if (($randomNum >= 80) && ($randomNum <= 91))
+	if (($randomNum >= 78) && ($randomNum <= 90))
 	{
 		$heading = getOtherFeatureHeading();
 	}
 	
-	if (($randomNum >= 92) && ($randomNum <= 100))
+	if (($randomNum >= 91) && ($randomNum <= 100))
 	{
 		$heading = getEthnicityHeading();
 	}
@@ -350,7 +360,7 @@ function isTopHit($heading)
 {
 	$isTopHit = false;
 	
-	if (strcmp($heading, "Top Hit") == 0)
+	if ((strcmp($heading, "Top Hits") == 0) || (strcmp($heading, "Chef Favourites") == 0))
 	{
 		$isTopHit = true;
 	}
@@ -368,7 +378,7 @@ function isTrendingNow($heading)
 {
 	$isTrendingNow = false;
 	
-	if (strcmp($heading, "Trending Now") == 0)
+	if ((strcmp($heading, "Trending Now") == 0) || (strcmp($heading, "Spotlight") == 0))
 	{
 		$isTrendingNow = true;
 	}
@@ -531,33 +541,33 @@ function isEthnicity($heading)
 }
 
 /****
- ** Randomly selects one recipe from list of given recipes
+ ** Randomly selects one array value from list of given arrays
  **
- ** @param    string  $recipes  list of recipes
- ** @return    Recipe  recipe
+ ** @param    double array  $arrayList  list of given arrays
+ ** @return    array  array value
  **/
-function selectRandomCandidate($recipes)
+function selectRandomCandidate($arrayList)
 {
-	$recipe = new Recipe;
-	$recipeCount = count($recipes);
+	$arrayValue = array();
+	$listCount = count($arrayList);
 	$randomNum = 0;
 	
-	$randomNum = rand(0, $recipeCount-1);
+	$randomNum = rand(0, $listCount-1);
 	
-	$recipe = $recipes[$randomNum];
+	$arrayValue = $arrayList[$randomNum];
 	
-	return $recipe;
+	return $arrayValue;
 }
 
 /****
  ** Generates recipe that corresponds to "meal" feature headings 
  **
  ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
 function generateByMealType($heading)
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	$recipeSelector = new Recipe;
 	$mealType = "";
 	$candidates = array();
@@ -704,12 +714,11 @@ function generateByMealType($heading)
 /****
  ** Generates recipe that corresponds to "under the clock" feature headings 
  **
- ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
-function generateByUnderClock($heading)
+function generateByUnderClock()
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	$recipeSelector = new Recipe;
 	
 	$candidates = $recipeSelector->selectByTimeLimit(20);
@@ -730,10 +739,9 @@ function generateByUnderClock($heading)
 /****
  ** Generates recipe that corresponds to "newest" feature headings 
  **
- ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
-function generateByNewest($heading)
+function generateByNewest()
 {
 	$recipe = array();
 	$recipeSelector = new Recipe;
@@ -751,20 +759,125 @@ function generateByNewest($heading)
 }
 
 /****
+ ** Filters given recipe IDs into 5-star, 4.5-star and 4-star 
+ ** categories then returns one of the category groups using
+ ** calculated odds
+ **
+ ** @param    double array  $candidates  recipe IDs and corresponding average rating (descending order)
+ ** @return    double array  rating group of recipe IDs 
+ **/
+function randomRatingCategory($candidates)
+{
+	$index = 0;
+	$groupIndex = 0;
+	$randomNum = 0;
+	$chosenGroup = array(); /* group of recipe IDs to return (by chosen rating value) */
+	
+	$randomNum = rand(1, 100);
+	
+	//assign required recipe IDs to 4-star rating group (if group chosen)
+	if ($randomNum <= 4)
+	{
+		//traverse to 4-star ratings in sorted rating array
+		while (1)
+		{
+			//traverse to 4.5-star ratings in sorted rating array
+			if ($candidates[$index][1] < 3.75)
+			{
+				break;
+			}
+				
+			if (($candidates[$index][1] < 4.25) && ($candidates[$index][1] >= 3.75))
+			{
+				$chosenGroup[$groupIndex] = $candidates[$index][0];
+					
+				$groupIndex++;
+			}
+				
+			$index++;
+		}
+	}
+	
+	//assign required recipe IDs to 4.5-star rating group (if group chosen)
+	if (($randomNum >= 5) && ($randomNum <= 36))
+	{
+		while (1)
+		{
+			//traverse to 4.5-star ratings in sorted rating array
+			if ($candidates[$index][1] < 4.25)
+			{
+				break;
+			}
+				
+			if (($candidates[$index][1] < 4.75) && ($candidates[$index][1] >= 4.25))
+			{
+				$chosenGroup[$groupIndex] = $candidates[$index][0];
+					
+				$groupIndex++;
+			}
+				
+			$index++;
+		}
+	}
+	
+	//assign required recipe IDs to 5-star rating group (if group chosen)
+	if ($randomNum >= 37)
+	{
+		//already begins at 5-star ratings
+		while (1)
+		{
+			if ($candidates[$index][1] < 4.75)
+			{
+				break;
+			}
+			
+			else 
+			{
+				$chosenGroup[$groupIndex] = $candidates[$index][0];
+				
+				$index++;
+				$groupIndex++;
+			}
+		}
+	}
+	
+	return $chosenGroup;
+}
+
+/****
  ** Generates recipe that corresponds to "top hit" feature headings 
  **
- ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
-function generateByTopHit($heading)
+function generateByTopHit()
 {
-	$recipe = new Recipe;
-	$review = new Review;
-	$recipeSelector = new Recipe;
+	$recipe = array();
+	$review = array();
 	$reviewSelector = new Review;
+	$recipeSelector = new Recipe;
 	$candidates = array();
+	$randomNum = 0;
 	
+	$candidates = $reviewSelector->selectAverageRatings();
 	
+	$candidates = randomRatingCategory($candidates);
+	
+	if (count($candidates) != 0)
+	{
+		$review = selectRandomCandidate($candidates);
+		
+		$recipe = $recipeSelector->selectByRecipeID($review);
+		
+		if (count($recipe) == 0)
+		{
+			$recipe = null;
+		}
+	}
+	
+	else 
+	{
+		$recipe = null;
+	}
 	
 	return $recipe;
 }
@@ -772,15 +885,21 @@ function generateByTopHit($heading)
 /****
  ** Generates recipe that corresponds to "trending now" feature headings 
  **
- ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
-function generateByTrendingNow($heading)
+function generateByTrendingNow()
 {
-	$recipe = new Recipe;
-	$cookbook = new Cookbook;
+	$recipe = array();
+	$cookbook = array();
 	$recipeSelector = new Recipe;
 	$cookbookSelector = new Cookbook;
+	$candidates = array();
+	
+	$candidates = $cookbookSelector->frequentRecipeIDs();
+	
+	$cookbook = selectRandomCandidate($candidates);
+	
+	$recipe = $recipeSelector->selectByRecipeID($cookbook[0]);
 	
 	return $recipe;
 }
@@ -789,11 +908,11 @@ function generateByTrendingNow($heading)
  ** Generates recipe that corresponds to "holiday" feature headings 
  **
  ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
 function generateByHoliday($heading)
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	$recipeSelector = new Recipe;
 	$holiday = "";
 	$candidates = array();
@@ -874,10 +993,9 @@ function generateByHoliday($heading)
 /****
  ** Generates recipe that corresponds to "new" feature headings 
  **
- ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
-function generateByNew($heading)
+function generateByNew()
 {
 	$recipe = array();
 	$recipeSelector = new Recipe;
@@ -921,12 +1039,13 @@ function generateByNew($heading)
  ** Generates recipe that corresponds to "popular ingredient" feature headings 
  **
  ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
 function generateByPopularIngredient($heading)
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	$recipeSelector = new Recipe;
+	$candidates = array();
 	
 	//split heading string into name and priority value
 	$tokens = explode(" ", $heading);
@@ -934,24 +1053,24 @@ function generateByPopularIngredient($heading)
 	$ingredient = $tokens[0];
 	
 	//find recipes in database with popular ingredient (plural form) in heading (singular form) 
-	switch ($ingredient)
+	if ((strcmp("Berry", $ingredient ) == 0) || (strcmp("Pastry", $ingredient ) == 0))
 	{
 		//special singular form "berry" not sub-string of plural form (won't detect in database)
-		case "berry":
+		if (strcmp("Berry", $ingredient) == 0)
 		{
-			$candidates = $recipeSelector->selectByPopularIngredient("berries");
+			$candidates = $recipeSelector->selectByPopularIngredient("Berries");
 		}
 		
 		//special singular form "pastry" not sub-string of plural form (won't detect in database)
-		case "pastry":
+		if (strcmp("Pastry", $ingredient) == 0)
 		{
-			$candidates = $recipeSelector->selectByPopularIngredient("pastries");
+			$candidates = $recipeSelector->selectByPopularIngredient("Pastries");
 		}
-		
-		default:
-		{
-			$candidates = $recipeSelector->selectByPopularIngredient($ingredient);
-		}
+	}
+	
+	else 
+	{
+		$candidates = $recipeSelector->selectByPopularIngredient($ingredient);
 	}
 	
 	if (count($candidates) != 0)
@@ -971,11 +1090,11 @@ function generateByPopularIngredient($heading)
  ** Generates recipe that corresponds to "other" feature headings 
  **
  ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
 function generateByOtherFeature($heading)
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	$recipeSelector = new Recipe;
 	
 	$candidates = $recipeSelector->selectByOtherFeature($heading);
@@ -997,17 +1116,17 @@ function generateByOtherFeature($heading)
  ** Generates recipe that corresponds to "ethnicity" feature headings 
  **
  ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
 function generateByEthnicity($heading)
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	$recipeSelector = new Recipe;
 	$ethnicity = "";
 	$candidates = array();
 	
-	//split ethnicity string into name and literal "ethnicity" value
-	$tokens = explode(" ", $ethnicity);
+	//split heading string into name and literal "ethnicity" value
+	$tokens = explode(" ", $heading);
 	$tokenCount = count($tokens);
 	
 	$upperBound = $tokenCount - 1;
@@ -1016,6 +1135,11 @@ function generateByEthnicity($heading)
 	for ($i = 0; $i < $upperBound; $i++)
 	{
 		$ethnicity = $ethnicity . $tokens[$i];
+		
+		if ($i != ($upperBound-1))
+		{
+			$ethnicity = $ethnicity . " ";
+		}
 	}
 	
 	$candidates = $recipeSelector->selectByEthnicity($ethnicity);
@@ -1037,11 +1161,11 @@ function generateByEthnicity($heading)
  ** Generates recipe that corresponds to recipe slot heading 
  **
  ** @param    string  $heading  recipe slot heading
- ** @return    Recipe  recipe
+ ** @return    array  recipe
  **/
 function generateRecipe($heading)
 {
-	$recipe = new Recipe;
+	$recipe = array();
 	
 	if (isMealType($heading) == true)
 	{
@@ -1050,22 +1174,22 @@ function generateRecipe($heading)
 	
 	if (isUnderClock($heading) == true)
 	{
-		$recipe = generateByUnderClock($heading);
+		$recipe = generateByUnderClock();
 	}
 	
 	if (isNewest($heading) == true)
 	{
-		$recipe = generateByNewest($heading);
+		$recipe = generateByNewest();
 	}
 	
 	if (isTopHit($heading) == true)
 	{
-		$recipe = generateByTopHit($heading);
+		$recipe = generateByTopHit();
 	}
 	
 	if (isTrendingNow($heading) == true)
 	{
-		$recipe = generateByTrendingNow($heading);
+		$recipe = generateByTrendingNow();
 	}
 	
 	if (isHoliday($heading) == true)
@@ -1075,7 +1199,7 @@ function generateRecipe($heading)
 	
 	if (isNew($heading) == true)
 	{
-		$recipe = generateByNew($heading);
+		$recipe = generateByNew();
 	}
 	
 	if (isPopularIngredient($heading) == true)
