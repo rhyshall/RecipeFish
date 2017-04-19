@@ -77,7 +77,7 @@ function isValidNameLength($name)
 
 	$length = strlen($name);
 	
-	if ($length > 40)
+	if ($length > 38)
 	{
 		$isValid = false;
 	}

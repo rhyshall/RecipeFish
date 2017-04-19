@@ -7,8 +7,6 @@
 *******************************************************************************************
 ******************************************************************************************/
 
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-
 body
 {
 	margin: 0%;
@@ -82,14 +80,127 @@ body
 {
 	font-size: 13px;
 	margin-top: 38px;
-	padding-left: 5px;
+	padding-left: 8px;
+	padding-right: 6px;
 	color: grey;
 }
 
+#rating 
+{
+
+}
+
+.half 
+{
+    position:relative;
+}
+.font
+{
+	font-size:6em;
+}
+.half:after 
+{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background: white;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+
+.recipe-description
+{
+	height: 54px;
+	font-size: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: -5px;
+	color: grey;
+}
+
+.glyphicon-user
+{
+	font-size: 12.5px;
+	padding-left: 8px;
+	float: left;
+}
+
+.recipe-author
+{
+	padding-left: 7px;
+	font-size: 12px;
+	float: left;
+}
+
+#clear-float2
+{
+	clear: both;
+}
+
+.glyphicon-time
+{
+	padding-top: 1.25px;
+	font-size: 12.5px;
+	padding-left: 8px;
+	float: left;
+}
+
+.recipe-time 
+{
+	padding-left: 5px;
+	font-size: 12px;
+	float: left;
+}
+
+#clear-float3
+{
+	clear: both;
+}
+
+.glyphicon-book
+{
+	font-size: 12.5px;
+	padding-left: 8px;
+	float: left;
+}
+
+.cookbook-adds
+{
+	padding-left: 5.5px;
+	font-size: 12px;
+	float: left;
+}
+
+#clear-float4
+{
+	clear: both;
+}
+
+#bottom-separator 
+{
+	margin-top: -18px;
+	padding-left: 32.5px;
+	padding-right: 32.5px;
+}
+
+#footer
+{
+	background-color: #f9f9f9;
+}
+
+#margin-canvas2
+{
+	background-color: #99ccff;
+	width: 284px;
+}
+
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css); */
 /* 5-star rating system widget: retrieved from https://codepen.io/jamesbarnett/pen/vlpkh */
-.rating 
+/*.rating 
 { 
 	margin-top: -8px;
+	padding-left: 3px;
     border: none;
     float: left;
 }
@@ -124,97 +235,27 @@ body
 	clear: both;
 }
 
-/* highlight stars on hover */
+/* highlight stars on hover 
 
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+.rating > input:checked ~ label,  show gold star when clicked 
+.rating:not(:checked) > label:hover,  hover current star 
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  }  hover previous stars in list 
 
-.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked + label:hover,  hover current star when changing rating 
 .rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+.rating > label:hover ~ input:checked ~ label,  lighten current selection 
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }  
 
-.recipe-description
-{
-	font-size: 12px;
-	padding-left: 5px;
-	margin-bottom: -5px;
-	color: grey;
-}
-
-.glyphicon-user
-{
-	font-size: 12.5px;
-	padding-left: 5px;
-	float: left;
-}
-
-.recipe-author
-{
-	padding-left: 7px;
-	font-size: 12px;
-	float: left;
-}
-
-#clear-float2
-{
-	clear: both;
-}
-
-.glyphicon-time
-{
-	padding-top: 1.25px;
-	font-size: 12.5px;
-	padding-left: 5px;
-	float: left;
-}
-
-.recipe-time 
-{
-	padding-left: 5px;
-	font-size: 12px;
-	float: left;
-}
-
-#clear-float3
-{
-	clear: both;
-}
-
-.glyphicon-book
-{
-	font-size: 12.5px;
-	padding-left: 5px;
-	float: left;
-}
-
-.cookbook-adds
-{
-	padding-left: 5.5px;
-	font-size: 12px;
-	float: left;
-}
-
-#clear-float4
-{
-	clear: both;
-}
-
-#bottom-separator 
-{
-	margin-top: -18px;
-	padding-left: 32.5px;
-	padding-right: 32.5px;
-}
-
-#footer
-{
-	background-color: #f9f9f9;
-}
-
-#margin-canvas2
-{
-	background-color: #99ccff;
-	width: 284px;
-}
+<!--5-star rating system widget: retrieved from https://codepen.io/jamesbarnett/pen/vlpkh-->
+									<fieldset class="rating">
+										<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Magnificent!"></label>
+										<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Amazing"></label>
+										<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Great"></label>
+										<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Good"></label>
+										<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Fair"></label>
+										<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Poor"></label>
+										<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Very poor"></label>
+										<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Sucked!"></label>
+										<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Really sucked!"></label>
+										<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Worst recipe ever!"></label>
+									</fieldset> */

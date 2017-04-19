@@ -37,7 +37,7 @@ Ice%1
 Juice%5
 Lamb%2
 Liqueur%3
-Melon%1
+Melon%2
 Milk%0
 Muffin%7
 Mushroom%1
@@ -50,7 +50,7 @@ Pear%1
 Pea%1
 Pepper%1
 Pie%8
-Pineapple%2
+Pineapple%3
 Pop%0
 Pork%7
 Potato%7
@@ -58,12 +58,12 @@ Pudding%3
 Rice%10
 Rum%3
 Salad%13
-Sandwich%13
+Sandwich%12
 Sauce%7
 Sausage%5
 Seafood%9
 Shake%4
-Smoothie%12
+Smoothie%11
 Soup%10
 Tea%1
 Tequila%2

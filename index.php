@@ -14,6 +14,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
 include($root . "utilities/indexUtilities.php");
+include($root . "utilities/generalUtilities.php");
 
 $RECIPE_COUNT = 16;
 ?>
@@ -46,6 +47,8 @@ $RECIPE_COUNT = 16;
 		
 			<div id="recipe-canvas">
 				<?php 
+					$chosenIDList = array(); /* IDs of recipes chosen to display (for anti-duplicate purposes) */
+				
 					for ($i = 1; $i < $RECIPE_COUNT; $i = $i + 4)
 					{
 						echo '<div class="row">';
@@ -58,10 +61,33 @@ $RECIPE_COUNT = 16;
 				?>
 							<div id="<?php echo "recipe" . $j ?>" class="col-md-3">
 								<?php 
-									$heading = generateHeading();
+									while (1)
+									{
+										$heading = generateHeading();
 								
-									$recipe = array();
-									$recipe = generateRecipe($heading);
+										$recipe = array();
+										$recipe = generateRecipe($heading);
+										
+										if ($recipe == null)
+										{
+											unset($recipe);
+										}
+										
+										else 
+										{
+											if (in_array($recipe["id"], $chosenIDList))
+											{
+												unset($recipe);
+											}
+											
+											else 
+											{	
+												array_push($chosenIDList, $recipe["id"]);
+					
+												break;
+											}
+										}
+									}
 								?>
 							
 								<a href="#" class="thumbnail">
@@ -71,25 +97,19 @@ $RECIPE_COUNT = 16;
 									
 									<p id="<?php echo "recipe-name" . $j ?>" class="recipe-name"><?php echo $recipe["name"] ?></p>
 									
-									<!--5-star rating system widget: retrieved from https://codepen.io/jamesbarnett/pen/vlpkh-->
-									<fieldset class="rating">
-										<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Magnificent!"></label>
-										<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Amazing"></label>
-										<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Great"></label>
-										<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Good"></label>
-										<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Fair"></label>
-										<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Poor"></label>
-										<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Very poor"></label>
-										<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Sucked!"></label>
-										<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Really sucked!"></label>
-										<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Worst recipe ever!"></label>
-									</fieldset>
+									<div class="rating">
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star half"></i>
+									</div>
 									
 									<div id="clear-float1">
 										<!--clear float from previous content-->
 									</div>
 									
-									<p id="<?php echo "recipe-description" . $j ?>" class="recipe-description">Description</p>
+									<p id="<?php echo "recipe-description" . $j ?>" class="recipe-description"><?php echoWordsX($recipe["description"], 118) ?></p>
 									
 									<div class="recipe-separator">
 										<hr>

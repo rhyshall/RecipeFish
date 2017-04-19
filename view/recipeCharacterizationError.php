@@ -36,7 +36,7 @@
 				<div id="name-length-panel">
 					<img id="name-length-speech-bubble" src="/RecipeFish/images/standard/error speech bubble.png">
 							
-					<p id="name-length-speech-text">Name may only contain a maximum of 40 characters</p>
+					<p id="name-length-speech-text">Name may only contain a maximum of 38 characters</p>
 				</div>
 					
 			<?php 
