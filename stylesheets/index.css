@@ -85,9 +85,16 @@ body
 	color: grey;
 }
 
-#rating 
+.rating 
 {
+	margin-top: -4px;
+	padding-left: 8px;
+	margin-bottom: 14px;
+}
 
+.glyphicon-star 
+{
+	padding-right: 2px;
 }
 
 .half 

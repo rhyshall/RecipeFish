@@ -48,6 +48,8 @@ $RECIPE_COUNT = 16;
 			<div id="recipe-canvas">
 				<?php 
 					$chosenIDList = array(); /* IDs of recipes chosen to display (for anti-duplicate purposes) */
+					$reviewSelector = new Review;
+					$rating = 0;
 				
 					for ($i = 1; $i < $RECIPE_COUNT; $i = $i + 4)
 					{
@@ -98,11 +100,99 @@ $RECIPE_COUNT = 16;
 									<p id="<?php echo "recipe-name" . $j ?>" class="recipe-name"><?php echo $recipe["name"] ?></p>
 									
 									<div class="rating">
-										<i class="glyphicon glyphicon-star"></i>
-										<i class="glyphicon glyphicon-star"></i>
-										<i class="glyphicon glyphicon-star"></i>
-										<i class="glyphicon glyphicon-star"></i>
-										<i class="glyphicon glyphicon-star half"></i>
+										<?php 
+											$rating = $reviewSelector->averageRecipeRating($recipe["id"]);
+											
+											//if not rated
+											if ($rating < 0.5)
+											{
+												echo "<i class='glyphicon glyphicon-star-empty'></i>";
+												echo "<i class='glyphicon glyphicon-star-empty'></i>";
+												echo "<i class='glyphicon glyphicon-star-empty'></i>";
+												echo "<i class='glyphicon glyphicon-star-empty'></i>";
+												echo "<i class='glyphicon glyphicon-star-empty'></i>";
+											}
+											
+											//if average rating is 0.5 stars
+											if (($rating >= 0.5) && ($rating < 0.75))
+											{
+												echo "<i class='glyphicon glyphicon-star half'></i>";
+											}
+											
+											//if average rating is 1 star
+											if (($rating >= 0.75) && ($rating < 1.25))
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+											}
+											
+											//if average rating is 1.5 stars
+											if (($rating >= 1.25) && ($rating < 1.75))
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star half'></i>";
+											}
+											
+											//if average rating is 2 stars
+											if (($rating >= 1.75) && ($rating < 2.25))
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+											}
+											
+											//if average rating is 2.5 stars
+											if (($rating >= 2.25) && ($rating < 2.75))
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star half'></i>";
+											}
+											
+											//if average rating is 3 stars
+											if (($rating >= 2.75) && ($rating < 3.25))
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+											}
+											
+											//if average rating is 3.5 stars
+											if (($rating >= 3.25) && ($rating < 3.75))
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star half'></i>";
+											}
+											
+											//if average rating is 4 stars
+											if (($rating >= 3.75) && ($rating < 4.25))
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+											}
+											
+											//if average rating is 4.5 stars
+											if (($rating >= 4.25) && ($rating < 4.75))
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star half'></i>";
+											}
+											
+											//if average rating is 5 stars
+											if ($rating >= 4.75)
+											{
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+												echo "<i class='glyphicon glyphicon-star'></i>";
+											}
+										?>
 									</div>
 									
 									<div id="clear-float1">

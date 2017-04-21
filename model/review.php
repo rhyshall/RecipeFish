@@ -71,6 +71,35 @@ class Review
 	}
 	
 	/****
+	** retrieve average rating of given recipe in the Recipe Fish database
+	**
+	** @return    double  average rating of given recipe 
+	*/
+	function averageRecipeRating($recipeID)
+	{
+		$connection = RecipeFish::connect();
+		$rating = 0;
+	
+		$query = "select avg(rating) as avg_rating from review where recipe_id=:recipe_id";
+		
+		$statement = $connection->prepare($query);	
+
+		$statement->bindValue(":recipe_id", $recipeID);			
+
+		$statement->execute();
+		$result = $statement->fetch();
+		
+		if (empty($result) == false)
+		{
+			$rating = $result[0];
+		}
+		
+		RecipeFish::close($connection);
+		
+		return $rating;
+	}
+	
+	/****
 	** retrieve average ratings of each recipe in the Recipe Fish database
 	**
 	** @return    double array  recipe IDs and their average ratings
