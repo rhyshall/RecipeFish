@@ -22,7 +22,7 @@ $RECIPE_COUNT = 16;
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/index.css">
+		<link rel="stylesheet" type="text/css" href="/RecipeFish/stylesheets/index.css"/>
 		
 		<!--stylesheet for tab icon-->
 		<link rel="shortcut icon" type="image/ico" href="/RecipeFish/images/standard/fish tab icon.ico"/>
@@ -96,7 +96,11 @@ $RECIPE_COUNT = 16;
 								?>
 							
 								<a href="#" class="thumbnail">
-									<img class="recipe-image" src="<?php echo relativeImagePath($recipe["image_path"]) ?>>
+									<?php 
+										$relativeImagePath = relativeImagePath($recipe["image_path"]);
+									?>
+
+									<img class="recipe-image" src="<?php echo $relativeImagePath ?>" style="height: 200px; width: 244px;"></img>
 									
 									<p id="<?php echo "recipe-heading" . $j ?>" class="recipe-heading"><?php echo $heading ?></p>
 									

@@ -67,7 +67,7 @@
 			
 			<div id ="header-canvas">
 				<div id="logo">
-					<a href="/RecipeFish"><img src="/RecipeFish/images/standard/recipe fish logo.png"></a>
+					<a href="/RecipeFish"><img src="/RecipeFish/images/standard/recipe fish logo.png"/></a>
 				</div>
 				
 				<div id="categories">

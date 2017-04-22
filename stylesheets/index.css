@@ -65,7 +65,11 @@ body
 .recipe-image
 {
 	border-radius: 6.5px;
-	padding-bottom: 9px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	margin-top: 7px;
+	margin-bottom: 10px;
 }
 
 .recipe-heading
@@ -79,7 +83,7 @@ body
 .recipe-name 
 {
 	font-size: 13px;
-	margin-top: 38px;
+	margin-top: 34px;
 	padding-left: 8px;
 	padding-right: 6px;
 	color: grey;
@@ -150,13 +154,13 @@ body
 	font-size: 12px;
 	padding-left: 8px;
 	padding-right: 8px;
-	margin-bottom: -5px;
+	margin-bottom: -6px;
 	color: grey;
 }
 
 .glyphicon-user
 {
-	margin-top: -3px;
+	margin-top: -4px;
 	font-size: 12.5px;
 	padding-left: 8px;
 	float: left;
@@ -164,7 +168,7 @@ body
 
 .recipe-author
 {
-	margin-top: -3px;
+	margin-top: -4px;
 	padding-left: 7px;
 	font-size: 12px;
 	color: #000080;
@@ -206,6 +210,7 @@ body
 .cookbook-adds
 {
 	padding-left: 5.5px;
+	margin-bottom: 7px;
 	font-size: 12px;
 	float: left;
 }
