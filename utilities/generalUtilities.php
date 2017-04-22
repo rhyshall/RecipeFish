@@ -82,4 +82,18 @@ function echoWordsX($text, $limit)
 		}
 	}
 }
+
+/****
+ ** Parses relative recipe image path from absolute recipe image path 
+ ** 
+ **
+ ** @param    string  $absolutePath  path of given recipe image file 
+ ** @return	  string  parsed relative recipe image path 
+ **/
+function relativeImagePath($absolutePath)
+{
+	$relativePath = "";
+	
+	return $relativePath;
+}
 ?>

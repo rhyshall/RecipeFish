@@ -15,6 +15,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 include($root . "utilities/database.php");
 include($root . "utilities/indexUtilities.php");
 include($root . "utilities/generalUtilities.php");
+include($root. "model/user.php");
 
 $RECIPE_COUNT = 16;
 ?>
@@ -49,6 +50,8 @@ $RECIPE_COUNT = 16;
 				<?php 
 					$chosenIDList = array(); /* IDs of recipes chosen to display (for anti-duplicate purposes) */
 					$reviewSelector = new Review;
+					$userSelector = new User;
+					$cookbookSelector = new Cookbook;
 					$rating = 0;
 				
 					for ($i = 1; $i < $RECIPE_COUNT; $i = $i + 4)
@@ -93,13 +96,13 @@ $RECIPE_COUNT = 16;
 								?>
 							
 								<a href="#" class="thumbnail">
-									<img class="recipe-image" src="/RecipeFish/images/skins/skin1.png">
+									<img class="recipe-image" src="<?php echo relativeImagePath($recipe["image_path"]) ?>>
 									
 									<p id="<?php echo "recipe-heading" . $j ?>" class="recipe-heading"><?php echo $heading ?></p>
 									
 									<p id="<?php echo "recipe-name" . $j ?>" class="recipe-name"><?php echo $recipe["name"] ?></p>
 									
-									<div class="rating">
+									<div class="rating-stars">
 										<?php 
 											$rating = $reviewSelector->averageRecipeRating($recipe["id"]);
 											
@@ -194,6 +197,37 @@ $RECIPE_COUNT = 16;
 											}
 										?>
 									</div>
+
+									<?php 
+										//if recipe is rated 
+										if ($rating >= 0.5)
+										{
+											$recipeReviews = $reviewSelector->selectByRecipeID($recipe["id"]);
+												
+											$ratingCount = count($recipeReviews);
+												
+											//align rating count appropriately with trailing half-star
+											if ((($rating >= 0.25) && ($rating < 0.75)) || (($rating >= 1.25) && ($rating < 1.75)) || (($rating >= 2.25) && ($rating < 2.75))
+												|| (($rating >= 3.25) && ($rating < 3.75)) || (($rating >= 4.25) && ($rating < 4.75)))
+												{
+													echo "<div class='rating-count1'>";
+														
+													echo "<p>(" . $ratingCount . ")" . "</p>";
+														
+													echo "</div>";
+												}
+											
+											//align rating count appropriately with trailing full-star											
+											else 
+											{
+												echo "<div class='rating-count2'>";
+														
+												echo "<p>(" . $ratingCount . ")" . "</p>";
+														
+												echo "</div>";	
+											}
+										}
+									?>
 									
 									<div id="clear-float1">
 										<!--clear float from previous content-->
@@ -205,19 +239,49 @@ $RECIPE_COUNT = 16;
 										<hr>
 									</div>
 									
-									<span class="glyphicon glyphicon-user"></span><p id="<?php echo "recipe-author" . $j ?>" class="recipe-author">Author</p>
+									<?php 
+										$user = $userSelector->selectByID($recipe["author_id"]);
+									?>
+									
+									<span class="glyphicon glyphicon-user"></span><p id="<?php echo "recipe-author" . $j ?>" class="recipe-author"><?php echo $user->getUsername() ?></p>
 									
 									<div id="clear-float2">
 										<!--clear float from previous content-->
 									</div>
 									
-									<span class="glyphicon glyphicon-time"></span><p id="<?php echo "recipe-time" . $j ?>" class="recipe-time">Time</p>
+									<?php 
+										$totalTime = ($recipe["prep_time_hour"] * 60) + $recipe["prep_time_minute"] + ($recipe["cook_time_hour"] * 60) + $recipe["cook_time_minute"] 
+											+ ($recipe["wait_time_hour"] * 60) + $recipe["wait_time_minute"];
+											
+										$totalHours = (int)($totalTime / 60);
+										$totalMinutes = $totalTime % 60;
+									
+										if ($totalHours > 0) 
+										{ 
+									?>
+											<span class="glyphicon glyphicon-time"></span><p id="<?php echo "recipe-time" . $j ?>" class="recipe-time">
+												<?php echo $totalHours . " Hr, " . $totalMinutes . " Min" ?></p>
+									<?php 
+										}
+	
+										else 
+										{ 
+									?>
+											<span class="glyphicon glyphicon-time"></span><p id="<?php echo "recipe-time" . $j ?>" class="recipe-time">
+												<?php echo $totalMinutes . " Min" ?></p>
+									<?php
+										} 
+									?>
 									
 									<div id="clear-float3">
 										<!--clear float from previous content-->
 									</div>
 									
-									<span class="glyphicon glyphicon-book"></span><p id="<?php echo "recipe-cookbook" . $j ?>" class="cookbook-adds">0</p>
+									<?php 
+										$cookbookAdds = $cookbookSelector->getEntryCount($recipe["id"]);
+									?>
+									
+									<span class="glyphicon glyphicon-book"></span><p id="<?php echo "recipe-cookbook" . $j ?>" class="cookbook-adds"><?php echo $cookbookAdds ?></p>
 									
 									<div id="clear-float4">
 										<!--clear float from previous content-->

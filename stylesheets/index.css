@@ -85,35 +85,63 @@ body
 	color: grey;
 }
 
-.rating 
+.rating-stars
 {
+	float: left;
+	color: orange;
 	margin-top: -4px;
 	padding-left: 8px;
 	margin-bottom: 14px;
 }
 
+.rating-count1
+{
+	float: left;
+	margin-top: -4px;
+	padding-left: 1px;
+	font-size: 12px;
+	color: grey;
+}
+
+.rating-count2
+{
+	float: left;
+	margin-top: -4px;
+	padding-left: 4px;
+	font-size: 12px;
+	color: grey;
+}
+
+#clear-float1
+{
+	clear: both;
+}
+
 .glyphicon-star 
 {
 	padding-right: 2px;
+	font-size: 14px;
 }
 
 .half 
 {
     position:relative;
 }
-.font
-{
-	font-size:6em;
-}
+
 .half:after 
 {
     content: '';
     position: absolute;
     z-index: 1;
     background: white;
-    width: 50%;
+    width: 47%;
     height: 100%;
     left: 50%;
+}
+
+.glyphicon-star-empty  
+{
+	color: grey;
 }
 
 .recipe-description
@@ -128,6 +156,7 @@ body
 
 .glyphicon-user
 {
+	margin-top: -3px;
 	font-size: 12.5px;
 	padding-left: 8px;
 	float: left;
@@ -135,8 +164,10 @@ body
 
 .recipe-author
 {
+	margin-top: -3px;
 	padding-left: 7px;
 	font-size: 12px;
+	color: #000080;
 	float: left;
 }
 

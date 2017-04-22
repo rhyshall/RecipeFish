@@ -130,7 +130,7 @@ function getPopularIngredientHeading()
 function getOtherFeatureHeading()
 {
 	$root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
-	$OTHER_PRIORITY_TOTAL = 35;
+	$OTHER_PRIORITY_TOTAL = 32;
 	$otherFeatureHeading = "None";
 	
 	$randomNum = rand(1, $OTHER_PRIORITY_TOTAL);
@@ -776,7 +776,7 @@ function randomRatingCategory($candidates)
 	$randomNum = rand(1, 100);
 	
 	//assign required recipe IDs to 4-star rating group (if group chosen)
-	if ($randomNum <= 4)
+	if ($randomNum <= 3)
 	{
 		//traverse to 4-star ratings in sorted rating array
 		while (1)
@@ -799,7 +799,7 @@ function randomRatingCategory($candidates)
 	}
 	
 	//assign required recipe IDs to 4.5-star rating group (if group chosen)
-	if (($randomNum >= 5) && ($randomNum <= 36))
+	if (($randomNum >= 4) && ($randomNum <= 33))
 	{
 		while (1)
 		{
@@ -821,7 +821,7 @@ function randomRatingCategory($candidates)
 	}
 	
 	//assign required recipe IDs to 5-star rating group (if group chosen)
-	if ($randomNum >= 37)
+	if ($randomNum >= 34)
 	{
 		//already begins at 5-star ratings
 		while (1)

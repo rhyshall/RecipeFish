@@ -79,6 +79,8 @@ class Cookbook
 		
 		$statement = $connection->prepare($query);
 		
+		$statement->bindValue(":recipe_id", $recipeID);		
+		
 		$statement->execute();
 		$result = $statement->fetchAll();
 		
