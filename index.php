@@ -95,7 +95,7 @@ $RECIPE_COUNT = 16;
 									}
 								?>
 							
-								<a href="#" class="thumbnail">
+								<a href="/RecipeFish/view/recipeProfile.php?id=<?php echo $recipe["id"] ?>" class="thumbnail">
 									<?php 
 										$relativeImagePath = relativeImagePath($recipe["image_path"]);
 									?>

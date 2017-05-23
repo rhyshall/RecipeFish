@@ -13,12 +13,14 @@ session_start();
 $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
+include($root . "/model/user.php");
 include($root . "/model/recipe.php");
 include($root . "/model/recipeIngredient.php");
 include($root . "/model/recipeDirection.php");
 include($root . "/model/ingredient.php");
 include($root . "/model/direction.php");
-include($root . "/model/user.php");
+include($root . "/model/review.php");
+include($root . "/model/cookbook.php");
 
 /****
 ** Delimit feature string with '%' and assign each 
@@ -88,6 +90,15 @@ $holiday = $recipe["holiday"];
 $notes = $recipe["notes"];
 $authorID = $recipe["author_id"];
 
+$reviewSelector = new Review;
+$rating = $reviewSelector->averageRecipeRating($recipe["id"]);
+
+$recipeReviews = $reviewSelector->selectByRecipeID($recipe["id"]);
+$ratingCount = count($recipeReviews);
+
+$cookbookSelector = new Cookbook;
+$cookbookCount = $cookbookSelector->getEntryCount($recipe["id"]);
+
 //split time from date 
 $splitArray = array();
 $splitArray = explode(" ", $recipe["date_uploaded"]);
@@ -155,75 +166,227 @@ $authorUsername = $userObj->getUsername();
 				<p><?php echo $name ?></p>
 			</div>
 			
-			<div id="recipe-header">
-				<div id="recipe-photo">
-					<img src="<?php echo $imagePath ?>"></img>
+			<div class="rating-stars">
+				<?php 
+					//if not rated
+					if ($rating < 0.5)
+					{
+						echo "<i class='glyphicon glyphicon-star-empty'></i>";
+						echo "<i class='glyphicon glyphicon-star-empty'></i>";
+						echo "<i class='glyphicon glyphicon-star-empty'></i>";
+						echo "<i class='glyphicon glyphicon-star-empty'></i>";
+						echo "<i class='glyphicon glyphicon-star-empty'></i>";
+					}
 					
-					<div id="photo-stats">
+					//if average rating is 0.5 stars
+					if (($rating >= 0.5) && ($rating < 0.75))
+					{
+						echo "<i class='glyphicon glyphicon-star half'></i>";
+					}
+					
+					//if average rating is 1 star
+					if (($rating >= 0.75) && ($rating < 1.25))
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+					}
+					
+					//if average rating is 1.5 stars
+					if (($rating >= 1.25) && ($rating < 1.75))
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star half'></i>";
+					}
+					
+					//if average rating is 2 stars
+					if (($rating >= 1.75) && ($rating < 2.25))
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+					}
+					
+					//if average rating is 2.5 stars
+					if (($rating >= 2.25) && ($rating < 2.75))
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star half'></i>";
+					}
+					
+					//if average rating is 3 stars
+					if (($rating >= 2.75) && ($rating < 3.25))
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+					}
+					
+					//if average rating is 3.5 stars
+					if (($rating >= 3.25) && ($rating < 3.75))
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star half'></i>";
+					}
+					
+					//if average rating is 4 stars
+					if (($rating >= 3.75) && ($rating < 4.25))
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+					}
+					
+					//if average rating is 4.5 stars
+					if (($rating >= 4.25) && ($rating < 4.75))
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star half'></i>";
+					}
+					
+					//if average rating is 5 stars
+					if ($rating >= 4.75)
+					{
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+						echo "<i class='glyphicon glyphicon-star'></i>";
+					}
+				?>
+			</div>
+				
+			<?php 
+				//align rating count appropriately with trailing half-star
+				if ((($rating >= 0.25) && ($rating < 0.75)) || (($rating >= 1.25) && ($rating < 1.75)) || (($rating >= 2.25) && ($rating < 2.75))
+					|| (($rating >= 3.25) && ($rating < 3.75)) || (($rating >= 4.25) && ($rating < 4.75)))
+				{
+					echo "<div class='rating-count1'>";
+
+					echo "<p>(" . $ratingCount . ")" . "</p>";
 						
+					echo "</div>";
+				}
+				
+				//align rating count appropriately with trailing full-star											
+				else 
+				{
+					echo "<div class='rating-count2'>";
+
+					echo "<p>(" . $ratingCount . ")" . "</p>";
+							
+					echo "</div>";	
+				}
+			?>
+			
+			<div id="clear-float1">
+				<!--clear float from previous content-->
+			</div>
+			
+			<div id="recipe-header">
+				<div id="left-header">
+					<div id="recipe-photo">
+						<img src="<?php echo $imagePath ?>"></img>
+					</div>
+					
+					<div id="recipe-options" class="btn-group" role="group">
+						<button id="cookbook-button" type="button" class="btn btn-warning"><span id="cookbook-icon" class="glyphicon glyphicon-book"></span>Add</button>
+						<button id="review-button" type="button" class="btn btn-warning"><span id="review-icon" class="glyphicon glyphicon-list-alt"></span>Review</button>
+						<button id="share-button" type="button" class="btn btn-warning"><span id="share-icon" class="glyphicon glyphicon-share"></span>Share</button>
+						<button id="print-button" type="button" class="btn btn-warning"><span id="print-icon" class="glyphicon glyphicon-print"></span>Print</button>
 					</div>
 				</div>
 				
-				<div id="header-info1">
+				<div id="right-header">
+					<div id="author-photo">
+						<img src="<?php echo $userImagePath ?>"></img>
+					</div>
+				
+					<div id="author-info">
+						<p>Recipe by</p>
+						
+						<a href="#"><?php echo $authorUsername ?></a>
+					</div>
+					
+					<div class="clear-float">
+						<!--clear float from previous content-->
+					</div>
+					
+					<div id ="cookbook-adds">
+						<?php 
+							if ($cookbookCount <= 0)
+							{
+								echo "<p>Be the first to add to cookbook!</p>";
+							}
+							
+							if ($cookbookCount == 1)
+							{
+								echo "<p>" . $cookbookCount . " user added to cookbook</p>";
+							}
+							
+							if ($cookbookCount >= 2)
+							{
+								echo "<p>" . $cookbookCount . " users added to cookbook</p>";
+							}
+						?>
+					</div>
+					
 					<div id="prep-time">
-						<span id="clock" class="glyphicon glyphicon-time"></span> 
-					
-						<p>Prep Time<span class="colon">:</span> <?php if (($prepHour > 0) || (strpos($prepHour, "+") == true)) echo $prepHour . " Hr"; if (($prepHour > 0) && ($prepMin > 0)) echo ", "; if ($prepMin > 0) echo $prepMin . " Min"; if (($prepMin <= 0) && ($prepHour <=0)) echo "N/A"; ?></p>
-					
-						<div id="clear-float">
+						<span class="glyphicon glyphicon-time"></span> 
+						
+						<p>Prep<span class="colon">:</span> <?php if (($prepHour > 0) || (strpos($prepHour, "+") == true)) echo $prepHour . " Hr"; if (($prepHour > 0) && ($prepMin > 0)) echo ", "; if ($prepMin > 0) echo $prepMin . " Min"; if (($prepMin <= 0) && ($prepHour <=0)) echo "N/A"; ?></p>
+						
+						<div class="clear-float">
 							<!--clear float from previous content-->
 						</div>
+					</div>
+						
+					<div id="cook-time">
+						<span class="glyphicon glyphicon-time"></span> 
+					
+						<p>Cook<span class="colon">:</span> <?php if (($cookHour > 0) || (strpos($cookHour, "+") == true)) echo $cookHour . " Hr"; if (($cookHour > 0) && ($cookMin > 0)) echo ", "; if ($cookMin > 0) echo $cookMin . " Min"; if (($cookMin <= 0) && ($cookHour <=0)) echo "N/A"; ?></p>
+					
+						<div class="clear-float">
+							<!--clear float from previous content-->
+						</div>
+					</div>
+					
+					<div class="clear-float">
+						<!--clear float from previous content-->
 					</div>
 					
 					<div id="wait-time">
-						<span id="clock" class="glyphicon glyphicon-time"></span> 
+						<span class="glyphicon glyphicon-time"></span> 
 					
-						<p>Wait Time<span class="colon">:</span> <?php if (($waitHour > 0) || (strpos($waitHour, "+") == true)) echo $waitHour . " Hr"; if (($waitHour > 0) && ($waitMin > 0)) echo ", "; if ($waitMin > 0) echo $waitMin . " Min"; if (($waitMin <= 0) && ($waitHour <=0)) echo "N/A"; ?></p>
+						<p>Wait<span class="colon">:</span> <?php if (($waitHour > 0) || (strpos($waitHour, "+") == true)) echo $waitHour . " Hr"; if (($waitHour > 0) && ($waitMin > 0)) echo ", "; if ($waitMin > 0) echo $waitMin . " Min"; if (($waitMin <= 0) && ($waitHour <=0)) echo "N/A"; ?></p>
 					
-						<div id="clear-float2">
+						<div class="clear-float">
 							<!--clear float from previous content-->
 						</div>
 					</div>
-					
-					<div id="author">
-						<p>Author<span class="colon">:</span></p>
-						<a href="#"><?php echo $authorUsername ?></a>
-						
-						<div id="clear-float3">
-							<!--clear float from previous content-->
-						</div>
-					</div>
-					
-					<div id="date-uploaded">
-						<p>Date Uploaded<span class="colon">:</span> <?php echo $dateUploaded ?></p>
-					</div>
-				</div>
-				
-				<div id="header-info2">
-					<div id="cook-time">
-						<span id="clock2" class="glyphicon glyphicon-time"></span> 
-					
-						<p>Cook Time<span class="colon">:</span> <?php if (($cookHour > 0) || (strpos($cookHour, "+") == true)) echo $cookHour . " Hr"; if (($cookHour > 0) && ($cookMin > 0)) echo ", "; if ($cookMin > 0) echo $cookMin . " Min"; if (($cookMin <= 0) && ($cookHour <=0)) echo "N/A"; ?></p>
-					
-						<div id="clear-float4">
-							<!--clear float from previous content-->
-						</div>
-					</div>
-				
+
 					<div id="servings">
 						<span id="cutlery" class="glyphicon glyphicon-cutlery"></span> 
 					
 						<p>Servings<span class="colon">:</span> <?php echo $servings ?></p>
 						
-						<div id="clear-float5">
+						<div class="clear-float">
 							<!--clear float from previous content-->
 						</div>
 					</div>
+					
+					<div class="clear-float">
+						<!--clear float from previous content-->
+					</div>
 				</div>
-				
-				<div id="clear-float6">
-					<!--clear float from previous content-->
-				</div>
+			</div>
+			
+			<div class="clear-float">
+				<!--clear float from previous content-->
 			</div>
 			
 			<div id="recipe-description">
@@ -263,12 +426,12 @@ $authorUsername = $userObj->getUsername();
 							{
 								echo "<span class='glyphicon glyphicon-plus'></span><p class='ingredient'>$ingredients[$i]</p>";
 								
-								echo '<div id="clear-float8"><!--clear float from previous content--></div>';
+								echo '<div id="clear-float9"><!--clear float from previous content--></div>';
 							}
 						?>	
 					</div>
 				
-					<div id="clear-float9">
+					<div id="clear-float10">
 						<!--clear float from previous content-->
 					</div>
 				</div>
@@ -293,7 +456,7 @@ $authorUsername = $userObj->getUsername();
 								echo "<p class='direction'>" . $directions[$i] . "</p>";
 								echo "</div>";
 								
-								echo '<div id="clear-float10"><!--clear float from previous content--></div>';
+								echo '<div id="clear-float11"><!--clear float from previous content--></div>';
 							}
 						?>	
 				</div>

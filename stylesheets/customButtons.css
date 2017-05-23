@@ -67,8 +67,8 @@ fieldset[disabled].btn-grey1.active
 .btn-grey2
 { 
   color: #000000; 
-  background-color: #D9D9D9; 
-  border-color: #E6F3FF; 
+  background-color: #cccccc; 
+  border-color: #b3b3b3; 
 } 
  
 .btn-grey2:hover, 
@@ -78,8 +78,8 @@ fieldset[disabled].btn-grey1.active
 .open .dropdown-toggle.btn-grey2
 { 
   color: #000000; 
-  background-color: #BFBFBF; 
-  border-color: #E6F3FF; 
+  background-color: #b3b3b3; 
+  border-color: #a6a6a6; 
 } 
  
 .btn-grey2:active, 

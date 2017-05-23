@@ -146,6 +146,7 @@ body
 .glyphicon-star-empty  
 {
 	color: grey;
+	padding-right: 2px;
 }
 
 .recipe-description

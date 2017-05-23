@@ -82,37 +82,32 @@
 				<form id="search-form" action="/RecipeFish/controller/searchController.php" role="search">
 					<input id="search-field" type="text" class="form-control" placeholder="Search recipe..."></input>
 
-					<button id="search-button" class="btn btn-info" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+					<button id="search-button" class="btn btn-grey2" type="submit"><i class="glyphicon glyphicon-search"></i></button>
 				</form>
-				<!--
+				
+				<div id="random-recipe">
+					<a href="#"><img id="die" src="/RecipeFish/images/standard/die.png"></img></a>
+				</div>
+				
 				<div id="advanced-search">
-					<button id="advanced-search-button" class="btn btn-grey1" type="submit">Advanced Search</button>
-				</div> -->
+					<a href="#"><img id="beaker" src="/RecipeFish/images/standard/beaker.png"></img></a>
+				</div>
 			
 				<?php 
 					//if user signed in
 					if (isset($_SESSION["username"]) == true)
 					{
+						$userSelector = new User;
+						$user = new User;
+						
+						$user = $userSelector->selectByUsername($_SESSION["username"]);
+						$userImagePath = $user->getImagePath()
+						
 				?>		<!-- display appropriate gender pic-->
 						<div id="user-menu">
-							<?php 
-								//if user is male 
-								if (strcmp($_SESSION["gender"], "male") == 0)
-								{
-							?>		<!--display user button with male pic-->
-									<button id="user-button" class="btn btn-grey1" type="submit"><span id="male-pic" class="glyphicon glyphicon-user pull-left"></span>
-									<?php echo $_SESSION["username"] ?></button>
-							<?php 
-								}
-							
-								else 
-								{
-							?>		<!--display user button with female pic-->	
-									<button id="user-button" class="btn btn-grey1" type="submit"><img id="female-pic" src="/RecipeFish/images/standard/female user.png"></span>
-									<?php echo $_SESSION["username"] ?></button>
-							<?php	
-								} 
-							?>
+							<!--display user button with pic-->
+							<button id="user-button" class="btn btn-grey1" type="submit"><img id="user-pic" src="<?php echo $userImagePath; ?>"></img>
+							<?php echo $_SESSION["username"] ?></button>
 						
 							<!--user options (drop-down)-->
 							<div id="user-drop-down" class="dropdown">
@@ -125,7 +120,6 @@
 									<li><a href="/RecipeFish/view/recipes.php">Recipes<span class="glyphicon glyphicon-cutlery pull-right"></span></a></li>
 									<li><a href="#">Reviews<span class="glyphicon glyphicon-list-alt pull-right"></span></a></li>
 									<li><a href="#">Stats<span class="glyphicon glyphicon-stats pull-right"></span></a></li>
-									<li><a href="#">History<span class="glyphicon glyphicon-align-left pull-right"></span></a></li>
 									<li class="divider"></li>
 									<li><a href="/RecipeFish/controller/logOutController.php">Log Out<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
 								</ul>

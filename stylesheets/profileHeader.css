@@ -25,9 +25,12 @@ body
 
 #profile-picture-image
 {
-	height: 82px;
-	width: 90px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
-	margin-top: 22.5px;
-	margin-left: -781px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: grey;
+	margin-top: 9px;
+	margin-left: -770px;
 }

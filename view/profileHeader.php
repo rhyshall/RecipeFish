@@ -9,8 +9,6 @@
 ******************************************************************************************/
 
 $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
-
-include($root . "/model/user.php");
 ?>
 
 <html>
