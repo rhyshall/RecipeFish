@@ -13,6 +13,7 @@ session_start();
 $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 
 include($root . "utilities/database.php");
+include($root . "/model/user.php");
 ?>
 
 <html>

@@ -15,6 +15,7 @@ $root = $_SERVER["DOCUMENT_ROOT"] . "/RecipeFish/";
 include($root . "/utilities/recipesUtilities.php");
 include($root . "utilities/database.php");
 include($root . "/model/recipe.php");
+include($root . "/model/user.php");
 
 $MAX_DISPLAY_COUNT = 10; /* maximum recipes to display for 1 page */
 $ALPHABETICAL = 1;
