@@ -89,6 +89,114 @@ class Cookbook
 		return $result[0][0];
 	}
 	
+	/****
+	** Determines whether given user has already added given recipe to 
+	** their cookbook
+	**
+	** @param    int  $userID  ID of corresponding user
+	**			 int  $recipeID  ID of corresponding recipe
+	** @return    boolean  true if recipe's already in user's cookbook, false otherwise
+	*/
+	function isAdded($userID, $recipeID)
+	{
+		$isAdded = false;
+		$connection = RecipeFish::connect();
+	
+		$query = "select * from cookbook where user_id=:user_id and recipe_id=:recipe_id;";
+		
+		$statement = $connection->prepare($query);
+		
+		$statement->bindValue(":user_id", $userID);	
+		$statement->bindValue(":recipe_id", $recipeID);		
+		
+		$statement->execute();
+		$result = $statement->fetchAll();
+		
+		RecipeFish::close($connection);
+		
+		if (empty($result) == 0)
+		{
+			$isAdded = true;
+		}
+		
+		return $isAdded;
+	}
+	
+	/****
+	** insert information corresponding to a given user's cookbook into 
+	** the database system
+	**
+	** @return    boolean  insertion status
+	*/
+	function insert()
+	{
+		$connection = RecipeFish::connect();
+		
+		$query = "insert into cookbook(id, user_id, recipe_id, date_added) values (:id, :user_id, :recipe_id, :date_added)";
+			
+		$statement = $connection->prepare($query);
+		
+		// bind class values to query values
+		$statement->bindValue(":id", "");	
+		$statement->bindValue(":user_id", $this->getUserID());
+		$statement->bindValue(":recipe_id", $this->getRecipeID());	
+		$statement->bindValue(":date_added", $this->getDateAdded());	
+		
+		if ($statement->execute())
+		{
+			RecipeFish::close($connection);
+			
+			return true;
+		}
+		
+		else
+		{
+			//error reporting for debugging purposes
+			/*$arr = $statement->errorInfo();
+			print_r($arr);*/
+			
+			RecipeFish::close($connection);
+			
+			return false;
+		}
+	}
+	
+	/****
+	** remove all information from cookbook corresponding to 
+	** given user and recipe IDs from the database system 
+	**
+	** @return    boolean  deletion status
+	*/
+	function remove($userID, $recipeID)
+	{
+		$connection = RecipeFish::connect();
+		
+		$query = "delete from cookbook where user_id=:user_id and recipe_id=:recipe_id;";
+			
+		$statement = $connection->prepare($query);
+		
+		$statement->bindValue(":user_id", $userID);
+		$statement->bindValue(":recipe_id", $recipeID);
+		
+		if ($statement->execute())
+		{
+			RecipeFish::close($connection);
+			
+			return true;
+		}
+		
+		else
+		{
+			//error reporting for debugging purposes
+			/*$arr = $statement->errorInfo();
+			print_r($arr);*/
+			
+			RecipeFish::close($connection);
+			
+			return false;
+		}
+	}
+	
 	function getID()
 	{
 		return $this->ID;

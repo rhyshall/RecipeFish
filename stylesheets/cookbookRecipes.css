@@ -1,9 +1,9 @@
 /******************************************************************************************
 *******************************************************************************************
-** Name: recipes.css																   ****
-** Purpose: Provides style sheet for "recipes.php"					   				   ****
+** Name: cookbookRecipes.css														   ****
+** Purpose: Provides style sheet for "cookbookRecipes.php"					   		   ****
 ** Author: Rhys Hall																   ****
-** Date Created: 04/26/2016														   	   ****
+** Date Created: 06/24/2017 													   	   ****
 *******************************************************************************************
 ******************************************************************************************/
 
@@ -46,52 +46,19 @@ body
 	color: #e62e00;
 }
 
-#add-first-recipe-messages 
-{
-	padding-top: 62px;
-}
-
-#recipe-message1
-{
-	font-size: 15px;
-	text-align: center;
-}
-
-#recipe-message2
-{
-	padding-top: 50px;
-	font-size: 15px;
-	text-align: center;
-}
-
-#add-first-recipe
-{
-	padding-top: 21.5px;
-	text-align: center;
-	background-color: #ffffff;
-}
-
-#add-first-recipe-button
-{
-	height: 38px;
-	width: 300px;
-	font-size: 15px;
-	box-shadow: 1px 1px 2.5px #29a329;
-	margin-bottom: 194px;
-}
-
 #recipes
 {
 	padding-top: 36px;
+	margin-left: 160px;
 	text-align: center;
 	background-color: #ffffff;
 	padding-bottom: 21.5px;
+	width: 870px;
 }
 
 #recipes-table 
 {
-	width: 900px;
-	margin-left: 144.5px;
+	width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -108,7 +75,6 @@ body
 	padding-top: 16px;
 	padding-bottom: 7px;
 	padding-left: 27px;
-	margin-right: -450px;
 }
 
 #photo-table-title 
@@ -126,51 +92,22 @@ body
 .table-date
 {
 	margin-top: 16px;
-	margin-right: 40px;
-	margin-left: 18px;
+	margin-right: 120px;
+	margin-left: 12px;
 	font-size: 14px;
-}
-
-.glyphicon-pencil
-{
-	font-size: 14px;
-	margin-top: 18px;
-	margin-right: -29px;
-	padding-right: 21.5px;
 }
 
 .glyphicon-trash
 {
 	font-size: 14px;
 	margin-top: 18px;
-	padding-right: 27px;
-	margin-right: -29px;
+	margin-right: 14px;
+	padding-left: 30px;
 }
 
 #options-menu 
 {
 	padding-left: 271px;
-}
-
-#add-recipe 
-{
-	padding-top: 27px;
-	float: left;
-}
-
-#plus-symbol
-{
-	font-size: 12px;
-	padding-left: 5px;
-}
-
-#add-recipe-button 
-{
-	height: 32px;
-	width: 81px;
-	padding-top: 6px;
-	font-size: 15px;
-	box-shadow: 1px 1px 1px #1f7a1f;
 }
 
 #page-number

@@ -352,8 +352,8 @@ class Recipe
 		else
 		{
 			//error reporting for debugging purposes
-			$arr = $statement->errorInfo();
-			print_r($arr);
+			/*$arr = $statement->errorInfo();
+			print_r($arr);*/
 			
 			RecipeFish::close($connection);
 			

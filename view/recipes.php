@@ -65,7 +65,7 @@ $REVERSE_ALPHABETICAL = 4;
 				popUpWindow = window.open("confirmRecipeDelete.php?id=" + id, "Confirm Recipe Deletion", parameters);
 			}
 			
-			<!--displays success pop-up window if add recipe was successful
+			<!--displays success pop-up window if delete recipe was successful
 			function displayDeleteSuccessPopUp(name)
 			{
 				var parameters = "height=200,width=450,left=" + ((screen.width/2)-(450/2)) + ",top=" + ((screen.height/2)-(screen.height/4));

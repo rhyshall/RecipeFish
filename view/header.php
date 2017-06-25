@@ -116,7 +116,7 @@
 							
 								<ul id="user-drop-down-menu" class="dropdown-menu">
 									<li><a href="/RecipeFish/view/profile.php">Profile<span class="glyphicon glyphicon-user pull-right"></span></a></li>
-									<li><a href="#">Cookbook<span class="glyphicon glyphicon-book pull-right"></span></a></li>
+									<li><a href="/RecipeFish/view/cookbookRecipes.php">Cookbook<span class="glyphicon glyphicon-book pull-right"></span></a></li>
 									<li><a href="/RecipeFish/view/recipes.php">Recipes<span class="glyphicon glyphicon-cutlery pull-right"></span></a></li>
 									<li><a href="#">Reviews<span class="glyphicon glyphicon-list-alt pull-right"></span></a></li>
 									<li><a href="#">Stats<span class="glyphicon glyphicon-stats pull-right"></span></a></li>

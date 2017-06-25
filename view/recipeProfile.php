@@ -395,8 +395,34 @@ $authorUsername = $userObj->getUsername();
 					</div>
 					
 					<div id="bottom-header">
+						<?php
+							$cookbookControllerURL = "/RecipeFish/controller/addCookbookController.php?recipe_id=" . $recipeID;
+						?>
+					
 						<div id="recipe-options" class="btn-group" role="group">
-							<button id="cookbook-button" type="button" class="btn btn-warning"><span id="cookbook-icon" class="glyphicon glyphicon-book"></span>Add</button>
+							<?php 
+								//if user created recipe or user already added recipe to cookbook
+								$userID = $_SESSION["userID"];
+								
+								$cookbookSelector = new Cookbook();
+								
+								if ((strcmp($userID, $authorID) == 0) || ($cookbookSelector->isAdded($userID, $recipeID) == true))
+								{
+							?>
+									<button id="cookbook-button" type="button" class="btn btn-warning" onclick="#" disabled>
+									<span id="cookbook-icon" class="glyphicon glyphicon-book"></span>Add</button>
+							<?php
+								}
+								
+								else 
+								{
+							?>
+									<button id="cookbook-button" type="button" class="btn btn-warning" onclick="window.location.href='<?php echo $cookbookControllerURL ?>'">
+									<span id="cookbook-icon" class="glyphicon glyphicon-book"></span>Add</button>
+							<?php 
+								}
+							?>
+							
 							<button id="review-button" type="button" class="btn btn-warning"><span id="review-icon" class="glyphicon glyphicon-list-alt"></span>Review</button>
 							<button id="share-button" type="button" class="btn btn-warning"><span id="share-icon" class="glyphicon glyphicon-share"></span>Share</button>
 							<button id="print-button" type="button" class="btn btn-warning"><span id="print-icon" class="glyphicon glyphicon-print"></span>Print</button>

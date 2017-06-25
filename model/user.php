@@ -21,6 +21,7 @@ class User
 	private $imagePath;
 	private $skinID;
 	private $recipeSortID; /* 1 = alphabetical, 2 = newest to oldest, 3 = oldest to newest, 4 = reverse alphabetical */
+	private $cookbookSortID; /* 1 = most recent, 2 = alphabetical, 3 = reverse alphabetical, 4 = least recent */
 	
 	/****
 	** retrieve user data from Recipe Fish database corresponding
@@ -33,7 +34,7 @@ class User
 	{
 		$connection = RecipeFish::connect();
 	
-		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id from user where id=:id;";
+		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id, cookbook_sort_id from user where id=:id;";
 		
 		$statement = $connection->prepare($query);
 
@@ -51,6 +52,7 @@ class User
 		$userObj->setImagePath($result["image_path"]);
 		$userObj->setSkinID($result["skin_id"]);
 		$userObj->setRecipeSortID($result["recipe_sort_id"]);
+		$userObj->setCookbookSortID($result["cookbook_sort_id"]);
 		
 		RecipeFish::close($connection);
 		
@@ -68,7 +70,7 @@ class User
 	{
 		$connection = RecipeFish::connect();
 	
-		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id from user where username=:username;";
+		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id, cookbook_sort_id from user where username=:username;";
 		
 		$statement = $connection->prepare($query);
 
@@ -86,6 +88,7 @@ class User
 		$userObj->setImagePath($result["image_path"]);
 		$userObj->setSkinID($result["skin_id"]);
 		$userObj->setRecipeSortID($result["recipe_sort_id"]);
+		$userObj->setCookbookSortID($result["cookbook_sort_id"]);
 		
 		RecipeFish::close($connection);
 		
@@ -103,7 +106,7 @@ class User
 	{
 		$connection = RecipeFish::connect();
 	
-		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id from user where email=:email;";
+		$query = "select id, username, password, email, gender, image_path, skin_id, recipe_sort_id, cookbook_sort_id from user where email=:email;";
 		
 		$statement = $connection->prepare($query);
 
@@ -121,6 +124,7 @@ class User
 		$userObj->setImagePath($result["image_path"]);
 		$userObj->setSkinID($result["skin_id"]);
 		$userObj->setRecipeSortID($result["recipe_sort_id"]);
+		$userObj->setCookbookSortID($result["cookbook_sort_id"]);
 		
 		RecipeFish::close($connection);
 		
@@ -158,8 +162,8 @@ class User
 	{
 		$connection = RecipeFish::connect();
 		
-		$query = "insert into user(id, username, password, email, gender, image_path, skin_id, recipe_sort_id) 
-				values (:id, :username, :password, :email, :gender, :image_path, :skin_id, :recipe_sort_id)";
+		$query = "insert into user(id, username, password, email, gender, image_path, skin_id, recipe_sort_id, cookbook_sort_id) 
+				values (:id, :username, :password, :email, :gender, :image_path, :skin_id, :recipe_sort_id, :cookbook_sort_id)";
 			
 		$statement = $connection->prepare($query);
 		
@@ -172,6 +176,7 @@ class User
 		$statement->bindValue(":image_path", $this->getImagePath());		
 		$statement->bindValue(":skin_id", $this->getSkinID());	
 		$statement->bindValue(":recipe_sort_id", $this->getRecipeSortID());	
+		$statement->bindValue(":cookbook_sort_id", $this->getCookbookSortID());	
 		
 		
 		if ($statement->execute())
@@ -204,7 +209,7 @@ class User
 		$connection = RecipeFish::connect();
 		
 		$query = "update user set username=:username, email=:email, gender=:gender, password=:password, image_path=:image_path,
-				skin_id=:skin_id, recipe_sort_id=:recipe_sort_id where id=:id;";
+				skin_id=:skin_id, recipe_sort_id=:recipe_sort_id, cookbook_sort_id=:cookbook_sort_id where id=:id;";
 			
 		$statement = $connection->prepare($query);
 		
@@ -217,6 +222,7 @@ class User
 		$statement->bindValue(":image_path", $this->getImagePath());		
 		$statement->bindValue(":skin_id", $this->getSkinID());	
 		$statement->bindValue(":recipe_sort_id", $this->getRecipeSortID());	
+		$statement->bindValue(":cookbook_sort_id", $this->getCookbookSortID());	
 		
 		if ($statement->execute())
 		{
@@ -277,6 +283,11 @@ class User
 		return $this->recipeSortID;
 	}
 	
+	function getCookbookSortID()
+	{
+		return $this->cookbookSortID;
+	}
+	
 	function setID($param)
 	{
 		$this->ID = $param;	
@@ -315,6 +326,11 @@ class User
 	function setRecipeSortID($param)
 	{
 		$this->recipeSortID = $param;	
+	}
+	
+	function setCookbookSortID($param)
+	{
+		$this->cookbookSortID = $param;
 	}
 }
 ?>
